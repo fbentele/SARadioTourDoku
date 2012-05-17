@@ -1,0 +1,22 @@
+\chapter{Aufgabenstellung}
+
+
+\section{Ziel}
+Ziel dieser Arbeit ist es, die bestehende Web Applikation Tour Live, in eine native Android Tablet Applikation zu portieren. Dabei dürfen keine bestehenden Features weggelassen werden. Die Applikation richtet sich einem sehr spezifischen Umfeld, daher ist die Bedienung diesen Anforderungen anzupassen.
+\\
+Das Endprodukt beinhaltet die funktionierende Applikation mit der Schnittstelle zum Server für die Übertragung der Daten. Die Applikation ermöglicht es dem RadioTour\-Speaker alle Angaben gemäss Requirements zu erfassen und bietet die Möglichkeit zur Mehrsprachigkeit.
+
+\section{Abgrenzung}
+Das Produkt wird spezifisch auf ein Gerät ausgerichtet und nicht plattformübergreifend entwickelt. Die Verbindung zum Server wird in der Arbeit definiert jedoch werden keine serverseitigen Entwicklungen erarbeitet.
+\\
+Die Mehrsprachigkeit wird nach Android Standards implementiert \footnote{http://developer.android.com/guide/topics/resources/localization.html\#creating-alternatives}. Eine Übersetzung ist jedoch nicht Teil der Arbeit.
+
+\section{Erklärung}
+Ich erkläre hiermit, dass ich die vorliegende Arbeit selber und ohne fremde Hilfe durchgeführt habe, ausser derjenigen, welche explizit in der Aufgabenstellung erwähnt ist oder mit dem Betreuer schriftlich vereinbart wurde, dass ich sämtliche verwendeten Quellen erwähnt und gemäss gängigen wissenschaftlichen Zitierregeln korrekt angegeben habe.
+\\[1em]
+Rapperswil, 29. Mai 2012
+\\[1em]
+\begin{tabular}{p{10cm}ll}
+Florian Bentele & Daniel Stucki
+
+\end{tabular}

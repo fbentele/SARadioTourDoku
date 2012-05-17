@@ -1,0 +1,49 @@
+\chapter{Einleitung}
+Im folgenden Abschnitt werden die aus technischer Sicht relevanten Aspekte genauer analysiert. Zu Beginn wird das Aufgabenumfeld in einem weiteren Sinne betrachtet, später gehen wir konkret auf die Analyse und das Software Engineering ein.
+\\
+
+Der technische Bericht richtet sich vor allem an Personen, die bereits Hintergrundwissen zum Betriebssystem Android vorweisen sowie für Entwickler, die an der Weiterentwicklung des Produktes interessiert sind.
+
+\section{BigPicture}
+Zur Übersicht wurde das Umfeld der Applikation in einem BigPicture zusammengefasst. Es ermöglicht die Darstellung der äusseren Einflussfaktoren sowie um die Abgrenzung des Systems zu definieren.
+
+\begin{figure}[h!]
+\caption{BigPicture}
+\centering
+\includegraphics{technischerbericht/images/big_picture.png}
+\end{figure} 
+
+Die schematische Darstellung zeigt im wesentlichen die drei Hauptaktoren auf. Zum einen sind dies die Motorradfahrer, welche die Radrennfahrer begleiten und Veränderungen in Echtzeit per Funk übermitteln. Diese Informationen kommen in kurzen Abständen und müssen sofort erfasst werden können. Im UserInterface verwenden wir dafür eine Lösung bei der mehrere Radrennfahrer gleichzeitig eingetragen werden können.
+\\
+
+Eine weitere Rolle spielt der \textit{RadioTour Speaker} mit dem Android Tablet. Er fasst die Informationen zusammen und wertet diese bereits auf dem Gerät aus. Im Tablett werden auch Daten wie z.B. die Durchschnittsgeschwindigkeit und die aktuelle Rennzeit angezeigt.
+\\
+Der dritte Aktor bildet der Server der \textit{cnlab AG}, welcher direkt mit der Applikation kommuniziert. Ausgetauscht werden die Veränderungen im Feld sowie markante Rückstände von der Spitze. Weiter können Ereignisse wie z.B. eine Verletzung oder ein defektes Fahrrad aufgezeichnet werden. Die Daten werden dann weiter auf der Webseite der \textit{TourLive} aufbereitet und publiziert. Nicht nur für die beteiligten im Team sondern auch für Fans sind diese Angaben von grossem Interesse, da die Daten vor den offiziellen Zeitmessungen bereits einen Einblick in das Schlussklassement geben.
+
+\section{Evaluation und Kaufempfehlung}
+Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwicklung der Arbeit. Aus diesem Grund stand dies ganz zu Beginn der Arbeit an. Zur Auswahl standen die beiden marktführenden Betriebssysteme Android und iOS. Als Grundlage für die Evaluation dienten die folgenden Kriterien:
+\begin{itemize}
+\item Vorkenntnisse der Programmiersprachen Java bzw. Objective-C
+\item Möglichkeiten zum UserInterface Design
+\item Programmierumgebung, \gls{ide}
+\item mögliche Vertriebskanäle der Applikation
+\item Nutzbarkeit von externen Geräten und Schnittstellen
+\item Vielfalt von Informationsquellen im Internet
+\item weitere
+\end{itemize}
+Die Kriterien wurden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java waren ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid wurde vom Betreuer genehmigt. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang.
+\\
+
+Für die Auswahl eines geeigneten Tablet Computer wurde in einem nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:
+\begin{itemize}
+\item Android Betriebssystem, gemäss Entscheid
+\item USB Anschluss für den Import der Fahrerliste am Renntag
+\item Mobilfunktnetz 3G für die Kommunikation
+\item GPS für die aktuelle Position
+\item Stromversorgung im Auto möglich
+\end{itemize}
+Zu den optionalen Kriterien gehören die Akkulaufzeit, falls die Stromversorgung unterbrochen wird sowie ein grosszügiger Bildschirm für die Bedienung mit dem Finger oder mithilfe eines Stiftes.
+\\
+
+Als Sieger somit auch als Kaufempfehlung an die \textit{cnlab AG} ging das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugte in der Auswahl mit der Gesamtleistung. Die Kaufempfehlung mit weiteren Ausführungen ist ebenfalls im Anhang zu finden.
+

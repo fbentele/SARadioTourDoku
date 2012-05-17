@@ -1,0 +1,121 @@
+%%
+%% wdok-title
+%% @(#) Time-stamp: <2005-04-20T17:36:45 mxp>
+%% Created by Michael Piotrowski <mxp@iws.cs.uni-magdeburg.de>
+
+%% NOTE:  This package is only usable with the mparticle and mpreport
+%% classes because it uses variables defined there (prefixed with mp@).
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{wdok-title}[2005/01/10 Title page for WDOK theses]
+
+\RequirePackage{graphicx}
+\RequirePackage{ifthen}
+\RequirePackage{keyval}
+
+%% To add flexibility, we will not use the ordinary processing of
+%% package options, but put them through the |keyval| package.
+%% This section is from the |hyperref| package.
+\def\ProcessOptionsWithKV#1{%
+  \let\@tempa\@empty
+  \@for\CurrentOption:=\@classoptionslist\do{%
+    \@ifundefined{KV@#1@\CurrentOption}%
+    {}%
+    {\edef\@tempa{\@tempa,\CurrentOption,}}}%
+  \edef\@tempa{%f
+    \noexpand\setkeys{#1}{\@tempa\@ptionlist{\@currname.\@currext}}}%
+  \@tempa
+  \AtEndOfPackage{\let\@unprocessedoptions\relax}}
+
+%% Declare the options.
+\newcommand{\@wdoktitletype}{diplom}
+\define@key{wdoktitle}{type}{\renewcommand{\@wdoktitletype}{#1}}
+
+%% Process them.
+\ProcessOptionsWithKV{wdoktitle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifthenelse{\equal{\@wdoktitletype}{master}}%
+{\newcommand{\@thesisname}{_}}%
+{\newcommand{\@thesisname}{Studienarbeit}}
+
+\ifthenelse{\equal{\@wdoktitletype}{master}}%
+{\newcommand{\@supervisortext}{Supervisors}}%
+{\newcommand{\@supervisortext}{Abteilung Informatik, Hochschule für Technik Rapperswil}}
+
+\ifthenelse{\equal{\@wdoktitletype}{master}}%
+{\newcommand{\@readertext}{Reader}}%
+{\newcommand{\@readertext}{Gutachter}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\supervisor}[1]{\def\@supervisor{#1}}
+\newcommand{\reader}[1]{\def\@reader{#1}}
+
+\renewcommand{\maketitle}{%
+  \begin{titlepage}%
+    %%s
+    \def\fakultaet{Studiengang Informatik}
+    \par\hspace{-\mp@margwd}%
+    \unitlength1mm
+    \begin{picture}(-2,12)
+      \put(-1,11){\rule{\mp@fullwd}{1mm}}
+
+      \put(-4,-17){
+        \parbox[b]{140mm}{
+          \raggedleft{
+  
+          }%
+        }%
+      }%
+      \put(0, -20){\includegraphics[height=30mm]{images/hsrlogo.png}}
+      
+      \put(117, -12){\includegraphics[height=15mm]{images/cnlablogo.png}}
+
+      \put(-1,-20){\rule{170mm}{.25mm}}
+    \end{picture}
+    
+    %% typeset the title
+    \vspace{5cm}
+    \begin{flushleft}
+      \sffamily\huge 
+      \@title\\[1ex]
+      \vspace{1cm}
+      \normalsize
+      \textbf{\@thesisname}\\
+      \@supervisortext\\[1ex]
+      \vspace{0.5cm}
+      \normalsize
+      \@author\\
+      Frühlingssemester 2012\\
+	  
+	  \vspace{0.5cm}
+      Abgabe: 01. Juni 2012
+	  
+	  \vspace{1cm}
+      \@ifundefined{@supervisor}{}
+      {
+        \par
+        \@supervisor
+		\\        
+        Projektpartner cnlab Software, 8640 Rapperswil\\
+        
+      }
+      \@ifundefined{@reader}{}
+      {
+        \par
+        \textbf{\@readertext}\\
+        \@reader
+      }
+      %%
+      \vfill
+      
+    \end{flushleft}
+
+    \hspace{-\mp@margwd}%
+    \rule{\mp@margwd}{2.25mm}%
+    \hspace{-\mp@margwd}%
+    \rule{\mp@fullwd}{.25mm}%
+  \end{titlepage}%
+}
