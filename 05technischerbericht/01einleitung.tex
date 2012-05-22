@@ -1,16 +1,18 @@
 \chapter{Einleitung}
+
+Test \cite{Felker201112} hallo.
 Im folgenden Abschnitt werden die aus technischer Sicht relevanten Aspekte genauer analysiert. Zu Beginn wird das Aufgabenumfeld in einem weiteren Sinne betrachtet, später gehen wir konkret auf die Analyse und das Software Engineering ein.
 \\
 
-Der technische Bericht richtet sich vor allem an Personen, die bereits Hintergrundwissen zum Betriebssystem Android vorweisen sowie für Entwickler, die an der Weiterentwicklung des Produktes interessiert sind.
+Der Hauptteil richtet sich vor allem an Personen, die bereits Hintergrundwissen zum Betriebssystem Android vorweisen sowie für Entwickler, die an der Weiterentwicklung des Produktes interessiert sind.
 
 \section{BigPicture}
-Zur Übersicht wurde das Umfeld der Applikation in einem BigPicture zusammengefasst. Es ermöglicht die Darstellung der äusseren Einflussfaktoren sowie um die Abgrenzung des Systems zu definieren.
+Zur Übersicht wird das Umfeld der Applikation in einem BigPicture zusammengefasst. Es ermöglicht die Darstellung der äusseren Einflussfaktoren sowie die Abgrenzung des Systems zu definieren.
 
 \begin{figure}[h!]
 \caption{BigPicture}
 \centering
-\includegraphics{technischerbericht/images/big_picture.png}
+\includegraphics{05technischerbericht/images/big_picture.png}
 \end{figure} 
 
 Die schematische Darstellung zeigt im wesentlichen die drei Hauptaktoren auf. Zum einen sind dies die Motorradfahrer, welche die Radrennfahrer begleiten und Veränderungen in Echtzeit per Funk übermitteln. Diese Informationen kommen in kurzen Abständen und müssen sofort erfasst werden können. Im UserInterface verwenden wir dafür eine Lösung bei der mehrere Radrennfahrer gleichzeitig eingetragen werden können.
@@ -29,21 +31,22 @@ Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwi
 \item mögliche Vertriebskanäle der Applikation
 \item Nutzbarkeit von externen Geräten und Schnittstellen
 \item Vielfalt von Informationsquellen im Internet
-\item weitere
 \end{itemize}
-Die Kriterien wurden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java waren ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid wurde vom Betreuer genehmigt. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang.
+Die Kriterien werden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java sind  ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid ist in Absprache mit Herrn Heinzmann getroffen worden. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang \ref{ref_kriterien}.
 \\
 
-Für die Auswahl eines geeigneten Tablet Computer wurde in einem nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:
+Für die Auswahl eines geeigneten Tablets wird im nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:
 \begin{itemize}
-\item Android Betriebssystem, gemäss Entscheid
-\item USB Anschluss für den Import der Fahrerliste am Renntag
-\item Mobilfunktnetz 3G für die Kommunikation
-\item GPS für die aktuelle Position
-\item Stromversorgung im Auto möglich
+\item Android Betriebssystem, gemäss Evaluation
+\item USB Anschluss für den Import der Fahrerliste am Renntag, optional auch mit Adapter möglich
+\item Mobilfunktnetz 3G für die Kommunikation mit dem Server
+\item GPS für die Lokalisierung
+\item Stromversorgung durch 12V (Auto) Adapter möglich
 \end{itemize}
 Zu den optionalen Kriterien gehören die Akkulaufzeit, falls die Stromversorgung unterbrochen wird sowie ein grosszügiger Bildschirm für die Bedienung mit dem Finger oder mithilfe eines Stiftes.
 \\
 
-Als Sieger somit auch als Kaufempfehlung an die \textit{cnlab AG} ging das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugte in der Auswahl mit der Gesamtleistung. Die Kaufempfehlung mit weiteren Ausführungen ist ebenfalls im Anhang zu finden.
+Als Sieger und somit auch als Kaufempfehlung an die \textit{cnlab AG} geht das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugt in der Vielfalt der Anschlüsse. Die Kaufempfehlung mit weiteren Erläuterungen ist ebenfalls im Anhang \ref{ref_kaufempfehlung} zu finden.
+\\
 
+Im Verlauf der Arbeit ist ein defekt an der Micro USB Buchse entstanden. Dieser Anschluss wird für die Entwicklung auf dem Gerät dringend benötigt. Beim Ersatzgerät handelt es sich um das Galaxy Nexus 

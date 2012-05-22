@@ -1,0 +1,7 @@
+\chapter*{Abstract}
+
+Die Android Tablet Applikation \textit{RadioTour} ersetzt die bisherige Webbasierte Anwendung zur Erfassung der Rennsituation an der Tour de Suisse. Der \textit{RadioTour Speaker} verfolgt in einem Begleitfahrzeug die Radfahrer und zeichnet Veränderungen und Rückstände auf. Die Informationen erhält er direkt von anderen Motorfahrzeugen.
+\\
+Zu Beginn einer Etappe wird die Fahrerliste in die Applikation importiert, dabei ist auch die aktuelle Klassifizierung (Rangliste) vom Vortag. Änderungen können während einer Etappe aufgezeichnet und abgespeichert werden. Die native Bedienung mit Finger oder Stift ermöglicht es auf dem Tablet Radfahrer zu gruppieren und deren zeitliche Abstände zu erfassen. Aus diesen Angaben kann ein virtuelles Klassement erstellt werden. Diese live aufgezeichneten Informationen werden über das Mobilfunknetz auf die Server der TourLive Webseite übertragen und für die Medien und die Zuschauer aufbereitet.
+\\
+Da die Applikation genau für den RadioTour Speaker angepasst ist, wird sie nicht für die Öffentlichkeit zur Verfügung stehen. Deshalb wird bei der Entwicklung nicht auf die Portierbarkeit für verschiedene Plattformen bzw. Gerätetypen geachtet, sondern vielmehr für einen konkreten Typ optimiert. Das für den RadioTour Speaker vorgesehene Endprodukt beinhaltet ein Tablet mit der RadioTour Applikation und einer vorkonfigurierten Verbindung zum Server.

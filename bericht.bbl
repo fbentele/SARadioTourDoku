@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{Felker201112}
+Donn Felker.
+\newblock {\em Android Tablet Application Development For Dummies}.
+\newblock For Dummies, 1 edition, 2011.
+
+\bibitem{Matthews201111}
+Robbie Matthews.
+\newblock {\em Beginning Android Tablet Programming (Beginning Apress)}.
+\newblock Apress, 1 edition, 2011.
+
+\bibitem{Riedel200908}
+Sven Riedel.
+\newblock {\em Git- kurz \& gut}.
+\newblock O'Reilly, 1 edition, 2009.
+
+\bibitem{Künneth201108}
+Thomas Künneth.
+\newblock {\em Android 3: Apps entwickeln mit dem Android SDK (Galileo
+  Computing)}.
+\newblock Galileo Computing, 1 edition, 2011.
+
+\bibitem{wiki:optimistic-concurrency}
+Wikipedia.
+\newblock Optmistic concurrency --- {W}ikipedia{,} the free encyclopedia.
+\newblock \url{http://de.wikipedia.org/wiki/Optimistic_Concurrency}, 2012.
+\newblock [Online; accessed 10-May-2012].
+
+\bibitem{tanenbaum07}
+Andrew~S. Tanenbaum and Maarten~Van Steen.
+\newblock {\em Distributed systems: principles and paradigms}.
+\newblock Pearson Prentice Hall, 2007.
+
+\bibitem{greanier00}
+Todd Greanier.
+\newblock Discover the secrets of the java serialization api, 2000.
+\newblock [Online; accessed 17-May-2012].
+
+\end{thebibliography}

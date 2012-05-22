@@ -1,4 +1,4 @@
-\chapter{Management Summary}
+\chapter*{Management Summary}
 
 \section{Ausgangslage}
 An der Tour de Suisse fahren ca. 200 Radrennfahrer in Tagesetappen durch die ganze Schweiz. Dabei werden Sie von diversen Motorfahrzeugen begleitet. Im Feld fährt ebenfalls der RadioTour Speaker mit. Seine Funktion besteht darin, Live Informationen des Rennens zu erfassen und an den Server der cnlab AG weiterzuleiten.  Die Übertragung der Daten vom Gerät zum Server geschieht über das Mobilfunknetz 3G.
@@ -6,11 +6,12 @@ An der Tour de Suisse fahren ca. 200 Radrennfahrer in Tagesetappen durch die gan
 \subsection{Live Informationen}
 Während dem Rennen werden aus verschiedenen Quellen Informationen gesammelt. Zum einen sind dies Veränderungen im Rennfeld, zum anderen sind dies Wertungen, die die Fahrer erreichen können, so z.B. einen Bergsprint. Diese Daten werden vom RadioTour Speaker manuell erfasst.
 \\
-Wenn sich ein Rennfahrer vom Feld ablöst und einen Vorsprung erarbeitet so wird dieser von den Motorradfahrer verfolgt. Diese Änderung wird dann sofort per Funkt an den RadioTour Speaker übermittelt.
+Wenn sich ein Rennfahrer vom Feld ablöst und einen Vorsprung erarbeitet so wird dieser von einem Motorradfahrer verfolgt. Diese Änderung wird dann sofort per Funk an den RadioTour Speaker übermittelt.
 
 \subsection{Äussere Bedingungen}
 Bei Live Sport Events wie der Tour de Suisse ist die Erfassung von Echtzeitdaten, aus technischer Sicht, eine Herausforderung. Die Bedingungen werden erschwert zum einen durch das Alpine Gebirge wo die Mobilfunkverbindungen und GPS Informationen nicht immer gewährleistet sind, zum anderen durch die ständigen Vibrationen der Fahrzeuge.
-Die Unterbrüchen der Verbindung werden überbrückt, indem die Änderungen gesammelt und periodisch an den Server gesendet. Ist ein Übertragen nicht möglich, wird es später wieder versucht.
+\\
+Die Unterbrüchen der Verbindung werden überbrückt, indem die Änderungen gesammelt und periodisch an den Server gesendet. Alle Änderungen werden als Paket in eine Warteschlange eingetragen, ist ein Übertragen zum Zeitpunkt nicht möglich wird es später wieder versucht.
 
 
 \section{Vorgehensweise}
@@ -27,13 +28,14 @@ In jeder dieser Phase werden die Arbeitsschritte nach \gls{rup} durchgeführt, j
 \\
 Die Erfassung der Anforderungen, der Entscheid zur Entwicklung auf einem Android Gerät sowie die Evaluation eines geeigneten Tablets bilden zusammen die Startphase des Projekts. Die Kriterien auf der die Entscheidung gestützt sind, wurden in einer Sitzung zusammen mit Herrn Dr. Prof. Peter Heinzmann, dem Betreuer der Arbeit diskutiert und genehmigt.
 \\
-Im weiteren Verlauf der Arbeit wurden die Anforderungen und UseCases definiert. Daraus entstand dann die Domainlogik und parallel dazu erste Prototypen des UserInterfaces. Insbesondere die Benutzerschnittstelle entstand in mehreren Iterationen, da die Bedienung massgebend am Erfolg des Produktes beteiligt ist und erst bei der Anwendung ersichtlich wird ob die Bedienung optimal ist.
+Im weiteren Verlauf der Arbeit werden die Anforderungen und die UseCases definiert. Daraus entsteht dann die Domainlogik und parallel dazu einen ersten Prototypen des UserInterfaces. Insbesondere die Benutzerschnittstelle entsteht in mehreren Iterationen, da die Bedienung massgebend am Erfolg des Produktes beteiligt ist und erst bei der Anwendung ersichtlich wird ob die Bedienung optimal ist.
 
 \section{Ergebnisse}
-Die RadioTour Android Applikation beinhaltet die festgelegten Anforderungen. Für den Einsatz an der Tour de Suisse ist das Gerät bereit. Der RadioTour Speaker kann die Veränderungen im Feld direkt auf dem Tablet erfassen. Die Bedienung ist wesentlich flüssiger und einfacher. An jedem Renntag muss die Fahrerliste sowie die Marschzeittabelle importiert werden.
+Die RadioTour Android Applikation beinhaltet die festgelegten Anforderungen. Für den Einsatz an der Tour de Suisse ist das Gerät bereit. Zu Beginn einer Etappe wird die aktuelle Fahrerliste sowie die Marschzeittabelle importiert. Der RadioTour Speaker kann die Veränderungen im Feld direkt auf dem Tablet erfassen. Die Bedienung ist wesentlich flüssiger und einfacher im Vergleich zur bisherigen Web Applikation. 
 \\
 
-
 \section{Ausblick}
-Nach dem Einsatz an der Tour de Suisse müssen die Eindrücke und das Feedback des RadioTour Speakers aufgenommen werden. Diese Informationen dienen zur Verbesserung des Produkts.
-\textit{TODO - Abschnitt unfertig} Für die weitere Entwicklung des Produktes muss das Feedback des \textit{Radiotour Speakers} ausgewertet und umgesetzt werden.
+Nach dem Einsatz an der Tour de Suisse müssen die Eindrücke und das Feedback des RadioTour Speakers aufgenommen werden. Diese Informationen dienen zur Verbesserung und zur weiteren Entwicklung des Produkts.
+\\
+
+\textit{TODO - Abschnitt unfertig}

@@ -11,29 +11,34 @@
 \usepackage{url}
 
 
+
 \makeindex
 
-\input{verzeichnisse/glossar}
+\input{06verzeichnisse/glossar}
 
 \makeglossaries
 
 \begin{document}
 
-\input{titel/titel}
-\input{abstract/abstract}
+\input{01titel/01titel}
+\input{02abstract/01abstract}
 
 \tableofcontents
 
-\input{aufgabenstellung/aufgabenstellung}
-\input{managementsummary/managementsummary}
+\input{03aufgabenstellung/01aufgabenstellung}
+\input{04managementsummary/01managementsummary}
 
-\input{technischerbericht/einleitung}
-\input{technischerbericht/analyse/analyse}
+\input{05technischerbericht/01einleitung}
+\input{05technischerbericht/02analyse}
 
-\input{verzeichnisse/verzeichnisse}
-
-\input{anhang/anhang}
-
+\input{06verzeichnisse/01verzeichnisse}
 \printglossaries
 
-\end{document}
+\nocite{*}
+\bibliographystyle {unsrt}
+\bibliography{06verzeichnisse/02literaturverzeichnis}
+
+\input{07anhang/anhang}
+
+
+\end{document}	

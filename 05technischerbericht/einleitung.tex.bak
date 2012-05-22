@@ -2,10 +2,10 @@
 Im folgenden Abschnitt werden die aus technischer Sicht relevanten Aspekte genauer analysiert. Zu Beginn wird das Aufgabenumfeld in einem weiteren Sinne betrachtet, später gehen wir konkret auf die Analyse und das Software Engineering ein.
 \\
 
-Der technische Bericht richtet sich vor allem an Personen, die bereits Hintergrundwissen zum Betriebssystem Android vorweisen sowie für Entwickler, die an der Weiterentwicklung des Produktes interessiert sind.
+Der Hauptteil richtet sich vor allem an Personen, die bereits Hintergrundwissen zum Betriebssystem Android vorweisen sowie für Entwickler, die an der Weiterentwicklung des Produktes interessiert sind.
 
 \section{BigPicture}
-Zur Übersicht wurde das Umfeld der Applikation in einem BigPicture zusammengefasst. Es ermöglicht die Darstellung der äusseren Einflussfaktoren sowie um die Abgrenzung des Systems zu definieren.
+Zur Übersicht wird das Umfeld der Applikation in einem BigPicture zusammengefasst. Es ermöglicht die Darstellung der äusseren Einflussfaktoren sowie um die Abgrenzung des Systems zu definieren.
 
 \begin{figure}[h!]
 \caption{BigPicture}
@@ -29,9 +29,8 @@ Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwi
 \item mögliche Vertriebskanäle der Applikation
 \item Nutzbarkeit von externen Geräten und Schnittstellen
 \item Vielfalt von Informationsquellen im Internet
-\item weitere
 \end{itemize}
-Die Kriterien wurden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java waren ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid wurde vom Betreuer genehmigt. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang.
+Die Kriterien werden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java sind  ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid ist in Absprache mit Herrn Heinzmann getroffen worden. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang.
 \\
 
 Für die Auswahl eines geeigneten Tablet Computer wurde in einem nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:

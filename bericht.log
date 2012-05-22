@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  16 MAY 2012 11:06
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  22 MAY 2012 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -728,36 +728,36 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 
 Writing index file bericht.idx
-(./verzeichnisse/glossar.tex)
+(./06verzeichnisse/glossar.tex)
 \glo@main@file=\write5
 \openout5 = `bericht.glo'.
 
-Package glossaries Info: Writing glossary file bericht.glo on input line 18.
+Package glossaries Info: Writing glossary file bericht.glo on input line 19.
  (./bericht.aux)
 \openout1 = `bericht.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 21.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 20.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 21.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -792,7 +792,7 @@ e
 ))
 \big@size=\dimen128
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 20.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -802,81 +802,81 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count123
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./bericht.out) (./bericht.out)
 \@outlinefile=\write6
 \openout6 = `bericht.out'.
 
 \c@lstlisting=\count124
- (./titel/titel.tex)
-<images/hsrlogo.png, id=124, 577.40718pt x 225.84375pt>
+ (./01titel/01titel.tex)
+<images/hsrlogo.png, id=128, 577.40718pt x 225.84375pt>
 File: images/hsrlogo.png Graphic file (type png)
 
 <use images/hsrlogo.png>
-Package pdftex.def Info: images/hsrlogo.png used on input line 23.
+Package pdftex.def Info: images/hsrlogo.png used on input line 24.
 (pdftex.def)             Requested size: 218.2364pt x 85.35826pt.
 
-<images/cnlablogo.png, id=125, 405.1938pt x 118.041pt>
+<images/cnlablogo.png, id=129, 405.1938pt x 118.041pt>
 File: images/cnlablogo.png Graphic file (type png)
 
 <use images/cnlablogo.png>
-Package pdftex.def Info: images/cnlablogo.png used on input line 23.
+Package pdftex.def Info: images/cnlablogo.png used on input line 24.
 (pdftex.def)             Requested size: 195.33784pt x 56.9055pt.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 23
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
 .
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 23
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
 .
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 23
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
 .
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 23
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
 .
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 23.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 
-Overfull \hbox (106.15704pt too wide) in paragraph at lines 23--23
+Overfull \hbox (106.15704pt too wide) in paragraph at lines 24--24
 []  
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 [1
 
 \openout3 = `bericht.ist'.
 
 {/usr/local/texlive/2011/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
-s/hsrlogo.png> <./images/cnlablogo.png>] (./abstract/abstract.tex
+s/hsrlogo.png> <./images/cnlablogo.png>] (./02abstract/01abstract.tex
 LaTeX Font Info:    Try loading font information for T1+phv on input line 1.
 
 (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/t1phv.fd
@@ -906,10 +906,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 ] (./bericht.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
-
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
  [5]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
@@ -917,106 +914,116 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 \tf@toc=\write7
 \openout7 = `bericht.toc'.
 
-
-(./aufgabenstellung/aufgabenstellung.tex [6]
+ (./03aufgabenstellung/01aufgabenstellung.tex [6]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.20007pt on input line 4.
+(Font)              scaled to size 10.20007pt on input line 3.
 )
-(./managementsummary/managementsummary.tex
-Overfull \hbox (0.63983pt too wide) in paragraph at lines 15--1
+(./04managementsummary/01managementsummary.tex
+Overfull \hbox (0.63983pt too wide) in paragraph at lines 14--1
 []  
  []
 
 [7
 
-
 ] [8
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 21.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[9
-
-]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 26.
+[9]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
  (/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-) (./technischerbericht/einleitung.tex [10]
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 11.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.50006pt on input line 11.
-<technischerbericht/images/big_picture.png, id=217, 401.5pt x 321.2pt>
-File: technischerbericht/images/big_picture.png Graphic file (type png)
-
-<use technischerbericht/images/big_picture.png>
-Package pdftex.def Info: technischerbericht/images/big_picture.png used on inpu
-t line 13.
-(pdftex.def)             Requested size: 401.49901pt x 321.19922pt.
-
-Overfull \hbox (31.61319pt too wide) in paragraph at lines 13--14
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
-
- []
-
-
-Underfull \vbox (badness 8056) has occurred while \output is active []
-
- [11
-
-
- <./technischerbericht/images/big_picture.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
 
  []
 
-) (./technischerbericht/analyse/analyse.tex [13] [14
+) (./05technischerbericht/01einleitung.tex [10]
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 9.30756pt on input line 13.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.50006pt on input line 13.
+<05technischerbericht/images/big_picture.png, id=225, 401.5pt x 321.2pt>
+File: 05technischerbericht/images/big_picture.png Graphic file (type png)
+
+<use 05technischerbericht/images/big_picture.png>
+Package pdftex.def Info: 05technischerbericht/images/big_picture.png used on in
+put line 15.
+(pdftex.def)             Requested size: 401.49901pt x 321.19922pt.
+
+Overfull \hbox (31.61319pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+[12 <./05technischerbericht/images/big_picture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+) (./05technischerbericht/02analyse.tex [13] [14
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
+<05technischerbericht/images/struktur.png, id=251, 240.9pt x 138.2766pt>
+File: 05technischerbericht/images/struktur.png Graphic file (type png)
 
-<technischerbericht/analyse/images/struktur.png, id=240, 240.9pt x 138.2766pt>
-File: technischerbericht/analyse/images/struktur.png Graphic file (type png)
-
-<use technischerbericht/analyse/images/struktur.png>
-Package pdftex.def Info: technischerbericht/analyse/images/struktur.png used on
- input line 14.
+<use 05technischerbericht/images/struktur.png>
+Package pdftex.def Info: 05technischerbericht/images/struktur.png used on input
+ line 14.
 (pdftex.def)             Requested size: 240.8994pt x 138.27625pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15
 
- <./technischerbericht/analyse/images/struktur.png>] [16])
-(./verzeichnisse/verzeichnisse.tex [17] [18
+ <./05technischerbericht/images/struktur.png>] [16] [17
+
+
+] [18
 
 ] [19
 
@@ -1026,48 +1033,60 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [22
 
-] [23
+])
+(./06verzeichnisse/01verzeichnisse.tex [23
 
 ] [24
 
-]
-(./bericht.lof)
+] [25
+
+] [26
+
+] (./bericht.lof)
 \tf@lof=\write8
 \openout8 = `bericht.lof'.
 
-) (./anhang/anhang.tex [25] [26
+)
+(./bericht.gls [27] [28
+
+]) (./bericht.bbl [29
+
+] [30
+
+]) (./07anhang/anhang.tex
+[31] [32
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [27] [28]
+ [33] [34]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
 
-) (./bericht.gls [29] [30
-
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
- [31
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
+ [35]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
  (./bericht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `bericht.out' has not changed.
-(rerunfilecheck)             Checksum: D4BB1D3C75FBA7EBD3C2A014818D0A2E;1803.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
+(rerunfilecheck)             Checksum: 2F21CC112BC3B24C751E6B00300F89DC;1810.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
  ) 
 Here is how much of TeX's memory you used:
- 10026 strings out of 493633
- 145098 string characters out of 3143377
- 240901 words of memory out of 3000000
- 13024 multiletter control sequences out of 15000+200000
- 78240 words of font info for 99 fonts, out of 3000000 for 9000
+ 10054 strings out of 493633
+ 145524 string characters out of 3143377
+ 240228 words of memory out of 3000000
+ 13034 multiletter control sequences out of 15000+200000
+ 78221 words of font info for 99 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  34i,8n,38p,1323b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, 
@@ -1076,19 +1095,20 @@ replaced by a fixed one
 pdfTeX warning (dest): name{glo:ide} has been referenced but does not exist, re
 placed by a fixed one
 
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/tex
-live/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texli
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
 ve/2011/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive
-/2011/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2011/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011/texmf-di
-st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2011/texmf-dist/fon
-ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/u
-rw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on bericht.pdf (31 pages, 265840 bytes).
+/2011/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2
+011/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2011/tex
+mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011/texmf-dist
+/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2011/texmf-dist/fonts
+/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utm
+ri8a.pfb>
+Output written on bericht.pdf (35 pages, 301230 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
