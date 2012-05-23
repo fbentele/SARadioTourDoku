@@ -1,14 +1,14 @@
 \begin{thebibliography}{1}
 
-\bibitem{Felker201112}
-Donn Felker.
-\newblock {\em Android Tablet Application Development For Dummies}.
-\newblock For Dummies, 1 edition, 2011.
-
 \bibitem{Matthews201111}
 Robbie Matthews.
 \newblock {\em Beginning Android Tablet Programming (Beginning Apress)}.
 \newblock Apress, 1 edition, 2011.
+
+\bibitem{Felker201112}
+Donn Felker.
+\newblock {\em Android Tablet Application Development For Dummies}.
+\newblock For Dummies, 1 edition, 2011.
 
 \bibitem{Riedel200908}
 Sven Riedel.

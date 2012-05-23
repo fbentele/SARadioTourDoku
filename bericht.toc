@@ -9,23 +9,27 @@
 \contentsline {section}{\numberline {0.7} Ausblick}{10}{section.0.7}
 \contentsline {chapter}{\numberline {1} Einleitung}{11}{chapter.1}
 \contentsline {section}{\numberline {1.1} BigPicture}{11}{section.1.1}
-\contentsline {section}{\numberline {1.2} Evaluation und Kaufempfehlung}{11}{section.1.2}
+\contentsline {section}{\numberline {1.2} Evaluation und Kaufempfehlung}{12}{section.1.2}
 \contentsline {chapter}{\numberline {2} Analyse}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1} Struktur der Applikation}{15}{section.2.1}
 \contentsline {section}{\numberline {2.2} Technologien}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Entwicklungsumgebung}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Android Version}{16}{subsection.2.2.2}
-\contentsline {chapter}{\numberline {3} Architektur}{17}{chapter.3}
-\contentsline {chapter}{\numberline {4} Realisierung}{19}{chapter.4}
-\contentsline {chapter}{\numberline {5} Testing}{21}{chapter.5}
-\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{23}{chapter.6}
-\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{25}{chapter.7}
-\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{25}{section.7.1}
-\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{25}{section.7.2}
-\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{25}{section.7.3}
-\contentsline {chapter}{Glossary}{29}{section*.6}
-\contentsline {part}{I\hspace {1em}Anhang}{33}{part.1}
-\contentsline {section}{\numberline {7.4} Projektmanagement}{35}{section.7.4}
-\contentsline {section}{\numberline {7.5} Software Dokumente}{35}{section.7.5}
-\contentsline {section}{\numberline {7.6} Kriterienkatalog}{35}{section.7.6}
-\contentsline {section}{\numberline {7.7} Kaufempfehlung}{35}{section.7.7}
+\contentsline {subsection}{\numberline {2.2.1}Android}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Externe Libraries}{16}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Entwicklungsumgebung}{16}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Android Version}{16}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3} Mitbewerberanalyse}{16}{section.2.3}
+\contentsline {chapter}{\numberline {3} Architektur}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1} Domainmodel}{19}{section.3.1}
+\contentsline {chapter}{\numberline {4} Realisierung}{21}{chapter.4}
+\contentsline {chapter}{\numberline {5} Testing}{23}{chapter.5}
+\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{25}{chapter.6}
+\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{27}{chapter.7}
+\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{27}{section.7.1}
+\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{27}{section.7.2}
+\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{27}{section.7.3}
+\contentsline {chapter}{Glossar}{31}{section*.6}
+\contentsline {part}{I\hspace {1em}Anhang}{35}{part.1}
+\contentsline {section}{\numberline {7.4} Projektmanagement}{37}{section.7.4}
+\contentsline {section}{\numberline {7.5} Software Dokumente}{37}{section.7.5}
+\contentsline {section}{\numberline {7.6} Kriterienkatalog}{37}{section.7.6}
+\contentsline {section}{\numberline {7.7} Kaufempfehlung}{37}{section.7.7}

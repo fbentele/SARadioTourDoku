@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  22 MAY 2012 15:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  23 MAY 2012 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,14 +812,14 @@ LaTeX Info: Redefining \nameref on input line 21.
 
 \c@lstlisting=\count124
  (./01titel/01titel.tex)
-<images/hsrlogo.png, id=128, 577.40718pt x 225.84375pt>
+<images/hsrlogo.png, id=144, 577.40718pt x 225.84375pt>
 File: images/hsrlogo.png Graphic file (type png)
 
 <use images/hsrlogo.png>
 Package pdftex.def Info: images/hsrlogo.png used on input line 24.
 (pdftex.def)             Requested size: 218.2364pt x 85.35826pt.
 
-<images/cnlablogo.png, id=129, 405.1938pt x 118.041pt>
+<images/cnlablogo.png, id=145, 405.1938pt x 118.041pt>
 File: images/cnlablogo.png Graphic file (type png)
 
 <use images/cnlablogo.png>
@@ -907,14 +907,18 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 ] (./bericht.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 10.
+
+Underfull \vbox (badness 1331) has occurred while \output is active []
+
  [5]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
 )
 \tf@toc=\write7
 \openout7 = `bericht.toc'.
 
- (./03aufgabenstellung/01aufgabenstellung.tex [6]
+
+(./03aufgabenstellung/01aufgabenstellung.tex [6]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -952,163 +956,189 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--40
  []
 
 ) (./05technischerbericht/01einleitung.tex [10]
-Underfull \hbox (badness 10000) in paragraph at lines 3--6
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 13.
+(Font)              scaled to size 9.30756pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.50006pt on input line 13.
-<05technischerbericht/images/big_picture.png, id=225, 401.5pt x 321.2pt>
+(Font)              scaled to size 8.50006pt on input line 12.
+<05technischerbericht/images/big_picture.png, id=244, 401.5pt x 321.2pt>
 File: 05technischerbericht/images/big_picture.png Graphic file (type png)
 
 <use 05technischerbericht/images/big_picture.png>
 Package pdftex.def Info: 05technischerbericht/images/big_picture.png used on in
-put line 15.
+put line 14.
 (pdftex.def)             Requested size: 401.49901pt x 321.19922pt.
 
-Overfull \hbox (31.61319pt too wide) in paragraph at lines 15--16
+Overfull \hbox (31.61319pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \vbox (badness 8056) has occurred while \output is active []
+
+ [11
+
+
+ <./05technischerbericht/images/big_picture.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 45--47
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--51
+[][][][][]$\T1/cmtt/m/n/9 http : / / www . samsung . com / ch / consumer / mobi
+le-[]phone / tablets / tablets /
+ []
+
+) (./05technischerbericht/02analyse.tex [13] [14
+
+]
+<05technischerbericht/images/struktur.png, id=273, 240.9pt x 138.2766pt>
+File: 05technischerbericht/images/struktur.png Graphic file (type png)
+
+<use 05technischerbericht/images/struktur.png>
+Package pdftex.def Info: 05technischerbericht/images/struktur.png used on input
+ line 12.
+(pdftex.def)             Requested size: 240.8994pt x 138.27625pt.
+
+Underfull \vbox (badness 6461) has occurred while \output is active []
+
+ [15
+
+ <./05technischerbericht/images/struktur.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[][][][][]$\T1/cmtt/m/n/9 AndroidVersionHoneycomb ,[] http : / / de . wikipedia
+ . org / wiki / Android _
+ []
+
+<05technischerbericht/images/giro.png, id=299, 582.175pt x 405.515pt>
+File: 05technischerbericht/images/giro.png Graphic file (type png)
+
+<use 05technischerbericht/images/giro.png>
+Package pdftex.def Info: 05technischerbericht/images/giro.png used on input lin
+e 49.
+(pdftex.def)             Requested size: 407.51973pt x 283.85855pt.
+
+Overfull \hbox (37.63391pt too wide) in paragraph at lines 49--50
+[][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16] [17 <./05technischerbericht/images/giro.png>] [18
+
+]
+<05technischerbericht/images/domain.png, id=324, 429.10312pt x 633.86812pt>
+File: 05technischerbericht/images/domain.png Graphic file (type png)
+
+<use 05technischerbericht/images/domain.png>
+Package pdftex.def Info: 05technischerbericht/images/domain.png used on input l
+ine 66.
+(pdftex.def)             Requested size: 429.10207pt x 633.86658pt.
+
+Overfull \hbox (59.21625pt too wide) in paragraph at lines 66--67
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[19
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+] [20 <./05technischerbericht/images/domain.png>] [21
 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
-
- []
-
-[12 <./05technischerbericht/images/big_picture.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 46--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
-
- []
-
-) (./05technischerbericht/02analyse.tex [13] [14
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-<05technischerbericht/images/struktur.png, id=251, 240.9pt x 138.2766pt>
-File: 05technischerbericht/images/struktur.png Graphic file (type png)
-
-<use 05technischerbericht/images/struktur.png>
-Package pdftex.def Info: 05technischerbericht/images/struktur.png used on input
- line 14.
-(pdftex.def)             Requested size: 240.8994pt x 138.27625pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [15
-
- <./05technischerbericht/images/struktur.png>] [16] [17
-
-
-] [18
-
-] [19
-
-] [20
-
-] [21
 
 ] [22
 
-])
-(./06verzeichnisse/01verzeichnisse.tex [23
+] [23
 
 ] [24
 
-] [25
+])
+(./06verzeichnisse/01verzeichnisse.tex [25
 
 ] [26
+
+] [27
+
+] [28
 
 ] (./bericht.lof)
 \tf@lof=\write8
 \openout8 = `bericht.lof'.
 
 )
-(./bericht.gls [27] [28
+(./bericht.gls [29] [30
 
-]) (./bericht.bbl [29
+]) (./bericht.bbl [31
 
-] [30
+] [32
 
 ]) (./07anhang/anhang.tex
-[31] [32
+[33] [34
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
- [33] [34]
+ [35] [36]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
- [35]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 44.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+ [37]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (./bericht.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 2F21CC112BC3B24C751E6B00300F89DC;1810.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 44.
+(rerunfilecheck)             Checksum: BAECE7EDA1DC0281DB7AB24B7CAFFA5F;2066.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 45.
  ) 
 Here is how much of TeX's memory you used:
- 10054 strings out of 493633
- 145524 string characters out of 3143377
- 240228 words of memory out of 3000000
- 13034 multiletter control sequences out of 15000+200000
+ 10170 strings out of 493633
+ 147167 string characters out of 3143377
+ 244002 words of memory out of 3000000
+ 13132 multiletter control sequences out of 15000+200000
  78221 words of font info for 99 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 34i,8n,38p,1323b,406s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{glo:api} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:ide} has been referenced but does not exist, re
-placed by a fixed one
-
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
-usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texli
-ve/2011/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive
-/2011/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2
-011/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2011/tex
-mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011/texmf-dist
-/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2011/texmf-dist/fonts
-/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/utm
-ri8a.pfb>
-Output written on bericht.pdf (35 pages, 301230 bytes).
+ 34i,8n,35p,1323b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2011/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texli
+ve/2011/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive
+/2011/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2011/t
+exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011/texmf-di
+st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2011/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on bericht.pdf (37 pages, 703179 bytes).
 PDF statistics:
- 418 PDF objects out of 1000 (max. 8388607)
- 362 compressed objects within 4 object streams
- 90 named destinations out of 1000 (max. 500000)
- 269 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 491 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 106 named destinations out of 1000 (max. 500000)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 
