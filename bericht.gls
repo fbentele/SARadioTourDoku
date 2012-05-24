@@ -18,5 +18,5 @@
 		\setentrycounter[]{page}\glsnumberformat{9\delimN 10}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossaryentryfield{sqlite}{\glsnamefont{SQLite}}{Eine Datenbank in einer Datei}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{15}}}%
+		\setentrycounter[]{page}\glsnumberformat{16}}}%
 \end{theglossary}\glossarypostamble

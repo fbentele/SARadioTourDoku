@@ -2,7 +2,7 @@
 \glossaryentry{RUP?\glossaryentryfield{rup}{\glsnamefont{RUP}}{Rational Unified Prozess}{\relax }|setentrycounter[]{page}\glsnumberformat}{10}
 \glossaryentry{IDE?\glossaryentryfield{ide}{\glsnamefont{IDE}}{Integrated Development Environment}{\relax }|setentrycounter[]{page}\glsnumberformat}{12}
 \glossaryentry{API?\glossaryentryfield{api}{\glsnamefont{API}}{Application Programming Interface}{\relax }|setentrycounter[]{page}\glsnumberformat}{15}
-\glossaryentry{SQLite?\glossaryentryfield{sqlite}{\glsnamefont{SQLite}}{Eine Datenbank in einer Datei}{\relax }|setentrycounter[]{page}\glsnumberformat}{15}
+\glossaryentry{SQLite?\glossaryentryfield{sqlite}{\glsnamefont{SQLite}}{Eine Datenbank in einer Datei}{\relax }|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{ORM?\glossaryentryfield{orm}{\glsnamefont{ORM}}{Object-relational mapping}{\relax }|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{IDE?\glossaryentryfield{ide}{\glsnamefont{IDE}}{Integrated Development Environment}{\relax }|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{Enum?\glossaryentryfield{enum}{\glsnamefont{Enum}}{Ein Enum ist ein Datentyp mit fest bestimmten Konstanten. Es kann immer nur ein Wert ausgewählt sein}{\relax }|setentrycounter[]{page}\glsnumberformat}{19}
