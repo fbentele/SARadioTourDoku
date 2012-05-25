@@ -1,20 +1,20 @@
 \chapter*{Management Summary}
 
-\section{Ausgangslage}
+\section*{Ausgangslage}
 An der Tour de Suisse fahren ca. 200 Radrennfahrer in Tagesetappen durch die ganze Schweiz. Dabei werden Sie von diversen Motorfahrzeugen begleitet. Im Feld fährt ebenfalls der RadioTour Speaker mit. Seine Funktion besteht darin, Live Informationen des Rennens zu erfassen und an den Server der cnlab AG weiterzuleiten.  Die Übertragung der Daten vom Gerät zum Server geschieht über das Mobilfunknetz 3G.
 
-\subsection{Live Informationen}
+\subsection*{Live Informationen}
 Während dem Rennen werden aus verschiedenen Quellen Informationen gesammelt. Zum einen sind dies Veränderungen im Rennfeld, zum anderen sind dies Wertungen, die die Fahrer erreichen können, so z.B. einen Bergsprint. Diese Daten werden vom RadioTour Speaker manuell erfasst.
 \\
 Wenn sich ein Rennfahrer vom Feld ablöst und einen Vorsprung erarbeitet so wird dieser von einem Motorradfahrer verfolgt. Diese Änderung wird dann sofort per Funk an den RadioTour Speaker übermittelt.
 
-\subsection{Äussere Bedingungen}
+\subsection*{Äussere Bedingungen}
 Bei Live Sport Events wie der Tour de Suisse ist die Erfassung von Echtzeitdaten, aus technischer Sicht, eine Herausforderung. Die Bedingungen werden erschwert zum einen durch das Alpine Gebirge wo die Mobilfunkverbindungen und GPS Informationen nicht immer gewährleistet sind, zum anderen durch die ständigen Vibrationen der Fahrzeuge.
 \\
 Die Unterbrüchen der Verbindung werden überbrückt, indem die Änderungen gesammelt und periodisch an den Server gesendet. Alle Änderungen werden als Paket in eine Warteschlange eingetragen, ist ein Übertragen zum Zeitpunkt nicht möglich wird es später wieder versucht.
 
 
-\section{Vorgehensweise}
+\section*{Vorgehensweise}
 In dieser Studienarbeit kommt das Vorgehensmodell zur Softwareentwicklung von \gls{rup} zur Anwendung. Das Projekt wird in die folgenden vier Phasen aufgeteilt:
 
 \begin{itemize}
@@ -30,12 +30,11 @@ Die Erfassung der Anforderungen, der Entscheid zur Entwicklung auf einem Android
 \\
 Im weiteren Verlauf der Arbeit werden die Anforderungen und die UseCases definiert. Daraus entsteht dann die Domainlogik und parallel dazu einen ersten Prototypen des UserInterfaces. Insbesondere die Benutzerschnittstelle entsteht in mehreren Iterationen, da die Bedienung massgebend am Erfolg des Produktes beteiligt ist und erst bei der Anwendung ersichtlich wird ob die Bedienung optimal ist.
 
-\section{Ergebnisse}
-Die RadioTour Android Applikation beinhaltet die festgelegten Anforderungen. Für den Einsatz an der Tour de Suisse ist das Gerät bereit. Zu Beginn einer Etappe wird die aktuelle Fahrerliste sowie die Marschzeittabelle importiert. Der RadioTour Speaker kann die Veränderungen im Feld direkt auf dem Tablet erfassen. Die Bedienung ist wesentlich flüssiger und einfacher im Vergleich zur bisherigen Web Applikation. 
-\\
+\section*{Ergebnisse}
+Die RadioTour Android Applikation beinhaltet die festgelegten Anforderungen. Die Fahrerlisten und die offiziellen Zeitmessungen können via USB oder über das Internet importiert werden. Die Gruppen lassen sich dynamisch verändern und die Rennsituation wird an den Server übermittelt. Ein Testlauf mit dem ersten Prototyp hat klar aufgezeigt, dass die Anwendung eine Verbesserung in der Bedienung bringt. Dabei entstehen keine Einbussen in der Funktionalität. Für den Einsatz an der Tour de Suisse ist die Applikation bereit.
 
-\section{Ausblick}
-Nach dem Einsatz an der Tour de Suisse müssen die Eindrücke und das Feedback des RadioTour Speakers aufgenommen werden. Diese Informationen dienen zur Verbesserung und zur weiteren Entwicklung des Produkts.
-\\
 
-\textit{TODO - Abschnitt unfertig}
+\section*{Ausblick}
+Für den erfolgreichen Einsatz an der Tour de Suisse ist ein Testlauf, insbesondere um die Serververbindung zu testen, notwendig.
+\\
+Nach der Tour de Suisse müssen die Eindrücke und das Feedback des RadioTour Speakers aufgenommen werden, damit die Applikation weiter verbessert werden kann.
