@@ -1,5 +1,5 @@
 \chapter{Architektur}
-Im folgenden Abschnitt wird die Architektur der Applikation diskutiert. Die Architektur ist so gewählt, dass die einzelnen funktionalen Komponenten zueinander eine tiefe Abhängigkeit aufweisen.
+Im folgenden Abschnitt wird die Architektur der Applikation diskutiert. Die Architektur ist so gewählt, dass die einzelnen funktionalen Komponenten zueinander eine tiefe Abhängigkeit aufweisen und dadurch eine weitere Entwicklung möglichst einfach ist.
 
 \section{Klassendiagramm}
 Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind dies die Rennfahrer, welche Informationen über sich festhalten andererseits die Etappe mit den Informationen zur Strecke. Während dem Rennen werden die Fahrer in Gruppen unterteilt. Auch diese Gruppen sind in der Domain abgebildet. Das Klassendiagramm des Domain Package zeigt die wesentlichen Elemente.
@@ -20,3 +20,10 @@ Ein \textit{Judgement}, also eine Wertung, gehört immer zu einer Etappe. Diese 
 
 \section{Sequenzdiagramm}
 Aus dem UseCase 
+
+\begin{figure}[h!]
+\caption{Das System Sequenz Diagramm}
+\label{fig:domain}
+\centering
+\includegraphics{05bericht/images/ssd_rennen.png}
+\end{figure} 

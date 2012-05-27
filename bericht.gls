@@ -2,7 +2,7 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossaryentryfield{api}{\glsnamefont{API}}{Application Programming Interface}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
 \glsgroupheading{E}\relax \glsresetentrylist %
 \glossaryentryfield{enum}{\glsnamefont{Enum}}{Ein Enum ist ein Datentyp mit fest bestimmten Konstanten. Es kann immer nur ein Wert ausgewählt sein}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{19}}}\glsgroupskip
@@ -12,7 +12,7 @@
 		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
 \glsgroupheading{O}\relax \glsresetentrylist %
 \glossaryentryfield{orm}{\glsnamefont{ORM}}{Object-relational mapping}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{16}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{17}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossaryentryfield{rup}{\glsnamefont{RUP}}{Rational Unified Prozess}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{7\delimN 8}}}\glsgroupskip
@@ -20,5 +20,5 @@
 \glossaryentryfield{splashscreen}{\glsnamefont{Splashscreen}}{Eine Anzeige, die oftmals beim Start einer Applikation die Wartezeit bis zur vollständigen Initialisierung überbrückt.}{\relax }{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{16}}}%
 \glossaryentryfield{sqlite}{\glsnamefont{SQLite}}{{Eine Datenbank in einer Datei} first}{\relax }{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{16}}}%
+		\setentrycounter[]{page}\glsnumberformat{17}}}%
 \end{theglossary}\glossarypostamble

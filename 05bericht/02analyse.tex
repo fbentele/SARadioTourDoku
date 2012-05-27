@@ -17,6 +17,7 @@ Die funktionalen Anforderungen sind in drei Prioritätsstufen eingeteilt:
 \item Rennsituation an den Server übermitteln
 \item Spezialklassemente und Wertungen erstellen und Fahrer zuweisen
 \item Maillots erfassen und bearbeiten
+\item Persistierung der Daten auf dem Gerät
 
 \end{itemize}
 
@@ -26,27 +27,41 @@ Die funktionalen Anforderungen sind in drei Prioritätsstufen eingeteilt:
 \item aktuelle Rennkilometer und Rennzeit anzeigen
 \item Stoppuhr
 \item aktuelle Position durch GPS bestimmen
-\item 
+\item Events für Fahrer an den Server übermitteln
 \end{itemize}
 
 
 \textbf{wünschenswerten Anforderungen (nice to have)}
 \begin{itemize}
-\item aktuelle Position in der Marschtabelle anzeigen.
-\item \gls{splashscreen}
+\item aktuelle Position des \textit{RadioTour Speakers} in der Marschtabelle anzeigen.
+\item \gls{splashscreen} beim Start der Applikation
+\item 
 \end{itemize}
 
+\subsection{Nicht funktionale Anforderungen}
+Im Umfeld eines Live Sport Events spielen neben den funktionalen Anforderungen an ein Software Produkt auch nicht funktionale Anforderungen eine wichtige Rolle. So muss z.B. das UserInterface Fehler bei der Eingabe tolerieren bzw. korrigierbar machen. Die Bedienung muss flüssig verlaufen und zu jedem Zeitpunkt muss der Status der Applikation sichtbar sein. Die für \textit{RadioTour} relevanten nicht funktionalen Anforderungen sind im folgenden aufgelistet.
+
+\begin{itemize}
+\item Mobilfunkverbindung ist nicht immer Gewährleistet, keine Daten dürfen dadurch verloren gehen
+\item Informationen müssen auch bei direktem Sonnenlicht gut lesbar sein
+\item Angenehme, flüssige und selbsterklärende Bedienung der Applikation
+\end{itemize}
+
+Weitere nicht funktionale Anforderungen beziehen sich auch auf die Hardware an sich und sind somit im Kapitel \ref{kap:kaufempfehlung} bereits aufgeführt.
 
 \section{Struktur der Applikation}
 %ja, plural ist Status, http://de.wikipedia.org/wiki/Status
-Die Applikation hat im Grunde zwei Status, einerseits werden vor dem Rennen die Fahrerliste und die Marschtabelle importiert andererseits wird die Rennsituation während dem Rennen erfasst und Änderungen festgehalten. Diese beiden Status können aber nicht absolut voneinander getrennt werden, da während dem Rennen Änderungen denkbar sind. So entsteht die Baumartige Struktur, wie sie in der Abbildung zu sehen ist.
+Die Applikation hat im Grunde zwei Status, einerseits werden vor dem Rennen die Fahrerliste und die Marschtabelle importiert andererseits wird die Rennsituation während dem Rennen erfasst und Änderungen festgehalten. Diese beiden Status können aber nicht absolut voneinander getrennt werden, da während dem Rennen Änderungen denkbar sind. Während dem Rennen müssen gewisse Daten immer angezeigt werden. Diese Live Informationen werden deshalb als eigene Ebene abgebildet. Aus den Anforderungen und den Kriterien entsteht die Baumartige Struktur, wie sie in der Abbildung zu sehen ist.
 
 \begin{figure}[h!]
-\caption{Struktur der Applikation}
+\caption{Struktur der Applikation als Organigramm}
 \centering
 \includegraphics{05bericht/images/struktur.png}
 \end{figure} 
 
+Der Stamm stellt die Applikation dar und die Äste zeigen die Aufteilung der Funktionen. Die Rennzeit sowie die aktuelle Rennposition sind in einem immer sichtbaren Bereich platziert.
+\\
+Die untere Ebene beinhaltet die Kernelemente der Applikation und diese werden in Views seitenweise dargestellt. Durch eine Navigation lässt sich zwischen den Views wechseln ohne, dass dabei die Live Informationen ausgeblendet werden.
 
 
 \section{Technologien}
@@ -56,7 +71,7 @@ Die native Programmiersprache für das Android Betriebssystem ist Java. Die Prog
 \subsection{Externe Libraries}
 Android beinhaltet bereits ein umfangreiches Framework zur Entwicklung. Einzig beim \gls{orm}, also beim Abbilden von Objektdaten in der Datenbank kommt eine externe Library zum Einsatz.
 \\
-\textit{ORMLite} \footnote{ORMLite, \url{http://ormlite.com/}, Aufgerufen am 23.05.2012} ist eine OpenSource Java Library, welche auch für Android eine optimale Lösung bietet. Die zu verwendenden Felder einer Klasse können mit Java Annotationen versehen werden, daraus versucht ORMLite dann die Datenbank zu beschreiben. In der RadioTour Anwendung konnten alle Felder abgebildet werden.
+\textit{ORMLite} \footnote{ORMLite, \url{http://ormlite.com/}, Aufgerufen am 23.05.2012} ist eine OpenSource Java Library, welche auch für Android eine optimale Lösung bietet. Die zu verwendenden Felder einer Klasse können mit Java Annotationen versehen werden, daraus versucht ORMLite dann die Datenbank zu beschreiben. In dieser Arbeit wurde die ORMLite Version 4.39 verwendet.
 
 
 \subsection{Entwicklungsumgebung}

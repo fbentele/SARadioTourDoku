@@ -4,28 +4,29 @@
 \contentsline {chapter}{\numberline {2} Analyse}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1} Requirements}{15}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Funktionale Anforderungen}{15}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nicht funktionale Anforderungen}{16}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2} Struktur der Applikation}{16}{section.2.2}
 \contentsline {section}{\numberline {2.3} Technologien}{16}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Android}{16}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Externe Libraries}{16}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Externe Libraries}{17}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Entwicklungsumgebung}{17}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Android Version}{17}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4} Mitbewerberanalyse}{17}{section.2.4}
+\contentsline {section}{\numberline {2.4} Mitbewerberanalyse}{18}{section.2.4}
 \contentsline {chapter}{\numberline {3} Architektur}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1} Klassendiagramm}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2} Sequenzdiagramm}{19}{section.3.2}
-\contentsline {chapter}{\numberline {4} Realisierung}{21}{chapter.4}
-\contentsline {chapter}{\numberline {5} Testing}{23}{chapter.5}
-\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{25}{chapter.6}
-\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{27}{chapter.7}
-\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{27}{section.7.1}
-\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{27}{section.7.2}
-\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{27}{section.7.3}
-\contentsline {chapter}{Glossar}{31}{section*.8}
-\contentsline {part}{I\hspace {1em}Anhang}{35}{part.1}
-\contentsline {section}{\numberline {7.4} BigPicture}{37}{section.7.4}
-\contentsline {section}{\numberline {7.5} Projektmanagement}{37}{section.7.5}
-\contentsline {section}{\numberline {7.6} Software Dokumente}{37}{section.7.6}
-\contentsline {section}{\numberline {7.7} Kriterienkatalog}{37}{section.7.7}
-\contentsline {section}{\numberline {7.8} Kaufempfehlung}{37}{section.7.8}
-\contentsline {section}{\numberline {7.9} UseCases der bisherigen Applikation}{37}{section.7.9}
+\contentsline {chapter}{\numberline {4} Realisierung}{23}{chapter.4}
+\contentsline {chapter}{\numberline {5} Testing}{25}{chapter.5}
+\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{29}{chapter.7}
+\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{29}{section.7.1}
+\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{29}{section.7.2}
+\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{29}{section.7.3}
+\contentsline {chapter}{Glossar}{33}{section*.8}
+\contentsline {part}{I\hspace {1em}Anhang}{37}{part.1}
+\contentsline {section}{\numberline {7.4} BigPicture}{39}{section.7.4}
+\contentsline {section}{\numberline {7.5} Projektmanagement}{39}{section.7.5}
+\contentsline {section}{\numberline {7.6} Software Dokumente}{39}{section.7.6}
+\contentsline {section}{\numberline {7.7} Kriterienkatalog}{39}{section.7.7}
+\contentsline {section}{\numberline {7.8} Kaufempfehlung}{39}{section.7.8}
+\contentsline {section}{\numberline {7.9} UseCases der bisherigen Applikation}{39}{section.7.9}
