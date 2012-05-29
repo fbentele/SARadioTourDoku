@@ -1,9 +1,53 @@
 \chapter*{Aufgabenstellung}
 
+\section*{Ausgangslage}
+Bei Radrennen erfasst der so genannte RadioTour-Speaker Informationen zur Rennsituation, welche ihm von Motorradfahrern per Funk geliefert werden. Gegenwärtig legt der RadioTour-Speaker mit Hilfe einer TabletPC Web-Anwendung per Click auf die erhaltenen Fahrernummern die Zusammensetzung der Gruppen fest. Er tippt auch die Zeitabstände zwischen den Gruppen ein. Die RadioTour-Anwendung  visualisiert die Fahrergruppen und liefert Detailinformationen zu den Fahrern (z.B. Namen, Team, Virtueller Rang). Veränderungen in den Fahrergruppen können per Drag-and-Drop nachgeführt werden. Die mit der RadioTour-Anwendung erfassten Rennsituationen werden per Mobilfunknetz zu einem Webserver gesendet, wo sie für weitere Anwendungen, z.B. für Live Webinformationen zu Verfügung stehen.
+
 \section*{Ziel}
 Ziel dieser Arbeit ist es, die bestehende Web Applikation Tour Live, in eine native Android Tablet Applikation zu portieren. Die Applikation richtet sich einem sehr spezifischen Umfeld, daher ist die Bedienung diesen Anforderungen anzupassen.
 \\
 Das Endprodukt beinhaltet die funktionierende Applikation mit der Schnittstelle zum Server für die Übertragung der Daten. Die Applikation ermöglicht es dem RadioTour\-Speaker alle Angaben gemäss Requirements zu erfassen und bietet die Möglichkeit zur Mehrsprachigkeit.
+
+\section*{Teilaufgaben}
+\begin{itemize}
+\item Analyse der existierenden RadioTour- und TourLive-Anwendungen
+\begin{itemize}
+\item Tour de Suisse Dokumente
+\item Alte RadioTour-Anwendung\\
+\url{http://gps.cnlab.ch/tablet/}\\
+user: ba\_tourlive\\
+password: access4tl
+\item TourLive-System (GPS Positions- und Bilderfassungssysteme, Webanwendung)
+\item Kommunikation RadioTour – TourLive-Webanwendung
+\item Vergleich mit Systemen anderer Radrennen 
+\end{itemize}
+
+\item Festlegung der Funktionalität der neuen Tablet-Anwendung (Requirements Engineering)
+\begin{itemize}
+\item Studium der Geschäftsprozesse (Renninformationen, Rennverlauf)
+\item Austesten von Teilfunktionen (Android-Tablet Programmierung, GPS-Positionserfassung, Usability Experimente)
+\item Erweiterte Funktionen (z.B. Erfassung der Streckenkilometer, Integration von Marschtabellen)
+\item Auswahl der Hardware-Plattform
+\item Spezifikation
+\end{itemize}
+
+\item Design
+Benutzerschnittstelle
+Kommunikation mit TourLive Aufnahmesystemen (Weitergabe der Daten an Datenserver)
+RadioTour-Anwendung
+
+\item Realisierung
+Prototypen
+Anpassungen
+Friendly User Test Version (Beta-Release)
+Feldtest an einem Radrennen
+Übergabe an cnlab
+
+\item Dokumentation
+Gemäss Anforderungen Industriepartner (das System soll vom Industriepartner betrieben und erweitert werden können)
+Bericht gemäss HSR/Heinzmann Richtlinien
+\end{itemize}
+
 
 \section*{Abgrenzung}
 Das Produkt wird spezifisch auf ein Gerät ausgerichtet und nicht plattformübergreifend entwickelt. Die Verbindung zum Server wird in der Arbeit definiert jedoch werden keine serverseitigen Entwicklungen erarbeitet.

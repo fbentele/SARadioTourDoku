@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {2.4} Mitbewerberanalyse}{18}{section.2.4}
 \contentsline {chapter}{\numberline {3} Architektur}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1} Klassendiagramm}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2} Sequenzdiagramm}{19}{section.3.2}
+\contentsline {section}{\numberline {3.2} Sequenz Diagramm}{19}{section.3.2}
 \contentsline {chapter}{\numberline {4} Realisierung}{23}{chapter.4}
 \contentsline {chapter}{\numberline {5} Testing}{25}{chapter.5}
 \contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{27}{chapter.6}

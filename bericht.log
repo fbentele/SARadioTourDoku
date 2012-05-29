@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  27 MAY 2012 12:50
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2012.2.23)  27 MAY 2012 14:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,30 +929,34 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.20007pt on input line 3.
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 13.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-(./04managementsummary/01managementsummary.tex
-Overfull \hbox (0.63983pt too wide) in paragraph at lines 14--1
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 15.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
+
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [5]
+Overfull \hbox (8.84853pt too wide) in paragraph at lines 39--45
+[]\T1/ptm/m/n/10.95 Realisierung Pro-to-ty-pen An-pas-sun-gen Fri-end-ly User T
+est Ver-si-on (Beta-Release)
+ []
+
+) (./04managementsummary/01managementsummary.tex
+Overfull \hbox (0.63983pt too wide) in paragraph at lines 58--1
 []  
  []
 
-[5] [6
+[6] [7
 
 ]
-LaTeX Font Info:    Try loading font information for TS1+ptm on input line 21.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-[7]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 27.
- (/usr/local/texlive/2011/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
-) [8]
-(./bericht.toc
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+) [8] (./bericht.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
  [9
@@ -970,7 +974,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 9.30756pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.50006pt on input line 12.
-<05bericht/images/big_picture.png, id=231, 401.5pt x 321.2pt>
+<05bericht/images/big_picture.png, id=233, 401.5pt x 321.2pt>
 File: 05bericht/images/big_picture.png Graphic file (type png)
 
 <use 05bericht/images/big_picture.png>
@@ -1030,7 +1034,7 @@ le-[]phone / tablets / tablets /
 ] [15
 
 ]
-<05bericht/images/struktur.png, id=268, 395.97937pt x 192.72pt>
+<05bericht/images/struktur.png, id=270, 395.97937pt x 192.72pt>
 File: 05bericht/images/struktur.png Graphic file (type png)
 
 <use 05bericht/images/struktur.png>
@@ -1057,7 +1061,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--88
                                                   \fi \fi 
 l.91 
       <./05bericht/images/struktur.png (PNG copy)>]
-<05bericht/images/giro.png, id=303, 582.175pt x 405.515pt>
+<05bericht/images/giro.png, id=305, 582.175pt x 405.515pt>
 File: 05bericht/images/giro.png Graphic file (type png)
 
 <use 05bericht/images/giro.png>
@@ -1075,7 +1079,7 @@ Overfull \hbox (37.63391pt too wide) in paragraph at lines 100--101
                                                   \fi \fi 
 l.1 \chapter
             {Architektur} <./05bericht/images/giro.png>]
-<05bericht/images/domain.png, id=315, 429.10312pt x 633.86812pt>
+<05bericht/images/domain.png, id=317, 429.10312pt x 633.86812pt>
 File: 05bericht/images/domain.png Graphic file (type png)
 
 <use 05bericht/images/domain.png>
@@ -1089,15 +1093,15 @@ Overfull \hbox (59.21625pt too wide) in paragraph at lines 11--12
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<05bericht/images/ssd_rennen.png, id=317, 411.03563pt x 380.92313pt>
+<05bericht/images/ssd_rennen.png, id=319, 411.03563pt x 380.92313pt>
 File: 05bericht/images/ssd_rennen.png Graphic file (type png)
 
 <use 05bericht/images/ssd_rennen.png>
-Package pdftex.def Info: 05bericht/images/ssd_rennen.png used on input line 28.
+Package pdftex.def Info: 05bericht/images/ssd_rennen.png used on input line 29.
 
 (pdftex.def)             Requested size: 411.03462pt x 380.92218pt.
 
-Overfull \hbox (41.1488pt too wide) in paragraph at lines 28--29
+Overfull \hbox (41.1488pt too wide) in paragraph at lines 29--30
  [][] 
  []
 
@@ -1164,7 +1168,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
 
-<07anhang/images/bigpicture.png, id=450, 537.6888pt x 797.379pt>
+<07anhang/images/bigpicture.png, id=451, 537.6888pt x 797.379pt>
 File: 07anhang/images/bigpicture.png Graphic file (type png)
 
 <use 07anhang/images/bigpicture.png>
@@ -1175,7 +1179,7 @@ Overfull \hbox (60.26581pt too wide) in paragraph at lines 7--8
 [][]
  []
 
-<05bericht/images/usecasediagram.png, id=452, 377.15906pt x 373.395pt>
+<05bericht/images/usecasediagram.png, id=453, 377.15906pt x 373.395pt>
 File: 05bericht/images/usecasediagram.png Graphic file (type png)
 
 <use 05bericht/images/usecasediagram.png>
@@ -1186,7 +1190,7 @@ Package pdftex.def Info: 05bericht/images/usecasediagram.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<05bericht/images/uc01_fahrerliste.png, id=453, 136.3494pt x 136.8312pt>
+<05bericht/images/uc01_fahrerliste.png, id=454, 136.3494pt x 136.8312pt>
 File: 05bericht/images/uc01_fahrerliste.png Graphic file (type png)
 
 <use 05bericht/images/uc01_fahrerliste.png>
@@ -1197,7 +1201,7 @@ ne 40.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<05bericht/images/uc02_gruppen.png, id=454, 271.7352pt x 189.8292pt>
+<05bericht/images/uc02_gruppen.png, id=455, 271.7352pt x 189.8292pt>
 File: 05bericht/images/uc02_gruppen.png Graphic file (type png)
 
 <use 05bericht/images/uc02_gruppen.png>
@@ -1235,7 +1239,7 @@ l.56
 l.56 
       <./05bericht/images/usecasediagram.png (PNG copy)> <./05bericht/images/uc
 01_fahrerliste.png> <./05bericht/images/uc02_gruppen.png>]
-<05bericht/images/uc03_spezial.png, id=470, 280.4076pt x 194.6472pt>
+<05bericht/images/uc03_spezial.png, id=471, 280.4076pt x 194.6472pt>
 File: 05bericht/images/uc03_spezial.png Graphic file (type png)
 
 <use 05bericht/images/uc03_spezial.png>
@@ -1248,7 +1252,7 @@ Overfull \hbox (8.37775pt too wide) in paragraph at lines 67--69
 t-klas-se-ment (schnells-
  []
 
-<05bericht/images/uc05_virtuell.png, id=471, 385.44pt x 135.8676pt>
+<05bericht/images/uc05_virtuell.png, id=472, 385.44pt x 135.8676pt>
 File: 05bericht/images/uc05_virtuell.png Graphic file (type png)
 
 <use 05bericht/images/uc05_virtuell.png>
@@ -1270,7 +1274,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.96 
       <./05bericht/images/uc03_spezial.png>]
-<05bericht/images/uc06_fahrerliste.png, id=477, 422.0568pt x 68.4156pt>
+<05bericht/images/uc06_fahrerliste.png, id=478, 422.0568pt x 68.4156pt>
 File: 05bericht/images/uc06_fahrerliste.png Graphic file (type png)
 
 <use 05bericht/images/uc06_fahrerliste.png>
@@ -1303,7 +1307,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `bericht.out' has not changed.
-(rerunfilecheck)             Checksum: 3DDA237583111AD2B4D4AD2F93E388D2;2011.
+(rerunfilecheck)             Checksum: 3728D9A756AA2A2B9A1C674CCD947A6E;2012.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1318,8 +1322,8 @@ Here is how much of TeX's memory you used:
  78221 words of font info for 99 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  34i,8n,35p,1323b,428s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+{/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2011/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/tex
 live/2011/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texli
 ve/2011/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive
 /2011/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2011/t
@@ -1328,10 +1332,10 @@ st/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/local/texlive/2011/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/u
 rw/times/utmr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/urw/times/u
 tmri8a.pfb>
-Output written on bericht.pdf (44 pages, 2357641 bytes).
+Output written on bericht.pdf (44 pages, 2360333 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
+ 550 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
  121 named destinations out of 1000 (max. 500000)
  327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
