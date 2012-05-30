@@ -69,9 +69,11 @@ Die untere Ebene beinhaltet die Kernelemente der Applikation und diese werden in
 Die native Programmiersprache für das Android Betriebssystem ist Java. Die Programmierung in Java bringt den Vorteil, dass auf die gesamte \gls{api} von Android zugegriffen werden kann. Weiter sind die Geräte genau dafür ausgelegt und die optimale Performance kann erreicht werden. Sämtliche Komponenten dieser Arbeit sind in Java geschrieben. Für die Persistierung der Daten auf dem Tablet wird eine \gls{sqlite} Datenbank verwendet.
 
 \subsection{Externe Libraries}
-Android beinhaltet bereits ein umfangreiches Framework zur Entwicklung. Einzig beim \gls{orm}, also beim Abbilden von Objektdaten in der Datenbank kommt eine externe Library zum Einsatz.
+Android beinhaltet bereits ein umfangreiches Framework zur Entwicklung. Deshalb nutzt die \textit{RadioTour} Applikation folgende zwei externe Libraries:
 \\
-\textit{ORMLite} \footnote{ORMLite, \url{http://ormlite.com/}, Aufgerufen am 23.05.2012} ist eine OpenSource Java Library, welche auch für Android eine optimale Lösung bietet. Die zu verwendenden Felder einer Klasse können mit Java Annotationen versehen werden, daraus versucht ORMLite dann die Datenbank zu beschreiben. In dieser Arbeit wurde die ORMLite Version 4.39 verwendet.
+\textit{ORMLite} \footnote{ORMLite, \url{http://ormlite.com/}, Aufgerufen am 23.05.2012} ist eine OpenSource Java Library welche das \gls{orm} übernimmt. ORMLite bietet eine speziell auf Android angepasste Distribution. Um eine Klasse mit ihren Feldern zur Persistierung zu markieren werden Java Annotationen verwendet. Aus diesen Annotationen erstellt ORMLite die Datenbank. Darüber hinaus werden mit ORMLite alle Zugriffe auf die SQLite Datenbank ausgeführt. In dieser Arbeit wird die ORMLite Version 4.39 verwendet.
+\\
+\textit{Robotium} \footnote{Robotium \url{http://code.google.com/p/robotium/},Aufgerufen am 30.05.2012} ist ein Test Framework welches unter der Apache License 2.0 veröffentlicht und zur freien Nutzung angeboten wird. Robotium untersützt das Testen der Applikation mithilfe von UI Aktionen. In dieser Arbeit wird die version 3.2.1 von Robotium verwendet.  
 
 
 \subsection{Entwicklungsumgebung}
