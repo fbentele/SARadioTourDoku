@@ -17,16 +17,25 @@
 \contentsline {section}{\numberline {3.2} Sequenz Diagramm}{19}{section.3.2}
 \contentsline {chapter}{\numberline {4} Realisierung}{23}{chapter.4}
 \contentsline {chapter}{\numberline {5} Testing}{25}{chapter.5}
-\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{27}{chapter.6}
-\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{29}{chapter.7}
-\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{29}{section.7.1}
-\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{29}{section.7.2}
-\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{29}{section.7.3}
-\contentsline {chapter}{Glossar}{33}{section*.8}
-\contentsline {part}{I\hspace {1em}Anhang}{37}{part.1}
-\contentsline {section}{\numberline {7.4} BigPicture}{39}{section.7.4}
-\contentsline {section}{\numberline {7.5} Projektmanagement}{39}{section.7.5}
-\contentsline {section}{\numberline {7.6} Software Dokumente}{39}{section.7.6}
-\contentsline {section}{\numberline {7.7} Kriterienkatalog}{39}{section.7.7}
-\contentsline {section}{\numberline {7.8} Kaufempfehlung}{39}{section.7.8}
-\contentsline {section}{\numberline {7.9} UseCases der bisherigen Applikation}{39}{section.7.9}
+\contentsline {section}{\numberline {5.1} Java Unit Tests \& Android Testing Framework}{25}{section.5.1}
+\contentsline {section}{\numberline {5.2} Feldtest}{25}{section.5.2}
+\contentsline {chapter}{\numberline {6} Ergebnisse und Schlussfolgerungen}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7} Verzeichnisse und Referenzen}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1} Literaturverzeichnis}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2} Tabellenverzeichnis}{31}{section.7.2}
+\contentsline {section}{\numberline {7.3} Abbildungsverzeichnis}{31}{section.7.3}
+\contentsline {chapter}{Glossar}{35}{section*.8}
+\contentsline {chapter}{\numberline {8} Anhang}{39}{chapter.8}
+\contentsline {section}{\numberline {8.1} BigPicture}{39}{section.8.1}
+\contentsline {section}{\numberline {8.2} Projektmanagement}{39}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Zeitplanung}{39}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Code Base und Issue Tracking}{41}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3} Pers\IeC {\"o}nliche Berichte}{41}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Daniel Stucki}{41}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Florian Bentele}{41}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4} Software Dokumente}{42}{section.8.4}
+\contentsline {section}{\numberline {8.5} Kriterienkatalog}{42}{section.8.5}
+\contentsline {section}{\numberline {8.6} Kaufempfehlung}{42}{section.8.6}
+\contentsline {section}{\numberline {8.7} UseCases der bisherigen Applikation}{42}{section.8.7}
+\contentsline {section}{\numberline {8.8} Usability Test}{46}{section.8.8}
+\contentsline {subsection}{\numberline {8.8.1}Auswertung und Feedback}{47}{subsection.8.8.1}

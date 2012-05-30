@@ -17,16 +17,25 @@
 \BOOKMARK [1][-]{section.3.2}{ Sequenz Diagramm}{chapter.3}% 17
 \BOOKMARK [0][-]{chapter.4}{ Realisierung}{}% 18
 \BOOKMARK [0][-]{chapter.5}{ Testing}{}% 19
-\BOOKMARK [0][-]{chapter.6}{ Ergebnisse und Schlussfolgerungen}{}% 20
-\BOOKMARK [0][-]{chapter.7}{ Verzeichnisse und Referenzen}{}% 21
-\BOOKMARK [1][-]{section.7.1}{ Literaturverzeichnis}{chapter.7}% 22
-\BOOKMARK [1][-]{section.7.2}{ Tabellenverzeichnis}{chapter.7}% 23
-\BOOKMARK [1][-]{section.7.3}{ Abbildungsverzeichnis}{chapter.7}% 24
-\BOOKMARK [0][-]{section*.8}{Glossar}{}% 25
-\BOOKMARK [-1][-]{part.1}{I Anhang}{}% 26
-\BOOKMARK [0][-]{section.7.4}{ BigPicture}{part.1}% 27
-\BOOKMARK [1][-]{section.7.5}{ Projektmanagement}{section.7.4}% 28
-\BOOKMARK [1][-]{section.7.6}{ Software Dokumente}{section.7.4}% 29
-\BOOKMARK [1][-]{section.7.7}{ Kriterienkatalog}{section.7.4}% 30
-\BOOKMARK [1][-]{section.7.8}{ Kaufempfehlung}{section.7.4}% 31
-\BOOKMARK [1][-]{section.7.9}{ UseCases der bisherigen Applikation}{section.7.4}% 32
+\BOOKMARK [1][-]{section.5.1}{ Java Unit Tests \046 Android Testing Framework}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.2}{ Feldtest}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{ Ergebnisse und Schlussfolgerungen}{}% 22
+\BOOKMARK [0][-]{chapter.7}{ Verzeichnisse und Referenzen}{}% 23
+\BOOKMARK [1][-]{section.7.1}{ Literaturverzeichnis}{chapter.7}% 24
+\BOOKMARK [1][-]{section.7.2}{ Tabellenverzeichnis}{chapter.7}% 25
+\BOOKMARK [1][-]{section.7.3}{ Abbildungsverzeichnis}{chapter.7}% 26
+\BOOKMARK [0][-]{section*.8}{Glossar}{}% 27
+\BOOKMARK [0][-]{chapter.8}{ Anhang}{}% 28
+\BOOKMARK [1][-]{section.8.1}{ BigPicture}{chapter.8}% 29
+\BOOKMARK [1][-]{section.8.2}{ Projektmanagement}{chapter.8}% 30
+\BOOKMARK [2][-]{subsection.8.2.1}{Zeitplanung}{section.8.2}% 31
+\BOOKMARK [2][-]{subsection.8.2.2}{Code Base und Issue Tracking}{section.8.2}% 32
+\BOOKMARK [1][-]{section.8.3}{ Pers\366nliche Berichte}{chapter.8}% 33
+\BOOKMARK [2][-]{subsection.8.3.1}{Daniel Stucki}{section.8.3}% 34
+\BOOKMARK [2][-]{subsection.8.3.2}{Florian Bentele}{section.8.3}% 35
+\BOOKMARK [1][-]{section.8.4}{ Software Dokumente}{chapter.8}% 36
+\BOOKMARK [1][-]{section.8.5}{ Kriterienkatalog}{chapter.8}% 37
+\BOOKMARK [1][-]{section.8.6}{ Kaufempfehlung}{chapter.8}% 38
+\BOOKMARK [1][-]{section.8.7}{ UseCases der bisherigen Applikation}{chapter.8}% 39
+\BOOKMARK [1][-]{section.8.8}{ Usability Test}{chapter.8}% 40
+\BOOKMARK [2][-]{subsection.8.8.1}{Auswertung und Feedback}{section.8.8}% 41

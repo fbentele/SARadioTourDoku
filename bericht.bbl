@@ -27,6 +27,12 @@ Wikipedia.
 \newblock \url{http://de.wikipedia.org/wiki/Optimistic_Concurrency}, 2012.
 \newblock [Online; accessed 10-May-2012].
 
+\bibitem{cnlabsaba}
+cnlab~AG{,} Dr. Prof. Peter~Heinzmann.
+\newblock Administratives zu studien- und bachelorarbeiten.
+\newblock \url{http://www.cnlab.ch/kurse/SABA/}, 2012.
+\newblock letzter Zugriff am 30.05.2012.
+
 \bibitem{tanenbaum07}
 Andrew~S. Tanenbaum and Maarten~Van Steen.
 \newblock {\em Distributed systems: principles and paradigms}.
