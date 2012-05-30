@@ -5,18 +5,16 @@ Studiengang: & Informatik (I)\\
 Semester: & FS 2012 (20.02.2012-16.09.2012)\\
 Institut: & ITA: Internet-Technologien und Anwendungen\\
 Gruppe: & Florian Bentele, Daniel Stucki\\
-Verantwortlicher: & Dr. Prof. Peter Heinzmann\\
-Industriepartner: & cnlab AG, Lukas Frey
+Verantwortlicher: & Dr. Prof. Peter Heinzmann, pheinzma@hsr.ch\\
+Industriepartner: & cnlab AG, Lukas Frey, lukas.frey@hsr.ch
 
 \end{tabular}
 
-\section*{Ausgangslage Studienarbeit "`RadioTour"'}
+\section*{Ausgangslage}
 Bei Radrennen erfasst der so genannte RadioTour-Speaker Informationen zur Rennsituation, welche ihm von Motorradfahrern per Funk geliefert werden. Gegenwärtig legt der RadioTour-Speaker mit Hilfe einer TabletPC Web-Anwendung per Click auf die erhaltenen Fahrernummern die Zusammensetzung der Gruppen fest. Er tippt auch die Zeitabstände zwischen den Gruppen ein. Die RadioTour-Anwendung  visualisiert die Fahrergruppen und liefert Detailinformationen zu den Fahrern (z.B. Namen, Team, Virtueller Rang). Veränderungen in den Fahrergruppen können per Drag-and-Drop nachgeführt werden. Die mit der RadioTour-Anwendung erfassten Rennsituationen werden per Mobilfunknetz zu einem Webserver gesendet, wo sie für weitere Anwendungen, z.B. für Live Webinformationen zu Verfügung stehen.
 
 \section*{Ziel}
-Ziel dieser Arbeit ist es, die bestehende Web Applikation Tour Live, in eine native Android Tablet Applikation zu portieren. Die Applikation richtet sich einem sehr spezifischen Umfeld, daher ist die Bedienung diesen Anforderungen anzupassen.
-\\
-Das Endprodukt beinhaltet die funktionierende Applikation mit der Schnittstelle zum Server für die Übertragung der Daten. Die Applikation ermöglicht es dem RadioTour\-Speaker alle Angaben gemäss Requirements zu erfassen und bietet die Möglichkeit zur Mehrsprachigkeit.
+Die aus dem Jahre 2006 stammende Notebook Web Applikation soll nun so überarbeitet und erweitert werden, dass man sie auf Android-Tablets oder iPads betreiben kann.
 
 \section*{Teilaufgaben}
 \begin{itemize}
@@ -42,34 +40,51 @@ password: access4tl
 \end{itemize}
 
 \item Design
-Benutzerschnittstelle
-Kommunikation mit TourLive Aufnahmesystemen (Weitergabe der Daten an Datenserver)
-RadioTour-Anwendung
-
-\item Realisierung
-Prototypen
-Anpassungen
-Friendly User Test Version (Beta-Release)
-Feldtest an einem Radrennen
-Übergabe an cnlab
-
-\item Dokumentation
-Gemäss Anforderungen Industriepartner (das System soll vom Industriepartner betrieben und erweitert werden können)
-Bericht gemäss HSR/Heinzmann Richtlinien
+\begin{itemize}
+\item Benutzerschnittstelle
+\item Kommunikation mit TourLive Aufnahmesystemen (Weitergabe der Daten an Datenserver)
+\item RadioTour-Anwendung
 \end{itemize}
 
+\item Realisierung
+\begin{itemize}
+\item Prototypen
+\item Anpassungen
+\item Friendly User Test Version (Beta-Release)
+\item Feldtest an einem Radrennen
+\item Übergabe an cnlab
+\end{itemize}
+
+\item Dokumentation
+\begin{itemize}
+\item Gemäss Anforderungen Industriepartner (das System soll vom Industriepartner betrieben und erweitert werden können)
+\item Bericht gemäss HSR / Heinzmann Richtlinien
+\end{itemize}
+\end{itemize}
 
 \section*{Abgrenzung}
 Das Produkt wird spezifisch auf ein Gerät ausgerichtet und nicht plattformübergreifend entwickelt. Die Verbindung zum Server wird in der Arbeit definiert jedoch werden keine serverseitigen Entwicklungen erarbeitet.
 \\
-Die Mehrsprachigkeit wird nach Android Standards implementiert \footnote{http://developer.android.com/guide/topics/resources/localization.html\#creating-alternatives}. Eine Übersetzung ist jedoch nicht Teil der Arbeit.
+Die Mehrsprachigkeit wird nach Android Standards implementiert \footnote{Android Internationalisierung, \url{http://developer.android.com/guide/topics/resources/localization.html}}. Eine Übersetzung ist jedoch nicht Teil der Arbeit.
+\\
+Diese Aufgabenstellung wird genehmigt vom Betreuer
+\\
+\\
+
+\begin{tabular}{p{3cm}p{4cm}}
+\hline
+Ort / Datum & P. Heinzmann
+\end{tabular}
 
 \section*{Erklärung}
 Ich erkläre hiermit, dass ich die vorliegende Arbeit selber und ohne fremde Hilfe durchgeführt habe, ausser derjenigen, welche explizit in der Aufgabenstellung erwähnt ist oder mit dem Betreuer schriftlich vereinbart wurde, dass ich sämtliche verwendeten Quellen erwähnt und gemäss gängigen wissenschaftlichen Zitierregeln korrekt angegeben habe.
-\\[1em]
+\\
 Rapperswil, 29. Mai 2012
-\\[1em]
-\begin{tabular}{p{10cm}ll}
-Florian Bentele & Daniel Stucki
+\\
+\\
 
+\begin{tabular}{p{5cm}p{5cm}}
+\hline
+
+Florian Bentele & Daniel Stucki
 \end{tabular}

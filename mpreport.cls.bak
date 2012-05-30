@@ -41,15 +41,12 @@
        % title
 
        \begin{center}
-  
-         
          \huge\@title\\[2ex]
          \Large Studienarbeit\\[1ex]
          \large Abteilung Informatik\\
          Hochschule für Technik Rapperswil\\[1ex]
          \normalsize Frühjahrssemeter 2012\\
          \@date\\[2ex]
-         
          \vfill
        \end{center}
        
@@ -325,10 +322,10 @@
 %% Dimensions
    \setlength\hoffset{-1in}
    \setlength\voffset{-1in}
-   \setlength\textwidth{130mm}
+   \setlength\textwidth{140mm}
    \setlength\textheight{.85\paperheight}
-   \setlength{\oddsidemargin}{65mm}
-   \setlength{\evensidemargin}{55mm}
+   \setlength{\oddsidemargin}{55mm}
+   \setlength{\evensidemargin}{45mm}
    \pagestyle{plain}
 
    \parindent0mm
