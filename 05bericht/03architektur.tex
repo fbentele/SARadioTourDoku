@@ -1,4 +1,4 @@
-\chapter{Architektur und Realisierung}
+\chapter{Architektur}
 Im folgenden Abschnitt wird die Architektur der Applikation diskutiert. Die Architektur ist so gewählt, dass die einzelnen funktionalen Komponenten zueinander eine tiefe Abhängigkeit aufweisen und dadurch eine weitere Entwicklung möglichst einfach ist.
 
 \section{Struktur der Applikation}
@@ -14,6 +14,37 @@ Die Applikation hat im Grunde zwei Status, einerseits werden vor dem Rennen die 
 Der Stamm stellt die Applikation dar und die Äste zeigen die Aufteilung der Funktionen. Die Rennzeit sowie die aktuelle Rennposition sind in einem immer sichtbaren Bereich platziert.
 \\
 Die untere Ebene beinhaltet die Kernelemente der Applikation. Diese werden in Views seitenweise dargestellt. Durch eine Navigation lässt sich zwischen den Views wechseln, ohne dass dabei die Live Informationen ausgeblendet werden.
+
+\section{Schichtenmodell und Paketdiagramm}
+Die Applikation lässt sich in vier verschiedene Schichten aufteilen. Diese Schichten sind in der folgenden Grafik illustriert. Die oberste Schicht stellt dabei die Schnittstelle zum Benutzer dar. Innerhalb der Schicht werden die dabei verwendeten Pakete angezeigt.  
+\begin{figure}[h!]
+\caption{Die Schichten der Applikation inklusive der verwendeten Pakete}
+\label{fig:layer}
+\centering
+\includegraphics[scale=0.9]{05bericht/images/packagediagram.png}
+\end{figure} 
+
+Die \textit{View} Schicht in der Abbildung \ref{fig:layer} enthält alle Pakete in welchen Elemente zur Benutzerinteraktion definiert sind. Um die einzelnen Pakete in dieser Schicht zu verstehen, wird hier ein kurzer Exkurs zu Android View Elementen eingeschoben. Für die Elemente \textit{Activity} und \textit{Fragment} wird hierfür ein Teil der Android API Beschreibung zitiert.
+
+\begin{quote}
+\textit{An Activity is an application component that provides a screen with which users can interact in order to do something, such as dial the phone, take a photo, send an email, or view a map. Each activity is given a window in which to draw its user interface. The window typically fills the screen, but may be smaller than the screen and float on top of other windows.}\footnote{Android Developers Reference, \url{http://developer.android.com/guide/topics/fundamentals/activities.html}, aufgerufen am 31.05.2012.}
+\end{quote}
+
+Die \textit{RadioTour} Applikation besteht aus einer Activity. Dies aus der Entscheidung heraus, dass gewisse Inhalte, wie zum Beispiel die aktuelle Etappe oder die Stoppuhr jederzeit verfügbar sein müssen. Diese Activity befindet sich im Paket \textit{activities}
+
+\begin{quote}
+\textit{A Fragment represents a behavior or a portion of user interface in an Activity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running (sort of like a "`sub activity"' that you can reuse in different activities).}\footnote{Android Developers Reference, \url{http://developer.android.com/guide/topics/fundamentals/fragments.html}, aufgerufen am 31.05.2012.}
+\end{quote}
+
+Eine spezielle Form der Fragmente stellen DialogFragmente dar. Sie werden benutzt um einen Dialog über der Activity einzublenden. In der Applikation werden diese Elemente verwendet um Daten zu erfassen und zu ändern. Die DialogFragmente der Applikation befinden sich im Paket \textit{dialogs}.
+
+Für eine genauere Analyse der in der \textit{View} Schicht verwendeten Elemente und Klassen sei auf das Kapitel \ref{ref:realisierung} verwiesen.
+\\
+Die \textit{Controller} Schicht in der Abbildung \ref{fig:layer} ist für die Aufbereitung der Daten welche von der \textit{View} Schicht dargestellt wird verantwortlich.
+
+Die \textit{Model} Schicht in der Abbildung \ref{fig:layer} stellt die Daten Objekte für die Applikation zur Verfügung. Eine Darstellung der in der \textit{RadioTour} App  verwendeten Domain Objekte ist in der Abbildung \ref{fig:domain} ersichtlich.
+
+Die \textit{Util} Schicht in der Abbildung \ref{fig:layer} beinhaltet die Dienstobjekte für den Datenbank Zugriff sowie für die Kommunikation der Applikation mit dem cnlab Server. Im Paket \textit{utils} befinden sich allgemein gebrauchte Hilfsmethoden.
 
 
 \section{Klassendiagramm}
