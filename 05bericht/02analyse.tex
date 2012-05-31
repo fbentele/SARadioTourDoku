@@ -48,21 +48,6 @@ Im Umfeld eines Live Sport Events spielen neben den funktionalen Anforderungen a
 
 Weitere nicht funktionale Anforderungen beziehen sich auch auf die Hardware an sich und sind im Kapitel \ref{kap:kaufempfehlung} bereits aufgeführt.
 
-\section{Struktur der Applikation}
-%ja, plural ist Status, http://de.wikipedia.org/wiki/Status
-Die Applikation hat im Grunde zwei Status, einerseits werden vor dem Rennen die Fahrerliste und die Marschtabelle importiert, andererseits wird die Rennsituation während dem Rennen erfasst und Änderungen festgehalten. Diese beiden Status können aber nicht absolut voneinander getrennt werden, da während dem Rennen Änderungen denkbar sind. Während dem Rennen müssen gewisse Daten immer angezeigt werden. Diese Live Informationen werden deshalb als eigene Ebene abgebildet. Aus den Anforderungen und den Kriterien entsteht folgende baumartige Struktur.
-
-\begin{figure}[h!]
-\caption{Struktur der Applikation als Organigramm}
-\centering
-\includegraphics{05bericht/images/struktur.png}
-\end{figure} 
-
-Der Stamm stellt die Applikation dar und die Äste zeigen die Aufteilung der Funktionen. Die Rennzeit sowie die aktuelle Rennposition sind in einem immer sichtbaren Bereich platziert.
-\\
-Die untere Ebene beinhaltet die Kernelemente der Applikation. Diese werden in Views seitenweise dargestellt. Durch eine Navigation lässt sich zwischen den Views wechseln, ohne dass dabei die Live Informationen ausgeblendet werden.
-
-
 \section{Technologien}
 \subsection{Android}
 Die native Programmiersprache für das Android Betriebssystem ist Java. Die Programmierung in Java bringt den Vorteil, dass auf die gesamte \gls{api} von Android zugegriffen werden kann. Weiter sind die Geräte genau dafür ausgelegt und eine optimale Performance kann erreicht werden. Sämtliche Komponenten dieser Arbeit sind in Java geschrieben. Für die Persistierung der Daten auf dem Tablet wird eine \gls{sqlite} Datenbank verwendet.
