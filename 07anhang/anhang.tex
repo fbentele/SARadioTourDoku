@@ -1,11 +1,4 @@
 \chapter{Anhang}
-\section{BigPicture}
-\label{fig:bigpicture}
-Im Folgenden ist das Aufgabenumfeld mit den äusseren Actors und Einflussbereichen in einem BigPicture zusammengefasst.
-\begin{figure}
-\includegraphics[scale=0.8]{07anhang/images/bigpicture.png}
-\caption{Das BigPicture in voller Grösse}
-\end{figure}
 
 \section{Projektmanagement}
 Für die Projektorganisation kommen verschiedene Anwendungen und Hilfsmittel zur Anwendung. Im Folgenden werden die einzelnen Bereiche behandelt.
@@ -15,7 +8,7 @@ Die Zeiterfassung ist in einem dafür vorbereiteten Excel File abgelegt. Folgend
 
 \begin{tabular}{p{2.1cm}p{7.5cm}r}
 Projektstart & & 21.02.2012\\
-Milestone 1 & RadioTour Bestandesaufname Webanwendung & 05.03.2012\\
+Milestone 1 & \textit{RadioTour} Bestandesaufname Webanwendung & 05.03.2012\\
 Milestone 2 & Plattform Entscheid gefällt & 12.03.2012\\
 Milestone 3 & Features und Abgrenzung definiert und mit Heinzmann besprochen & 19.03.2012\\
 Milestone 4 & Prototyp "'Rennsituation"` bei Heinzmann zum Testen übergeben & 09.04.2012\\
@@ -72,7 +65,7 @@ Hier sind die Kriterien
 
 \section{UseCases der bisherigen Applikation}
 \label{ref:usecases}
-Im unten stehenden UseCase Diagramm (Abbildung \ref{fig:usecasediagram}) sind die primären UseCases aufgeführt. Nur der RadioTour Speaker erfasst Daten in dieser Applikation und ist daher der einzige Aktor. Das System wird durch die RadioTour Applikation abgebildet. Zur besseren Darstellung wurden einzelne UseCases vereinfacht oder zusammengefasst.
+Im unten stehenden UseCase Diagramm (Abbildung \ref{fig:usecasediagram}) sind die primären UseCases aufgeführt. Nur der \textit{RadioTour Speaker} erfasst Daten in dieser Applikation und ist daher der einzige Aktor. Das System wird durch die \textit{RadioTour} Applikation abgebildet. Zur besseren Darstellung wurden einzelne UseCases vereinfacht oder zusammengefasst.
 \begin{figure}[h1]
   \caption{UseCase Diagramm}
   \label{fig:usecasediagram}
@@ -83,7 +76,7 @@ Im unten stehenden UseCase Diagramm (Abbildung \ref{fig:usecasediagram}) sind di
 
 \begin{itemize}
 \item \textbf{Fahrer auswählen}\\
-Dem RadioTour Speaker muss es möglich sein, einen oder mehrere Fahrer schnell auszuwählen. Die Fahrer werden im Auswahldialog bevorzugt durch ihre Startnummern dargestellt. An der Tour de Suisse besteht ein Team – nach Aussage von P. Heinzmann – aus 8 Fahrern. Um eine möglichst gute Übersicht zu gewährleisten, werden die Fahrer jeweils zeilenweise in deren Teams gruppiert. Ausgewählte Fahrer werden farblich hervorgehoben. Die Nummern der Fahrer, welche bereits Gruppen zugewiesen wurden, werden in Klammern dargestellt. Die Nummern ausgeschiedener Fahrer werden gestrichen dargestellt.
+Dem \textit{RadioTour Speaker} muss es möglich sein, einen oder mehrere Fahrer schnell auszuwählen. Die Fahrer werden im Auswahldialog bevorzugt durch ihre Startnummern dargestellt. An der Tour de Suisse besteht ein Team – nach Aussage von P. Heinzmann – aus 8 Fahrern. Um eine möglichst gute Übersicht zu gewährleisten, werden die Fahrer jeweils zeilenweise in deren Teams gruppiert. Ausgewählte Fahrer werden farblich hervorgehoben. Die Nummern der Fahrer, welche bereits Gruppen zugewiesen wurden, werden in Klammern dargestellt. Die Nummern ausgeschiedener Fahrer werden gestrichen dargestellt.
 
 \begin{figure}[h!]
   \caption{Die Fahrerauswahlliste zur Gruppierung in der bisherigen Web Applikation}
@@ -93,7 +86,7 @@ Dem RadioTour Speaker muss es möglich sein, einen oder mehrere Fahrer schnell a
 \end{figure}
 
 \item \textbf{Fahrer gruppieren}\\
-Dem RadioTour Speaker muss es möglich sein, die ausgewählten Fahrer in Gruppen zu organisieren. So kann er die ihm gemeldeten Rennsituationen mit Ausreissern, Verfolgern, Feld und Abgehängten darstellen.
+Dem \textit{RadioTour Speaker} muss es möglich sein, die ausgewählten Fahrer in Gruppen zu organisieren. So kann er die ihm gemeldeten Rennsituationen mit Ausreissern, Verfolgern, Feld und Abgehängten darstellen.
 
 \begin{figure}[H]
   \caption{Gruppierung in der bisherigen Web Applikation}
@@ -103,10 +96,10 @@ Dem RadioTour Speaker muss es möglich sein, die ausgewählten Fahrer in Gruppen
 \end{figure}
 
 \item \textbf{Rückstände angeben}\\
-Dem RadioTour Speaker muss es möglich sein, für die Gruppen (siehe oben) ihre jeweiligen Zeitabstände relativ zur Spitze einzugeben. Falls vorhanden, sollen auch die mit dem TourLive GPS-System erfassten Zeitabstände Spitze-Feld eingeblendet werden.
+Dem \textit{RadioTour Speaker} muss es möglich sein, für die Gruppen (siehe oben) ihre jeweiligen Zeitabstände relativ zur Spitze einzugeben. Falls vorhanden, sollen auch die mit dem TourLive GPS-System erfassten Zeitabstände Spitze-Feld eingeblendet werden.
 
 \item \textbf{Spezial Events erfassen}\\
-Dem RadioTour Speaker muss es möglich sein, für ausgewählte Fahrer Spezialereignisse festzulegen. Dies sind beispielsweise Arztbesuch, Aufgabe, Defekt oder Sturz.
+Dem \textit{RadioTour Speaker} muss es möglich sein, für ausgewählte Fahrer Spezialereignisse festzulegen. Dies sind beispielsweise Arztbesuch, Aufgabe, Defekt oder Sturz.
 \begin{figure}[H]
   \caption{Die Spezialklassemente und Wertungen in der bisherigen Web Applikation}
   \begin{center}
@@ -116,16 +109,16 @@ Dem RadioTour Speaker muss es möglich sein, für ausgewählte Fahrer Spezialere
 
 
 \item \textbf{Spezialklassement und Wertung wählen}\\
-Bei Mehretappenrennen werden typisch neben dem Gesamtklassement (schnellster Fahrer) mehrere Spezialklassemente (z.B. Bergpreis, Sprint, Punkteklassement) gewertet. Innerhalb der Etappen gibt es jeweils mehrere Stellen (Wertungen), an denen für die Spezialklassemente Punkte vergeben werden. Dem RadioTour Speaker muss es möglich sein, die gewünschte Wertung zu einem der vorher erfassten Spezialklassemente auszuwählen.
+Bei Mehretappenrennen werden typisch neben dem Gesamtklassement (schnellster Fahrer) mehrere Spezialklassemente (z.B. Bergpreis, Sprint, Punkteklassement) gewertet. Innerhalb der Etappen gibt es jeweils mehrere Stellen (Wertungen), an denen für die Spezialklassemente Punkte vergeben werden. Dem \textit{RadioTour Speaker} muss es möglich sein, die gewünschte Wertung zu einem der vorher erfassten Spezialklassemente auszuwählen.
 
 \item \textbf{Spezialklassement Resultate eintragen}\\
-Dem RadioTour Speaker muss es möglich sein, für eine Wertung, welche er ausgewählt hat (siehe UC oben), die Ränge zur Wertung mit Fahrernummern zu verbinden, wodurch das Klassement generiert wird.
+Dem \textit{RadioTour Speaker} muss es möglich sein, für eine Wertung, welche er ausgewählt hat (siehe UC oben), die Ränge zur Wertung mit Fahrernummern zu verbinden, wodurch das Klassement generiert wird.
 
 \item \textbf{Klassement anzeigen}\\
-Das durch die eingetragene Wertung erstellte Klassement muss vom RadioTour Speaker abgerufen werden können. Dort sollen alle Fahrer angezeigt werden, welche einen Punkterang in diesem Spezialklassement erreichten.
+Das durch die eingetragene Wertung erstellte Klassement muss vom \textit{RadioTour Speaker} abgerufen werden können. Dort sollen alle Fahrer angezeigt werden, welche einen Punkterang in diesem Spezialklassement erreichten.
 
 \item \textbf{Virtuelles Klassement}\\
-Dem RadioTour Speaker muss es möglich sein, ein aktuelles Klassement der Tour abzurufen und dieses nach bestimmten Kriterien zu sortieren. Die zurzeit möglichen Sortierkriterien sind:
+Dem \textit{RadioTour Speaker} muss es möglich sein, ein aktuelles Klassement der Tour abzurufen und dieses nach bestimmten Kriterien zu sortieren. Die zurzeit möglichen Sortierkriterien sind:
 \begin{itemize}
 \item[-]Gruppen (zur Zeit des Aufrufs, nicht offiziell)
 \item[-]Virtueller Rückstand (zur Zeit des Aufrufs, nicht offiziell)
@@ -143,7 +136,7 @@ Dem RadioTour Speaker muss es möglich sein, ein aktuelles Klassement der Tour a
 \end{figure}
 
 \item \textbf{Fahrerliste anschauen}\\
-Dem RadioTour Speaker muss es möglich sein, die aktuelle Fahrerliste anzuschauen. Die Fahrerliste ist nach Startnummern aufsteigend sortiert. (Die Startnummern werden in Mehretappenrennen so vergeben, dass die Fahrer eines Teams aufeinanderfolgende Startnummern erhalten.)
+Dem \textit{RadioTour Speaker} muss es möglich sein, die aktuelle Fahrerliste anzuschauen. Die Fahrerliste ist nach Startnummern aufsteigend sortiert. (Die Startnummern werden in Mehretappenrennen so vergeben, dass die Fahrer eines Teams aufeinanderfolgende Startnummern erhalten.)
 
 \begin{figure}[h!]
   \caption{Die Fahrerliste mit den Informationen zum Status der Fahrer}
@@ -153,23 +146,23 @@ Dem RadioTour Speaker muss es möglich sein, die aktuelle Fahrerliste anzuschaue
 \end{figure}
 
 \item \textbf{Fahrer de- bzw. aktivieren}\\
-Dem RadioTour Speaker muss es möglich sein, einzelne Fahrer zu deaktivieren bzw. wieder zu aktivieren. Der Grund der Deaktivierung soll auch später noch nachvollziehbar sein. Es soll möglich sein, den Grund für die Deaktivierung anzugeben (z.B. ausgeschieden, nicht gestartet, andere). 
-Eine so vorgenommene Deaktivierung eines Fahrers muss durch den RadioTour Speaker rückgängig gemacht werden können.
+Dem \textit{RadioTour Speaker} muss es möglich sein, einzelne Fahrer zu deaktivieren bzw. wieder zu aktivieren. Der Grund der Deaktivierung soll auch später noch nachvollziehbar sein. Es soll möglich sein, den Grund für die Deaktivierung anzugeben (z.B. ausgeschieden, nicht gestartet, andere).
+Eine so vorgenommene Deaktivierung eines Fahrers muss durch den \textit{RadioTour Speaker} rückgängig gemacht werden können.
 
 \item \textbf{Fahrerdetails bearbeiten}\\
-Dem RadioTour Speaker muss es möglich sein, einen Fahrer aus der Fahrerliste auszuwählen, um seine Details anzuschauen und auch zu bearbeiten. 
+Dem \textit{RadioTour Speaker} muss es möglich sein, einen Fahrer aus der Fahrerliste auszuwählen, um seine Details anzuschauen und auch zu bearbeiten. 
 
 \item \textbf{Statistik}\\
-Dem RadioTour Speaker muss es möglich sein, in seinem Admin-Bereich eine kurze und prägnante textbasierte Statistik zu erhalten, aus welcher er auf einen Blick sieht, wie viele Fahrer in der Datenbank sind und welche davon aktiv sind. Darüber hinaus die Anzahl Gruppen, Spezialklassemente, Wertungen und vergebene Punkte.
+Dem \textit{RadioTour Speaker} muss es möglich sein, in seinem Admin-Bereich eine kurze und prägnante textbasierte Statistik zu erhalten, aus welcher er auf einen Blick sieht, wie viele Fahrer in der Datenbank sind und welche davon aktiv sind. Darüber hinaus die Anzahl Gruppen, Spezialklassemente, Wertungen und vergebene Punkte.
 
 \item \textbf{Import Fahrerliste}\\
-Nach jedem Renntag ( = Etappe), wird in die RadioTour Applikation eine neue Fahrerliste mit den aktuellen offiziellen Zeiten importiert. Deshalb muss es dem RadioTour Speaker möglich sein, die aktuellen Zeiten zu importieren. Derzeit sind für den Import der Daten verschiedene Importverfahren implementiert, wie dies im Screenshot ersichtlich ist.
+Nach jedem Renntag ( = Etappe), wird in die \textit{RadioTour} Applikation eine neue Fahrerliste mit den aktuellen offiziellen Zeiten importiert. Deshalb muss es dem \textit{RadioTour Speaker} möglich sein, die aktuellen Zeiten zu importieren. Derzeit sind für den Import der Daten verschiedene Importverfahren implementiert, wie dies im Screenshot ersichtlich ist.
 
 \item \textbf{Erfassung Spezialklassemente}\\
-Dem RadioTour Speaker muss es möglich sein, Spezialklassemente zu erfassen. Diese Erfassungen werden vor der Tour de Suisse getätigt, weshalb ein Import hier nicht notwendig ist.
+Dem \textit{RadioTour Speaker} muss es möglich sein, Spezialklassemente zu erfassen. Diese Erfassungen werden vor der Tour de Suisse getätigt, weshalb ein Import hier nicht notwendig ist.
 
 \item \textbf{Speicherung Maillots}\\
-Dem RadioTour Speaker muss es möglich sein, die Belegung der 4 verschiedenen Maillots anzugeben und zu sichern. Folgende Maillots werden an der Tour de Suisse vergeben:
+Dem \textit{RadioTour Speaker} muss es möglich sein, die Belegung der 4 verschiedenen Maillots anzugeben und zu sichern. Folgende Maillots werden an der Tour de Suisse vergeben:
 
 \begin{center}
   \begin{tabular}{ l | l  }
@@ -187,7 +180,7 @@ Dem RadioTour Speaker muss es möglich sein, die Belegung der 4 verschiedenen Ma
 
 
 \item \textbf{Daten exportieren}\\
-Dem RadioTour Speaker muss es möglich sein, die Spezialklassemente, Wertungen, Fahrer nicht nur zu erfassen, importieren und bearbeiten, sondern auch als *.csv zu exportieren. Dabei werden einfach alle mit dem gewünschten Export assoziierten Infos in das exportierte *.csv geschrieben.
+Dem \textit{RadioTour Speaker} muss es möglich sein, die Spezialklassemente, Wertungen, Fahrer nicht nur zu erfassen, importieren und bearbeiten, sondern auch als *.csv zu exportieren. Dabei werden einfach alle mit dem gewünschten Export assoziierten Infos in das exportierte *.csv geschrieben.
 
 \end{itemize}
 
