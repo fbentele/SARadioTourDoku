@@ -45,7 +45,7 @@
          \Large Studienarbeit\\[1ex]
          \large Abteilung Informatik\\
          Hochschule für Technik Rapperswil\\[1ex]
-         \normalsize Frühjahrssemeter 2012\\
+         \normalsize Frühjahrssemester 2012\\
          \@date\\[2ex]
          \vfill
        \end{center}
