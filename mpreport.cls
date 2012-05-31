@@ -25,6 +25,7 @@
 %% in reports.
 \RequirePackage{graphicx}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% The class then redefines |\maketitle|.
@@ -34,19 +35,17 @@
    
 	% Logos
 		\begin{picture}(0,200)(0,-100)
-      		\put(-100, -30){\includegraphics[height=30mm]{images/hsrlogo.png}}
-      		\put(210, -20){\includegraphics[height=20mm]{images/cnlablogo.png}}
+      		\put(-50, -30){\includegraphics[height=30mm]{images/hsrlogo.png}}
+      		\put(250, -15){\includegraphics[height=20mm]{images/cnlablogo.png}}
 		\end{picture}
-		
-       % title
 
+       % title
        \begin{center}
+		 \Large\thesis , \departement\\[2ex]
          \huge\@title\\[2ex]
-         \Large Studienarbeit\\[1ex]
-         \large Abteilung Informatik\\
-         Hochschule für Technik Rapperswil\\[1ex]
-         \normalsize Frühjahrssemester 2012\\
-         \@date\\[2ex]
+		 \large\school\\[1ex]
+		 \normalsize\term\\
+		\normalsize\thedate
          \vfill
        \end{center}
        
@@ -55,18 +54,19 @@
 	\begin{flushleft}
 	\large
 		\begin{tabular}[t]{ll}
-			\emph{Autoren:} & \@author\\
-			\emph{Betreuer:} & Prof. Dr. Peter Heinzmann\\
-			\emph{Projektpartner:} & Lukas Frey, cnlab AG, Rapperswil-Jona
-	
+			\emph{Autoren:} & \@author\\[3pt]
+			\emph{Betreuer:} & \professor\\[3pt]
+			\emph{Projektpartner:} & \partner\\[3pt]
+			\emph{Arbeitsperiode:} & \timeperiode\\[3pt]
+			\emph{Arbeitsumfang:} & \workload\\[3pt]
+			%\emph{Link:} & \url{\linktothesis}
 		\end{tabular}
 	\end{flushleft}
 \end{minipage}
 
-
- 
-     \end{titlepage}%
-     }
+\end{titlepage}%
+     
+}
    \else
    \renewcommand{\maketitle}{%
      \begin{flushleft}
