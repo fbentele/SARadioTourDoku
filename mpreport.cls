@@ -32,7 +32,7 @@
    \if@titlepage
    \renewcommand{\maketitle}{%
      \begin{titlepage}%
-   
+
 	% Logos
 		\begin{picture}(0,200)(0,-100)
       		\put(-50, -30){\includegraphics[height=30mm]{images/hsrlogo.png}}
@@ -322,9 +322,9 @@
 %% Dimensions
    \setlength\hoffset{-1in}
    \setlength\voffset{-1in}
-   \setlength\textwidth{140mm}
+   \setlength\textwidth{130mm}
    \setlength\textheight{.85\paperheight}
-   \setlength{\oddsidemargin}{55mm}
+   \setlength{\oddsidemargin}{65mm}
    \setlength{\evensidemargin}{45mm}
    \pagestyle{plain}
 
