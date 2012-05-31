@@ -1,5 +1,5 @@
 \chapter{Analyse}
-Die Analyse untersucht die bestehende Web Applikation und fasst die Anforderungen zusammen. Weiter wird die Struktur der Applikation schematisch dargestellt. Es werden die verwendeten Technologien sowie ein kurzer Exkurs zu anderen Lösungen angesprochen.
+Die Analyse untersucht die bestehende Web Applikation und fasst die Anforderungen zusammen. Danach wird die Plattform und die passende Hardware dazu evaluiert und in Form einer Kaufempfehlung an die cnlab AG weitergeleitet. Es werden die verwendeten Technologien sowie ein kurzer Exkurs zu anderen Lösungen angesprochen.
 
 \section{Requirements}
 Die Anforderungen an die \textit{RadioTour} Applikation ergeben sich aus den Features der bisherigen Web Applikation und den Verbesserungsvorschlägen des \textit{RadioTour} Speakers. Im Anhang \ref{ref:usecases} sind sämtliche UseCases der bisherigen Applikation aufgeführt. Im folgenden Abschnitt werden die Funktionen, welche in diesem Projekt implementiert sind, aufgeführt.
@@ -47,6 +47,33 @@ Im Umfeld eines Live Sport Events spielen neben den funktionalen Anforderungen a
 \end{itemize}
 
 Weitere nicht funktionale Anforderungen beziehen sich auch auf die Hardware an sich und sind im Kapitel \ref{kap:kaufempfehlung} bereits aufgeführt.
+
+\section{Evaluation und Kaufempfehlung}
+\label{kap:kaufempfehlung}
+Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwicklung der Arbeit. Aus diesem Grund stand diese ganz zu Beginn der Arbeit an. Zur Auswahl standen die beiden marktführenden Betriebssysteme Android (Google) und iOS (Apple). Als Grundlage für die Evaluation dienten die folgenden Kriterien:
+\begin{itemize}
+\item Vorkenntnisse der Programmiersprachen Java bzw. Objective-C
+\item Möglichkeiten zum UserInterface Design
+\item Programmierumgebung, \gls{ide}
+\item Mögliche Vertriebskanäle der Applikation
+\item Nutzbarkeit von externen Geräten und Schnittstellen
+\item Vielfalt von Informationsquellen im Internet
+\end{itemize}
+Die Kriterien werden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java sind  ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid ist in Absprache mit Herrn Heinzmann getroffen worden. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang \ref{ref:kriterien}.
+\\
+Für die Auswahl eines geeigneten Tablets wird im nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:
+\begin{itemize}
+\item Android Betriebssystem, gemäss Evaluation
+\item USB Anschluss für den Import der Fahrerliste am Renntag, optional auch mit Adapter möglich
+\item Mobilfunktnetz 3G für die Kommunikation mit dem Server
+\item GPS für die Lokalisierung
+\item Stromversorgung durch 12V (Auto) Adapter möglich
+\end{itemize}
+Zu den optionalen Kriterien gehören die Akkulaufzeit, falls die Stromversorgung unterbrochen wird, sowie ein grosszügiger Bildschirm für die Bedienung mit dem Finger oder mithilfe eines Stifts.
+\\
+Als Sieger und somit auch als Kaufempfehlung an die \textit{cnlab AG} geht das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugt in der Vielfalt der Anschlüsse. Die Kaufempfehlung mit weiteren Erläuterungen ist ebenfalls im Anhang \ref{ref:kaufempfehlung} zu finden.
+\\
+Im Verlauf der Arbeit ist ein Defekt an der Micro USB Buchse entstanden. Dieser Anschluss wird für die Entwicklung auf dem Gerät dringend benötigt. Für die weitere Entwicklung ist ein Ersatzgerät angeschafft worden. Dabei handelt es sich um das Galaxy Nexus Tab 10.1\footnote{Galaxy Nexus Tab 10.1, \url{http://www.samsung.com/ch/consumer/mobile-phone/tablets/tablets/GT-P7500UWDITV}, Aufgerufen am 23.05.2012.}
 
 \section{Technologien}
 \subsection{Android}
