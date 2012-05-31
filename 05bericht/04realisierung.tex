@@ -1,25 +1,10 @@
 \chapter{Realisierung}
 \label{ref:realisierung}
-\subsection{Externe Libraries}
-\textbf{ORMLite (Version 4.39)}
 Dieses Kapitel widmet sich der Realisierung der Applikation inklusive der grafischen Erscheinung. Zudem werden die wichtigsten Infos, um einem Entwickler beim Industriepartner einen schnellen Einstieg in das Weiterführen des Projektes zu ermöglichen, vermittelt.
- 
-Zur Speicherung der Objekte in die SQLite Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
-\\
-Um eine Änderung an den zu persistierenden Objekten durchzuführen ist es notwendig, die Klasse DatabaseConfigUtil.java im
 
-\begin{lstlisting}{Name}
-package ch.hsr.sa.radiotour.technicalservices.database;
-\end{lstlisting}
-
-als normale Java Applikation auszuführen. Dies generiert das \textit{Configuration File}
-
-\textit{res/raw/ormlite\_config.txt}
-
-welches für eine effizientere Ausführung von \textit{ORMLite} gebraucht wird.
 
 \section{Aktuelle Erscheinung}
-\subsection{Activity}
+\textbf{Activity}
 
 Die \textit{RadioTour} App besteht aus einer Activity wie in Abbildung \ref{gesamteactivity} dargestellt wird. Diese Activity wird in zwei Hauptteile eingeteilt. Es sind dies der (1)Header- sowie der (2)Hauptbereich. 
 
@@ -178,13 +163,32 @@ public class AdminFragment extends Fragment
 View definiert in:
 \textit{res/layout/admin\_fragment.xml} 
 
-\subsection{Offene Tasks}
-Die Applikation ist weitgehend einsatzbereit. Folgende weitere Features sind noch offen:
-\begin{itemize}
-\item JSON
-\item Importieren der Fahrerliste sowie der Etappeninformationen ist derzeit als .csv nur via USB möglich
-\item Zeitabstände Feld-Spitze
-\item Die Zeit- und Punkteboni der Maillots werden noch nicht im virtuellen Klassement verrechnet
-\item Bei der Marschtabelle werden die abgefahrenen Stationen ausgegraut jedoch wird nicht auf die aktuelle Position „gescrollt“
-\item Beim Wechsel einer Etappe wir die Rennzeit und der Rennkilometer nicht zurückgesetzt
-\end{itemize}
+Das \textit{AdminFragment}, Abbildung \ref{fig:adminfragment}, beinhaltet drei Grundfunktionen der Applikation.
+Zum einen ist dies die gesamte Maillotsverwaltung inklusive Zuweisung eines Maillots zu einem Fahrer, der in der aktuellen Etappe dieses Maillot trägt.
+Weiter wird im \textit{AdminFragment} die aktuelle Etappe ausgewählt. Zudem können neue Etappen erfasst oder bereits bestehende Etappen bearbeitet werden. 
+Als letzte der drei Grundfunktionen steht der Import über csv zur Verfügung. Über einen Dateibrowser welcher in die Applikation integriert ist können die .csv - Dateien ausgewählt und importiert werden.  
+
+\section{Kommunikation zum Server}
+
+
+
+\section{Datenbankan}
+\textbf{ORMLite (Version 4.39)}
+
+ 
+Zur Speicherung der Objekte in die SQLite Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
+\\
+Um eine Änderung an den zu persistierenden Objekten durchzuführen ist es notwendig, die Klasse DatabaseConfigUtil.java im
+
+\begin{lstlisting}{Name}
+package ch.hsr.sa.radiotour.technicalservices.database;
+\end{lstlisting}
+
+als normale Java Applikation auszuführen. Dies generiert das \textit{Configuration File}
+
+\textit{res/raw/ormlite\_config.txt}
+
+welches für eine effizientere Ausführung von \textit{ORMLite} gebraucht wird.
+
+
+
