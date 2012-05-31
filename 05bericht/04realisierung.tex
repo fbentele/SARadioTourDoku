@@ -107,7 +107,7 @@ Den im transparenten Feld gruppierten Fahrer kann ein Rückstand relativ zur Spi
 
 \textbf{SpecialRankingFragment}
 \begin{figure}[h!]
-\caption{SpecialRankingFragment}
+\caption{SpecialRanking Fragment}
 \label{fig:specialrankingfragment}
 \centering
 \includegraphics[scale=0.8]{07anhang/images/dev_specialranking.png}
@@ -124,8 +124,6 @@ View definiert in:
 \textit{res/layout/special\_ranking\_fragment.xml}
 
 Das \textit{SpecialRankingFragment}, abgebildet in Abbildung \ref{fig:specialrankingfragment}, erlaubt es neue Spezialklassemente und deren Wertungen, welche einer Etappe zugeordnet werden, zu erstellen. Eine Wertung beinhaltet Zeit- und/oder Punktebonus. Zudem kann jede Wertung eine unterschiedliche Anzahl berücksichtigte Anzahl Fahrer haben. Die Boni, welche Fahrer die in einer Wertung eine Klassierung erreichen, werden pro Spezialklassement rechts im \textit{SpecialRankingFragment} angezeigt. Die Etappenbasierte Verrechnung der Boni geschieht im \textit{VirtualRankingFragment}.
-
-
 
 
 \textbf{VirtualRankingFragment}
@@ -169,14 +167,83 @@ Weiter wird im \textit{AdminFragment} die aktuelle Etappe ausgewählt. Zudem kö
 Als letzte der drei Grundfunktionen steht der Import über csv zur Verfügung. Über einen Dateibrowser welcher in die Applikation integriert ist können die .csv - Dateien ausgewählt und importiert werden.  
 
 \section{Kommunikation zum Server}
+Es werden zwei Verbindung mit dem TourLive Server aufgebaut. Die Liveinformationen im \textit{HeaderFragment} werden bei bestehender Verbindung alle 10 Sekunden abgefragt. Dabei sendet die \textit{RadioTour} Applikation ein \gls{http} Request ab und verarbeitet die Antwort. Erwartet wird ein JSON im folgenden Format:
 
+\begin{lstlisting}{Name}
+{
+sources:
+	[
+		[
+			{
+				source: "Spitze",
+				timestamp: "15:27:52",
+				rennkilometer: "-1",
+				online: "true"
+			}
+		],
+			[
+				{
+				source: "RadioTour",
+				timestamp: "0",
+				rennkilometer: "-1",
+				online: "false"
+				}
+			],
+		[
+			{
+				source: "Feld",
+				timestamp: "0",
+				rennkilometer: "-1",
+				online: "false"
+			}
+		],
+	]
+}
+\end{lstlisting}
 
+Die Rennsituation wird bei jeder Änderung in eine Queue geschrieben und bei bestehender Verbindung mit dem Server abgearbeitet. Dieses Verfahren erlaubt es auch bei längeren Unterbrechungen sämtliche Updates nicht zu verlieren.
 
-\section{Datenbankan}
+\begin{lstlisting}
+{
+	"timestamp":1338284032240,
+	"situation":
+		[
+			{
+				"drivernumber":[11, 15, 31],
+				"isLeader":true,
+				"groupnr":0,
+				"handicaptime":-2209078800000,
+				"isField":false
+			},
+			{
+				"isLeader":false,
+				"groupnr":1,
+				"handicaptime":-2209078800000,
+				"isField":true
+			},
+			{
+				"drivernumber":[76, 18, 41, 35],
+				"isLeader":false,
+				"groupnr":2,
+				"handicaptime":0,
+				"isField":false
+			},
+			{
+				"drivernumber":[178, 103, 67],
+				"isLeader":false,
+				"groupnr":3,
+				"handicaptime":0,
+				"isField":false
+			}
+		]
+}
+\end{lstlisting}
+
+\section{Datenbanken}
 \textbf{ORMLite (Version 4.39)}
 
  
-Zur Speicherung der Objekte in die SQLite Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
+Zur Speicherung der Objekte in die \gls{sqlite} Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
 \\
 Um eine Änderung an den zu persistierenden Objekten durchzuführen ist es notwendig, die Klasse DatabaseConfigUtil.java im
 
