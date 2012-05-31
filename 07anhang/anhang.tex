@@ -50,6 +50,7 @@ Sämtliche "`must"' und "`can"' Issues wurden erfolgreich abgearbeitet. Offen ge
 \label{ref:devguide}
 \subsection{Externe Libraries}
 \textbf{ORMLite (Version 4.39)}
+
 Zur Speicherung der Objekte in die SQLite Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
 \\
 Um eine Änderung an den zu persistierenden Objekten durchzuführen ist es notwendig, die Klasse DatabaseConfigUtil.java im
@@ -68,7 +69,8 @@ Die RadioTour App besteht aus einer Activity. Diese Activity wird in zwei Hauptt
 Activity:
 \begin{lstlisting}{Name}
 package ch.hsr.sa.radiotour.activities;
-public class RadioTourActivity extends Activity implements Observer, OnClickListene
+public class RadioTourActivity extends Activity implements
+	Observer, OnClickListene
 \end{lstlisting}
 
 
