@@ -41,8 +41,8 @@
 
        % title
        \begin{center}
-		 \Large\thesis , \departement\\[2ex]
-         \huge\@title\\[2ex]
+		 \Large\thesistype , \departement\\[2ex]
+         \huge\thesistitle\\[2ex]
 		 \large\school\\[1ex]
 		 \normalsize\term\\
 		\normalsize\thedate
@@ -54,7 +54,7 @@
 	\begin{flushleft}
 	\large
 		\begin{tabular}[t]{ll}
-			\emph{Autoren:} & \@author\\[3pt]
+			\emph{Autoren:} & \thesisauthora \ \& \thesisauthorb\\[3pt]
 			\emph{Betreuer:} & \professor\\[3pt]
 			\emph{Projektpartner:} & \partner\\[3pt]
 			\emph{Arbeitsperiode:} & \timeperiode\\[3pt]

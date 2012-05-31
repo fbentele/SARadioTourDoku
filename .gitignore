@@ -1,7 +1,6 @@
 .DS_Store
 *.bak
 *.aux
-*.glo
 *.idx
 *.log
 *.toc
