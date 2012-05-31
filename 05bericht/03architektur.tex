@@ -58,15 +58,18 @@ Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind die
 \end{figure} 
 
 
-Die Klasse \textit{Rider} speichert die Angaben zu einem Fahrer und beinhaltet keine eigene Logik. Objekte dieser Klasse dienen als Stammdaten für alle Etappen welche in der Applikation erfasst sind.
-In \textit{Stage} ist die Etappe definiert. Jede Etappe hat eine Marschtabelle in Form von mehreren \textit{PointOfRace} Objekten. Diese Objekte werden durch Import der Marschtabelle erstellt.
-\\
+Die Klasse \textit{Rider} speichert die Angaben zu einem Fahrer und beinhaltet keine eigene Logik. Objekte dieser Klasse dienen als Stammdaten für alle Etappen welche in der Applikation erfasst sind.\\
+Um die Fahrer nach Team sortiert anzeigen zu können, wird die Klasse \textit{Team} genutzt.\\
+In \textit{Stage} ist die Etappe definiert. Jede Etappe hat eine Marschtabelle in Form von mehreren \textit{PointOfRace} Objekten. Diese Objekte werden durch Import der Marschtabelle erstellt.\\
+Da pro Etappe jeder \textit{Rider} einen anderen \textit{RiderState} haben kann, gibt es die Verbindungsklasse \textit{RiderStageConnection}. In dieser Klasse ist jeweils die Etappe mit dem Fahrer verknüpft. Dies ermöglicht es, den Rückstand eines Fahrers in mehreren Etappen differenziert zu verfolgen. Dadurch werden bei einem Etappenwechsel innerhalb der Applikation immer die Informationen zur ausgewählten Etappe verwendet.\\
+Die Klasse \textit{SpecialRanking} stellt ein Spezialklassement dar und wird benötigt, um die einzelnen Wertungen (\textit{Judgement}), welche Etappen basiert sind, auch über alle Etappen hinweg zu verrechnen. Damit können zum einen Punkte- bzw. Zeitboni pro Etappe verrechnet werden, was zur Darstellung im Virtuellen Klassement gebraucht wird und zum andern eine Rangliste pro Spezialklassement geführt werden. Diese Rangliste enthält die Ergebnisse aller Wertungen des angegebenen Spezialklassements ohne Rücksicht auf die zugehörige Etappe.\\
+Die \textit{SpecialPointHolder} Klasse dient dazu, den zu Wertungen zugewiesenen Fahrern in der Datenbank zu speichern und zur späteren Berechnung des virtuellen Klassements berücksichtigen.\\
+Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar. Objekte vom Typ \textit{RaceSituation} werden bei jeder Neugruppierung von Fahrern oder Setzen eines Rückstandes einer Gruppe erstellt, an den Server gesendet und in die lokale SQLite Datenbank geschrieben. Jeweils beim Start der Applikation sowie beim Wechseln der aktuellen Etappe wird die zuletzt in der Datenbank abgespeicherte \textit{RaceSituation} geladen. Die \textit{Group} Klasse enthält die Angaben zum aktuellen Rückstand zur Spitze, dem letzten bekannten Rückstand sowie boolsche Attribute welche bestimmen ob die Gruppe das Feld oder die Spitze darstellt.\\
+Mit Hilfe der \textit{Maillot} Klasse können Maillots erstellt und verteilt werden, welche dann über alle Etappen bestehen. Da nach jeder Etappe ein anderer Fahrer ein Maillot tragen kann, wird eine Verbindung zwischen der Etappe und einem Maillot gebraucht. Diese Funktion wird durch die Klasse \textit{MaillotStageConnection} erfüllt. 
 
-Da pro Etappe jeder \textit{Rider} einen anderen \textit{RiderState} haben kann, gibt es die Verbindungsklasse \textit{RiderStageConnection}. In dieser Klasse ist jeweils die Etappe mit dem Fahrer verknüpft. Dies ermöglicht es, den Rückstand eines Fahrers in mehreren Etappen differenziert zu verfolgen. Dadurch werden bei einem Etappenwechsel innerhalb der Applikation immer die Informationen zur ausgewählten Etappe verwendet.
 
-Die Klasse \textit{SpecialRanking} stellt ein Spezialklassement dar und wird benötigt, damit die einzelnen Wertungen (\textit{Judgement}), welche Etappenbasiert sind auch über alle Etappen hinweg zu verrechnen.
-
-Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar.
+\section{Datenbankschema}
+Die Nutzung von ORMLite zur Objektrelationalen Abbildung von Instanzen in die SQLite Datenbank impliziert, dass das Datenbankschema der Klassenstruktur wie in \ref{fig:domain} abgebildet entspricht. 
 
 \section{Sequenz Diagramm}
 Der häufigste UseCase besteht darin, die Rennsituation zu erfassen und an den Server zu übermitteln. Gleichzeitig werden im Hintergrund die Live Informationen aktualisiert. Diese beiden Hauptanwendungsfälle sind im folgenden System Sequenz Diagramm dargestellt. Der Actor wird durch den \textit{RadioTour Speaker} dargestellt und das System durch die \textit{RadioTour} Applikation. Das externe System stellt die Serverseite dar.
@@ -79,7 +82,3 @@ Der häufigste UseCase besteht darin, die Rennsituation zu erfassen und an den S
 \end{figure} 
 
 Das Rennen wird durch das Starten der Rennzeit gestartet. Ab diesem Zeitpunkt beginnt die Aufzeichnung des Rennkilometers und die Berechnung der durchschnittlichen Geschwindigkeit.
-
-
-\section{Realisierung}
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
