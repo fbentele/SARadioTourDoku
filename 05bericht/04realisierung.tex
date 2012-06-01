@@ -211,5 +211,25 @@ als normale Java Applikation auszuführen. Dies generiert das \textit{Configurat
 
 welches für eine effizientere Ausführung von \textit{ORMLite} gebraucht wird.
 
+Um eine Klasse für die Persistierung durch \textit{ORMLite} vorzubereiten, muss diese mit Java Annotationen versehen werden. Als Beispiel für das Vorgehen wird der relevante Teil der annotierten Klasse \textit{MaillotStageConnection} im folgenden Listing gezeigt.
+
+\begin{lstlisting}{Name}
+@DatabaseTable
+public class MaillotStageConnection {
+	@DatabaseField(generatedId = true)
+	int id;
+	@DatabaseField(foreignAutoRefresh = true,
+	foreign = true, columnName = "maillot")
+	private Maillot maillot;
+	@DatabaseField(foreignAutoRefresh = true,
+	foreign = true, columnName = "etappe")
+	private Stage stage;
+	@DatabaseField(foreignAutoRefresh = true,
+	foreign = true, columnName = "rider")
+	private Rider rider;
+\end{lstlisting}
+
+
+
 
 
