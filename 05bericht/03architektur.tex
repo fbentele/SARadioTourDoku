@@ -8,7 +8,7 @@ Die Applikation hat im Grunde zwei Status, einerseits werden vor dem Rennen die 
 \begin{figure}[h!]
 \caption{Struktur der Applikation als Organigramm}
 \centering
-\includegraphics{05bericht/images/struktur.png}
+\includegraphics[scale=0.9]{05bericht/images/struktur.png}
 \end{figure} 
 
 Der Stamm stellt die Applikation dar und die Äste zeigen die Aufteilung der Funktionen. Die Rennzeit sowie die aktuelle Rennposition sind in einem immer sichtbaren Bereich platziert.
@@ -24,7 +24,7 @@ Die Applikation lässt sich in vier verschiedene Schichten aufteilen. Diese Schi
 \includegraphics[scale=0.9]{05bericht/images/packagediagram.png}
 \end{figure} 
 
-Die \textit{View} Schicht in der Abbildung \ref{fig:layer} enthält alle Pakete in welchen Elemente zur Benutzerinteraktion definiert sind. Um die einzelnen Pakete in dieser Schicht zu verstehen, wird hier ein kurzer Exkurs zu Android View Elementen eingeschoben. Für die Elemente \textit{Activity} und \textit{Fragment} wird hierfür ein Teil der Android API Beschreibung zitiert.
+Die \textit{View} Schicht in der Abbildung \ref{fig:layer} enthält alle Pakete in welchen Elemente zur Benutzerinteraktion definiert sind. Um die einzelnen Pakete in dieser Schicht zu verstehen, wird hier ein kurzer Exkurs zu Android View Elementen eingeschoben. Für die Elemente \textit{Activity} und \textit{Fragment} wird hierfür ein Teil der Android \gls{api} Beschreibung zitiert.
 
 \begin{quote}
 \textit{An Activity is an application component that provides a screen with which users can interact in order to do something, such as dial the phone, take a photo, send an email, or view a map. Each activity is given a window in which to draw its user interface. The window typically fills the screen, but may be smaller than the screen and float on top of other windows.}\footnote{Android Developers Reference, \url{http://developer.android.com/guide/topics/fundamentals/activities.html}, aufgerufen am 31.05.2012.}
@@ -54,7 +54,7 @@ Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind die
 \caption{Die Domainklassen in der Abhängigkeit}
 \label{fig:domain}
 \centering
-\includegraphics[scale=0.9]{05bericht/images/domain.png}
+\includegraphics[scale=0.8]{05bericht/images/domain.png}
 \end{figure} 
 
 
@@ -64,7 +64,7 @@ In \textit{Stage} ist die Etappe definiert. Jede Etappe hat eine Marschtabelle i
 Da pro Etappe jeder \textit{Rider} einen anderen \textit{RiderState} haben kann, gibt es die Verbindungsklasse \textit{RiderStageConnection}. In dieser Klasse ist jeweils die Etappe mit dem Fahrer verknüpft. Dies ermöglicht es, den Rückstand eines Fahrers in mehreren Etappen differenziert zu verfolgen. Dadurch werden bei einem Etappenwechsel innerhalb der Applikation immer die Informationen zur ausgewählten Etappe verwendet.\\
 Die Klasse \textit{SpecialRanking} stellt ein Spezialklassement dar und wird benötigt, um die einzelnen Wertungen (\textit{Judgement}), welche Etappen basiert sind, auch über alle Etappen hinweg zu verrechnen. Damit können zum einen Punkte- bzw. Zeitboni pro Etappe verrechnet werden, was zur Darstellung im Virtuellen Klassement gebraucht wird und zum andern eine Rangliste pro Spezialklassement geführt werden. Diese Rangliste enthält die Ergebnisse aller Wertungen des angegebenen Spezialklassements ohne Rücksicht auf die zugehörige Etappe.\\
 Die \textit{SpecialPointHolder} Klasse dient dazu, den zu Wertungen zugewiesenen Fahrern in der Datenbank zu speichern und zur späteren Berechnung des virtuellen Klassements berücksichtigen.\\
-Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar. Objekte vom Typ \textit{RaceSituation} werden bei jeder Neugruppierung von Fahrern oder Setzen eines Rückstandes einer Gruppe erstellt, an den Server gesendet und in die lokale SQLite Datenbank geschrieben. Jeweils beim Start der Applikation sowie beim Wechseln der aktuellen Etappe wird die zuletzt in der Datenbank abgespeicherte \textit{RaceSituation} geladen. Die \textit{Group} Klasse enthält die Angaben zum aktuellen Rückstand zur Spitze, dem letzten bekannten Rückstand sowie boolsche Attribute welche bestimmen ob die Gruppe das Feld oder die Spitze darstellt.\\
+Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar. Objekte vom Typ \textit{RaceSituation} werden bei jeder Neugruppierung von Fahrern oder Setzen eines Rückstandes einer Gruppe erstellt, an den Server gesendet und in die lokale \gls{sqlite} Datenbank geschrieben. Jeweils beim Start der Applikation sowie beim Wechseln der aktuellen Etappe wird die zuletzt in der Datenbank abgespeicherte \textit{RaceSituation} geladen. Die \textit{Group} Klasse enthält die Angaben zum aktuellen Rückstand zur Spitze, dem letzten bekannten Rückstand sowie boolsche Attribute welche bestimmen ob die Gruppe das Feld oder die Spitze darstellt.\\
 Mit Hilfe der \textit{Maillot} Klasse können Maillots erstellt und verteilt werden, welche dann über alle Etappen bestehen. Da nach jeder Etappe ein anderer Fahrer ein Maillot tragen kann, wird eine Verbindung zwischen der Etappe und einem Maillot gebraucht. Diese Funktion wird durch die Klasse \textit{MaillotStageConnection} erfüllt. 
 
 
@@ -78,7 +78,7 @@ Der häufigste UseCase besteht darin, die Rennsituation zu erfassen und an den S
 \caption{Das System Sequenz Diagramm}
 \label{fig:ssd_rennen}
 \centering
-\includegraphics{05bericht/images/ssd_rennen.png}
+\includegraphics[scale=0.9]{05bericht/images/ssd_rennen.png}
 \end{figure} 
 
 Das Rennen wird durch das Starten der Rennzeit gestartet. Ab diesem Zeitpunkt beginnt die Aufzeichnung des Rennkilometers und die Berechnung der durchschnittlichen Geschwindigkeit.

@@ -50,35 +50,11 @@ totalpages={419},
 timestamp={2012.05.22},
 }
 
-
-@misc{wiki:optimistic-concurrency,
-   author = "Wikipedia",
-   title = "Optmistic Concurrency --- {W}ikipedia{,} The Free Encyclopedia",
-   year = "2012",
-   howpublished = "\url{http://de.wikipedia.org/wiki/Optimistic_Concurrency}",
-   note = "[Online; accessed 10-May-2012]"
- }
  
- @misc{cnlabsaba,
-   author = "Dr. Prof. Peter Heinzmann, cnlab AG{,}",
-   title = "Administratives zu Studien- und Bachelorarbeiten",
-   year = "2012",
-   howpublished = "\url{http://www.cnlab.ch/kurse/SABA/}",
-   note = "letzter Zugriff am 30.05.2012"
- }
-
-
-@book{tanenbaum07,
-author = "Andrew S. Tanenbaum and Maarten Van Steen",
-title = "Distributed systems: principles and paradigms",
-year = "2007",
-publisher = "Pearson Prentice Hall"
-}
-
-@misc{greanier00,
-author = "Todd Greanier",
-title = "Discover the secrets of the Java Serialization API",
-year = "2000",
-url = "http://java.sun.com/developer/technicalArticles/Programming/serialization/",
-note = "[Online; accessed 17-May-2012]"
+@misc{cnlabsaba,
+author = "Dr. Prof. Peter Heinzmann, cnlab AG{,}",
+title = "Administratives zu Studien- und Bachelorarbeiten",
+year = "2012",
+howpublished = "\url{http://www.cnlab.ch/kurse/SABA/}",
+note = "letzter Zugriff am 30.05.2012"
 }

@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: bericht.aux
 The style file: unsrt.bst
 Database file #1: 06verzeichnisse/02literaturverzeichnis.bib
-You've used 8 entries,
+You've used 5 entries,
             1791 wiz_defined-function locations,
-            488 strings with 4522 characters,
-and the built_in function-call counts, 1203 in all, are:
-= -- 105
-> -- 36
+            473 strings with 4108 characters,
+and the built_in function-call counts, 774 in all, are:
+= -- 69
+> -- 20
 < -- 0
-+ -- 17
-- -- 9
-* -- 30
-:= -- 194
-add.period$ -- 26
-call.type$ -- 8
-change.case$ -- 7
++ -- 10
+- -- 5
+* -- 23
+:= -- 127
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 65
-empty$ -- 150
-format.name$ -- 9
-if$ -- 284
+cite$ -- 5
+duplicate$ -- 45
+empty$ -- 95
+format.name$ -- 5
+if$ -- 182
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 10
-newline$ -- 45
-num.names$ -- 8
-pop$ -- 50
+int.to.str$ -- 5
+missing$ -- 8
+newline$ -- 29
+num.names$ -- 5
+pop$ -- 30
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 18
+skip$ -- 10
 stack$ -- 0
 substring$ -- 0
-swap$ -- 8
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 8
-width$ -- 9
-write$ -- 90
+while$ -- 5
+width$ -- 6
+write$ -- 58

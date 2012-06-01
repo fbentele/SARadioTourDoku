@@ -1,6 +1,6 @@
 \chapter{Realisierung}
 \label{ref:realisierung}
-Dieses Kapitel widmet sich der Realisierung der Applikation inklusive der grafischen Erscheinung. Zudem werden die wichtigsten Infos, um einem Entwickler beim Industriepartner einen schnellen Einstieg in das Weiterführen des Projektes zu ermöglichen, vermittelt.
+Dieses Kapitel widmet sich der Realisierung der Applikation inklusive der grafischen Erscheinung. Zudem werden detaillierte Informationen, um einem Entwickler beim Industriepartner einen schnellen Einstieg in das Weiterführen des Projektes zu ermöglichen, vermittelt.
 
 
 \section{Aktuelle Erscheinung}
@@ -164,80 +164,32 @@ View definiert in:
 Das \textit{AdminFragment}, Abbildung \ref{fig:adminfragment}, beinhaltet drei Grundfunktionen der Applikation.
 Zum einen ist dies die gesamte Maillotsverwaltung inklusive Zuweisung eines Maillots zu einem Fahrer, der in der aktuellen Etappe dieses Maillot trägt.
 Weiter wird im \textit{AdminFragment} die aktuelle Etappe ausgewählt. Zudem können neue Etappen erfasst oder bereits bestehende Etappen bearbeitet werden. 
-Als letzte der drei Grundfunktionen steht der Import über csv zur Verfügung. Über einen Dateibrowser welcher in die Applikation integriert ist können die .csv - Dateien ausgewählt und importiert werden.  
+Als letzte der drei Grundfunktionen steht der Import über \gls{csv} zur Verfügung. Über einen Dateibrowser welcher in die Applikation integriert ist können die \gls{csv} - Dateien ausgewählt und importiert werden.  
 
 \section{Kommunikation zum Server}
-Es werden zwei Verbindung mit dem TourLive Server aufgebaut. Die Liveinformationen im \textit{HeaderFragment} werden bei bestehender Verbindung alle 10 Sekunden abgefragt. Dabei sendet die \textit{RadioTour} Applikation ein \gls{http} Request ab und verarbeitet die Antwort. Erwartet wird ein JSON im folgenden Format:
+Es werden zwei Verbindung mit dem TourLive Server aufgebaut. Zum einen werden die Liveinformationen aus dem TourLive Aufnahmesystem bei bestehender Verbindung alle 10 Sekunden abgefragt. Zum anderen wird die aktuelle Rennsituation an den Server übermittelt. Um einem Unterbruch der Verbindung möglichst unbemerkt zu überbrücken kommen zwei verschiedene Methoden zum Einsatz.
 
-\begin{lstlisting}{Name}
-{
-sources:
-	[
-		[
-			{
-				source: "Spitze",
-				timestamp: "15:27:52",
-				rennkilometer: "-1",
-				online: "true"
-			}
-		],
-			[
-				{
-				source: "RadioTour",
-				timestamp: "0",
-				rennkilometer: "-1",
-				online: "false"
-				}
-			],
-		[
-			{
-				source: "Feld",
-				timestamp: "0",
-				rennkilometer: "-1",
-				online: "false"
-			}
-		],
-	]
-}
-\end{lstlisting}
+\subsection{Sending}
+Die Rennsituation bildet sich aus den gruppierten Fahrern mit den eingetragenen Rückständen zusammen. Bei jeder Änderung im der Situation wird der aktuelle Stand mit dem Rückstand der jeweiligen Gruppen in eine Warteschlange geschrieben. In einem Hintegrundprozess wird bei bestehender Verbindung mit dem Server diese Warteschlange abgearbeitet. Gesendet wir dann die Rennsituation im \gls{json} Format, ein Beispiel davon ist in der Abbildung \ref{fig:jsonsend} zu sehen. Da der Hintergrundprozess mit einer niedrigen Priorität läuft, wird weder das UserInterface noch anderen Funktionen im Tablet belastet. Dieses Verfahren erlaubt es auch bei längeren Unterbrechungen sämtliche Updates in der richtigen Reihenfolge an den Server zu übermitteln.
+\newpage
 
-Die Rennsituation wird bei jeder Änderung in eine Queue geschrieben und bei bestehender Verbindung mit dem Server abgearbeitet. Dieses Verfahren erlaubt es auch bei längeren Unterbrechungen sämtliche Updates nicht zu verlieren.
+\begin{figure}[H]
+\caption{Rennsituation im JSON Format}
+\label{fig:jsonsend}
+\centering
+\includegraphics[scale=1]{05bericht/images/json.png}
+\end{figure}
 
-\begin{lstlisting}
-{
-	"timestamp":1338284032240,
-	"situation":
-		[
-			{
-				"drivernumber":[11, 15, 31],
-				"isLeader":true,
-				"groupnr":0,
-				"handicaptime":-2209078800000,
-				"isField":false
-			},
-			{
-				"isLeader":false,
-				"groupnr":1,
-				"handicaptime":-2209078800000,
-				"isField":true
-			},
-			{
-				"drivernumber":[76, 18, 41, 35],
-				"isLeader":false,
-				"groupnr":2,
-				"handicaptime":0,
-				"isField":false
-			},
-			{
-				"drivernumber":[178, 103, 67],
-				"isLeader":false,
-				"groupnr":3,
-				"handicaptime":0,
-				"isField":false
-			}
-		]
-}
-\end{lstlisting}
+
+\subsection{Receiveing}
+Im \textit{HeaderFragment} werden die Abstände zwischen der Spitze und dem Feld sowie der Spitze und dem \textit{RadioTour} Auto in Kilometer und Sekunden angegeben. Diese Informationen kommen aus dem TourLive Aufnahmesystem und werden auf dem Server berechnet. Auch kommt wieder ein Hintergrundprozess zum Einsatz, jedoch wird dafür ein Polling verwendet. Beim Polling wird in einem vordefinierten zeitlichen Abstand eine \gls{http} Anfrage an den Server geschickt. Kommt keine Antwort oder kann die Anfrage gar nicht erst platziert werden, konnte keine Verbindung aufgebaut werden. In diesem Fall werden die bestehenden Informationen weiter angezeigt, jedoch mit dem Hinweis, dass das Aufnahmesystem nicht verfügbar ist. Bei der Anfrage an den Server erwartet die Applikation eine Antwort im \gls{json} Format wie in der Abbildung \ref{fig:jsonreceive} dargestellt wird.
+
+\begin{figure}{H}
+\caption{Lievdaten im JSON Format }
+\label{fig:jsonreceive}
+\centering
+\includegraphics[scale=0.9]{05bericht/images/json2.png}
+\end{figure}
 
 \section{Datenbanken}
 \textbf{ORMLite (Version 4.39)}
