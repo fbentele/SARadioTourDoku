@@ -18,7 +18,7 @@ Die untere Ebene beinhaltet die Kernelemente der Applikation. Diese werden in Vi
 \newpage
 
 \section{Schichtenmodell und Paketdiagramm}
-Die Applikation lässt sich in vier verschiedene Schichten aufteilen. Diese Schichten sind in der folgenden Grafik illustriert. Die oberste Schicht stellt dabei die Schnittstelle zum Benutzer dar. Innerhalb der Schicht werden die dabei verwendeten Pakete angezeigt.  
+Die Applikation lässt sich in vier verschiedene Schichten aufteilen. Diese Schichten sind in der Abbildung \ref{fig:layer} illustriert. Die oberste Schicht stellt dabei die Schnittstelle zum Benutzer dar. Innerhalb der Schicht werden die dabei verwendeten Pakete angezeigt.  
 \begin{figure}[h!]
 \caption{Die Schichten der Applikation inklusive der verwendeten Pakete}
 \label{fig:layer}
@@ -38,7 +38,7 @@ Die \textit{RadioTour} Applikation besteht aus einer Activity. Dies aus der Ents
 \textit{A Fragment represents a behavior or a portion of user interface in an Activity. You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. You can think of a fragment as a modular section of an activity, which has its own lifecycle, receives its own input events, and which you can add or remove while the activity is running (sort of like a "`sub activity"' that you can reuse in different activities).}\footnote{Android Developers Reference, \url{http://developer.android.com/guide/topics/fundamentals/fragments.html}, aufgerufen am 31.05.2012.}
 \end{quote}
 
-Eine spezielle Form der Fragmente stellen DialogFragmente dar. Sie werden benutzt um einen Dialog über der Activity einzublenden. In der Applikation werden diese Elemente verwendet um Daten zu erfassen und zu ändern. Die DialogFragmente der Applikation befinden sich im Paket \textit{dialogs}.
+Eine spezielle Form von Fragmenten stellen DialogFragmente dar. Sie werden benutzt um einen Dialog über der Activity einzublenden. In der Applikation werden diese Elemente verwendet um Daten zu erfassen und zu ändern. Die DialogFragmente der Applikation befinden sich im Paket \textit{dialogs}.
 
 Für eine genauere Analyse der in der \textit{View} Schicht verwendeten Elemente und Klassen sei auf das Kapitel \ref{ref:realisierung} verwiesen.
 \\
@@ -46,11 +46,11 @@ Die \textit{Controller} Schicht in der Abbildung \ref{fig:layer} ist für die Au
 
 Die \textit{Model} Schicht in der Abbildung \ref{fig:layer} stellt die Daten Objekte für die Applikation zur Verfügung. Eine Darstellung der in der \textit{RadioTour} App  verwendeten Domain Objekte ist in der Abbildung \ref{fig:domain} ersichtlich.
 
-Die \textit{Util} Schicht in der Abbildung \ref{fig:layer} beinhaltet die Dienstobjekte für den Datenbank Zugriff sowie für die Kommunikation der Applikation mit dem cnlab Server. Im Paket \textit{utils} befinden sich allgemein gebrauchte Hilfsmethoden.
+Die \textit{Util} Schicht in der Abbildung \ref{fig:layer} beinhaltet die Dienstobjekte für den Datenbank Zugriff, sowie für die Kommunikation der Applikation mit dem cnlab Server. Im Paket \textit{utils} befinden sich allgemein gebrauchte Hilfsmethoden.
 
 
 \section{Klassendiagramm}
-Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind dies die Rennfahrer, welche Informationen über sich festhalten, andererseits die Etappe mit den Informationen zur Strecke. Während dem Rennen werden die Fahrer in Gruppen unterteilt. Auch diese Gruppen sind in der Domain abgebildet. Das Klassendiagramm des Domain Package zeigt die wesentlichen Elemente.
+Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind dies die Rennfahrer, welche Informationen über sich festhalten, andererseits die Etappe mit den Informationen zur Strecke. Während dem Rennen werden die Fahrer in Gruppen unterteilt. Auch diese Gruppen sind in der Domain abgebildet. Das Klassendiagramm des Domain Package (siehe Abbildung \ref{fig:domain}) zeigt die wesentlichen Elemente.
 
 \begin{figure}[h!]
 \caption{Die Domainklassen in der Abhängigkeit}
@@ -62,20 +62,20 @@ Die Domainlogik beinhaltet die Kernelemente der Applikation. Einerseits sind die
 
 Die Klasse \textit{Rider} speichert die Angaben zu einem Fahrer und beinhaltet keine eigene Logik. Objekte dieser Klasse dienen als Stammdaten für alle Etappen welche in der Applikation erfasst sind.\\
 Um die Fahrer nach Team sortiert anzeigen zu können, wird die Klasse \textit{Team} genutzt.\\
-In \textit{Stage} ist die Etappe definiert. Jede Etappe hat eine Marschtabelle in Form von mehreren \textit{PointOfRace} Objekten. Diese Objekte werden durch Import der Marschtabelle erstellt.\\
-Da pro Etappe jeder \textit{Rider} einen anderen \textit{RiderState} haben kann, gibt es die Verbindungsklasse \textit{RiderStageConnection}. In dieser Klasse ist jeweils die Etappe mit dem Fahrer verknüpft. Dies ermöglicht es, den Rückstand eines Fahrers in mehreren Etappen differenziert zu verfolgen. Dadurch werden bei einem Etappenwechsel innerhalb der Applikation immer die Informationen zur ausgewählten Etappe verwendet.\\
+In \textit{Stage} ist die Etappe definiert. Jede Etappe hat eine Marschtabelle in Form von mehreren \textit{PointOfRace} Objekten. Diese Objekte werden durch den Import der Marschtabelle erstellt.\\
+Da pro Etappe jeder \textit{Rider} einen anderen \textit{RiderState} haben kann, gibt es die Verbindungsklasse \textit{RiderStageConnection}. In dieser Klasse ist jeweils die Etappe mit dem Fahrer verknüpft. Dies ermöglicht es, den Rückstand eines Fahrers in mehreren Etappen differenziert zu verfolgen. Dadurch werden bei einem Etappenwechsel innerhalb der Applikation immer die Informationen zur aktuelle ausgewählten Etappe verwendet.\\
 Die Klasse \textit{SpecialRanking} stellt ein Spezialklassement dar und wird benötigt, um die einzelnen Wertungen (\textit{Judgement}), welche Etappen basiert sind, auch über alle Etappen hinweg zu verrechnen. Damit können zum einen Punkte- bzw. Zeitboni pro Etappe verrechnet werden, was zur Darstellung im Virtuellen Klassement gebraucht wird und zum andern eine Rangliste pro Spezialklassement geführt werden. Diese Rangliste enthält die Ergebnisse aller Wertungen des angegebenen Spezialklassements ohne Rücksicht auf die zugehörige Etappe.\\
-Die \textit{SpecialPointHolder} Klasse dient dazu, den zu Wertungen zugewiesenen Fahrern in der Datenbank zu speichern und zur späteren Berechnung des virtuellen Klassements berücksichtigen.\\
+Die \textit{SpecialPointHolder} Klasse dient dazu, den zu Wertungen zugewiesenen Fahrern in der Datenbank zu speichern und zur späteren Berechnung des virtuellen Klassements zu berücksichtigen.\\
 Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar. Objekte vom Typ \textit{RaceSituation} werden bei jeder Neugruppierung von Fahrern oder Setzen eines Rückstandes einer Gruppe erstellt, an den Server gesendet und in die lokale \gls{sqlite} Datenbank geschrieben. Jeweils beim Start der Applikation sowie beim Wechseln der aktuellen Etappe wird die zuletzt in der Datenbank abgespeicherte \textit{RaceSituation} geladen. Die \textit{Group} Klasse enthält die Angaben zum aktuellen Rückstand zur Spitze, dem letzten bekannten Rückstand sowie boolsche Attribute welche bestimmen ob die Gruppe das Feld oder die Spitze darstellt.\\
 Mit Hilfe der \textit{Maillot} Klasse können Maillots erstellt und verteilt werden, welche dann über alle Etappen bestehen. Da nach jeder Etappe ein anderer Fahrer ein Maillot tragen kann, wird eine Verbindung zwischen der Etappe und einem Maillot gebraucht. Diese Funktion wird durch die Klasse \textit{MaillotStageConnection} erfüllt. 
 
 \newpage
 
 \section{Datenbankschema}
-Die Nutzung von ORMLite zur Objektrelationalen Abbildung von Instanzen in die \gls{sqlite} Datenbank impliziert, dass das Datenbankschema der Klassenstruktur wie in \ref{fig:domain} abgebildet entspricht. 
+Die Nutzung von ORMLite zur Objektrelationalen Abbildung von Instanzen in die \gls{sqlite} Datenbank impliziert, dass das Datenbankschema der Klassenstruktur, wie in Abbildung \ref{fig:domain} dargestellt, entspricht. 
 
 \section{Sequenz Diagramm}
-Der häufigste UseCase besteht darin, die Rennsituation zu erfassen und an den Server zu übermitteln. Gleichzeitig werden im Hintergrund die Live Informationen aktualisiert. Diese beiden Hauptanwendungsfälle sind im folgenden System Sequenz Diagramm dargestellt. Der Actor wird durch den \textit{RadioTour Speaker} dargestellt und das System durch die \textit{RadioTour} Applikation. Das externe System stellt die Serverseite dar.
+Der häufigste UseCase besteht darin, die Rennsituation zu erfassen und an den Server zu übermitteln. Gleichzeitig werden im Hintergrund die Live Informationen aktualisiert. Diese beiden Hauptanwendungsfälle sind im folgenden System Sequenz Diagramm dargestellt. Der Akteur wird durch den \textit{RadioTour Speaker} dargestellt und das System durch die \textit{RadioTour} Applikation. Das TourLive System stellt die Serverseite dar.
 
 \begin{figure}[h!]
 \caption{Das System Sequenz Diagramm}

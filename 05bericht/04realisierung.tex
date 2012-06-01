@@ -6,7 +6,7 @@ Dieses Kapitel widmet sich der Realisierung der Applikation inklusive der grafis
 \section{Aktuelle Erscheinung}
 \textbf{Activity}
 
-Die \textit{RadioTour} App besteht aus einer Activity wie in Abbildung \ref{gesamteactivity} dargestellt wird. Diese Activity wird in zwei Hauptteile eingeteilt. Es sind dies der (1)Header- sowie der (2)Hauptbereich. 
+Die \textit{RadioTour} App besteht aus einer Activity wie in Abbildung \ref{fig:gesamteactivity} dargestellt wird. Diese Activity wird in zwei Hauptteile eingeteilt. Es sind dies der (1) Header- sowie der (2) Hauptbereich. 
 
 Activity:
 \begin{lstlisting}{Name}
@@ -19,11 +19,11 @@ public class RadioTourActivity extends Activity
 View definiert in:
 \textit{res/layout/base\_activity.xml}
 
-Die \textit{RadioTourActivity} Klasse ist der Startpunkt der Applikationsausführung und deshalb im \textit{AndroidManifest.xml} File als Startactivity eingetragen. Das AndroiManifest.xml ist eine Datei welche in jedem Android Projekt im Stammverzeichnis vorhanden sein muss. Es enthält wichtige Informationen zur Applikation, unter anderem die Startactivity.
+Die \textit{RadioTourActivity} Klasse ist der Startpunkt der Applikationsausführung und deshalb im \textit{AndroidManifest.xml} File als Startactivity eingetragen. Diese Datei muss in jedem Android Projekt im Stammverzeichnis vorhanden sein. Es enthält wichtige Informationen zur Applikation, unter anderem die Startactivity.
 
 
 \begin{figure}[h!]
-\caption{Gesamte Activity}
+\caption{RadioTour Activity}
 \label{fig:gesamteactivity}
 \centering
 \includegraphics[scale=0.8]{07anhang/images/dev_activity.png}
@@ -32,7 +32,7 @@ Die \textit{RadioTourActivity} Klasse ist der Startpunkt der Applikationsausfüh
 \subsection{Headerbereich}
 
 \begin{figure}[h!]
-\caption{Header Bereich}
+\caption{HeaderFragment}
 \label{fig:headerbereich}
 \centering
 \includegraphics[scale=0.8]{07anhang/images/dev_header.png}
@@ -48,7 +48,7 @@ public class HeaderFragment extends Fragment
 View definiert in:
 \textit{res/layout/header\_fragment.xml}
 
-Das \textit{HeaderFragment}, welches in Abbildung \ref{fig:headerbereich} illustriert ist, enthält alle Informationen, welche zu jedem Zeitpunkt der Applikationsausführung sichtbar sind. Dazu gehört der Systemzustand der zusätzlichen TourLive Komponenten welche via den TourLive Server über \gls{json} die \textit{RadioTour} Applikation mit Informationen versorgt.
+Das \textit{HeaderFragment}, welches in Abbildung \ref{fig:headerbereich} illustriert ist, enthält alle Informationen, welche zu jedem Zeitpunkt der Applikationsausführung sichtbar sind. Dazu gehört der Systemzustand der zusätzlichen TourLive Komponenten, welche via den TourLive Server über \gls{json} die \textit{RadioTour} Applikation mit Informationen versorgt.
 
 Zudem werden wichtige Angaben zum derzeitigen Stand des Rennens im \textit{HeaderFragment} angezeigt, welche direkt aus der Tablet Anwendung stammen. Es sind dies die aktuelle Rennzeit und der aktuelle Rennkilometer, welcher, wie auch die aktuelle Höhe über Meer und die durchschnittliche Geschwindigkeit, aus dem im Tablet integrierten GPS Empfänger stammen. Um Fehlangaben zu korrigieren, ist die Kilometer- sowie die Rennzeitangabe editierbar.
 Zeitabstände werden mit der ebenfalls im \textit{HeaderFragment} vorhandenen Stoppuhr gemessen. 
@@ -76,6 +76,7 @@ public class RaceFragment extends Fragment
 View definiert in:
 \textit{res/layout/race\_layout.xml}
 \\
+
 Das \textit{RaceFragment} welches in Abbildung \ref{fig:racefragment} zu sehen ist, beinhaltet zwei weitere Fragments. Das \textit{RaceFragment} an sich beinhaltet keine Funktionalität und dient nur zum Zusammenführen der zwei Fragmente \textit{DriverPickerFragment} und \textit{RiderGroupFragment}
 
 \textbf{RiderPickerFragment}
@@ -86,7 +87,7 @@ public class RiderPickerFragment extends ListFragment
 	implements OnClickListener
 \end{lstlisting}
 
-Das \textit{RiderPickerFragment}, Fragment A in Abbildung \ref{fig:racefragment} ermöglicht die Auswahl von einem oder mehreren Fahrern für die Zuweisung in eine Gruppe oder einem Spezialevent, siehe Abschnitt \ref{sec:requirements}. Die ausgewählten Fahrer können entweder per Drag and Drop oder mit anklicken des Zielfeldes zugewiesen werden. Mit einem Klick auf den "`Auswahl aufheben"' Text werden die bereits ausgewählten Fahrer wieder deselektiert.
+Das \textit{RiderPickerFragment}, Fragment A in Abbildung \ref{fig:racefragment} ermöglicht die Auswahl von einem oder mehreren Fahrern für die Zuweisung in eine Gruppe oder einem Spezialevent\footnote{siehe Abschnitt \ref{sec:requirements}}. Die ausgewählten Fahrer können entweder per Drag and Drop oder mit anklicken des Zielfeldes zugewiesen werden. Mit einem Klick auf den "`Auswahl aufheben"' Text werden die bereits ausgewählten Fahrer wieder deselektiert.
 
 Die Darstellung der Daten wird mithilfe eines \textit{ArrayAdapter<Team>} erzeugt. Dabei wird für jedes Team Objekt eine Zeile mit den jeweiligen Fahrern generiert. Die Textfelder mit den Spezialevents werden über eine dem \textit{RiderPickerFragment} hinzugefügten \textit{FooterView} ergänzt.
 
@@ -101,7 +102,7 @@ public class RiderPickerFragment extends Fragment
 View definiert in:
 \textit{res/layout/group\_fragment.xml}
 
-Das \textit{RiderGroupFragment}, Fragment B in Abbildung \ref{fig:racefragment} stellt die aktuelle Rennsituation dar. Die schmaleren grauen Feldern dienen dazu, neue Gruppen zu erstellen. Wenn im \textit{RiderPickerFragment} Fahrer ausgewählt sind, können diese in die graue Fläche gezogen werden (Drag and Drop) oder auf die Fläche geklickt werden.
+Das \textit{RiderGroupFragment}, Fragment B in Abbildung \ref{fig:racefragment}, stellt die aktuelle Rennsituation dar. Die schmaleren grauen Feldern dienen dazu, neue Gruppen zu erstellen. Wenn im \textit{RiderPickerFragment} Fahrer ausgewählt sind, können diese in die graue Fläche gezogen werden (Drag and Drop) oder auf die Fläche geklickt werden.
 Den im transparenten Feld gruppierten Fahrer kann ein Rückstand relativ zur Spitze eingetragen werden. Dieser Rückstand wird den Fahrern welche dieser Gruppe angehören berechnet und im virtuellen Klassement berücksichtigt.
 \\
 
@@ -123,7 +124,7 @@ public class SpecialRankingFragment extends Fragment
 View definiert in:
 \textit{res/layout/special\_ranking\_fragment.xml}
 
-Das \textit{SpecialRankingFragment}, abgebildet in Abbildung \ref{fig:specialrankingfragment}, erlaubt es neue Spezialklassemente und deren Wertungen, welche einer Etappe zugeordnet werden, zu erstellen. Eine Wertung beinhaltet Zeit- und/oder Punktebonus. Zudem kann jede Wertung eine unterschiedliche Anzahl berücksichtigte Anzahl Fahrer haben. Die Boni, welche Fahrer die in einer Wertung eine Klassierung erreichen, werden pro Spezialklassement rechts im \textit{SpecialRankingFragment} angezeigt. Die Etappenbasierte Verrechnung der Boni geschieht im \textit{VirtualRankingFragment}.
+Das \textit{SpecialRankingFragment}, abgebildet in Abbildung \ref{fig:specialrankingfragment}, erlaubt es neue Spezialklassemente und deren Wertungen, welche einer Etappe zugeordnet werden, zu erstellen. Eine Wertung beinhaltet Zeit- und/oder Punktebonus. Zudem kann jede Wertung eine unterschiedliche Anzahl berücksichtigte Fahrer haben. Die Boni, welche Fahrer die in einer Wertung eine Klassierung erreichen, werden pro Spezialklassement rechts im \textit{SpecialRankingFragment} angezeigt. Die etappenbasierte Verrechnung der Boni geschieht im \textit{VirtualRankingFragment}.
 
 
 \textbf{VirtualRankingFragment}
@@ -141,7 +142,7 @@ package ch.hsr.sa.radiotour.fragments;
 public class VirtualRankingFragment extends ListFragment
 \end{lstlisting}
 
-Das \textit{VirtualRankingFragment} erbt von ListFragment und zeigt die zu der aktuell ausgewählten Etappe die dazugehörigen \textit{RiderStageConnection} (siehe Abbildung \ref{fig:domain}) an. Mit einem Klick auf einen Fahrer in der Rangliste lassen die Stammdaten des jeweiligen Fahrers verändern. So können zum Beispiel versehentlich als ausgeschieden markierte Fahrer wieder als im Rennen gesetzt werden. Über Klicks auf die  Spaltenbezeichnung lässt sich die Liste, sowohl auf- wie auch absteigend, nach den einzelnen Werten sortieren. Die Bezeichnung der aktuell sortierten Spalte wird fett dargestellt. Die Sortierung basiert auf der abstrakten \textit{RiderSortStrategy} Klasse, welche nach dem Vorbild des \textit{Strategy Pattern} implementiert wurde. 
+Das \textit{VirtualRankingFragment} erbt von ListFragment und zeigt die zu der aktuell ausgewählten Etappe die dazugehörigen \textit{RiderStageConnection} (siehe Abbildung \ref{fig:domain}) an. Mit einem Klick auf einen Fahrer in der Rangliste lassen sich die Stammdaten des jeweiligen Fahrers verändern. So können zum Beispiel versehentlich als ausgeschieden markierte Fahrer wieder als "`im Rennen"' gesetzt werden. Über Klicks auf die Spaltenbezeichnung lässt sich die Liste, sowohl auf- wie auch absteigend, nach den einzelnen Werten sortieren. Die Bezeichnung der aktuell sortierten Spalte wird fett dargestellt. Die Sortierung basiert auf der abstrakten \textit{RiderSortStrategy} Klasse, welche nach dem Vorbild des \textit{Strategy Pattern} implementiert wurde. 
 
 \textbf{AdminFragment}
 
@@ -163,14 +164,14 @@ View definiert in:
 
 Das \textit{AdminFragment}, Abbildung \ref{fig:adminfragment}, beinhaltet drei Grundfunktionen der Applikation.
 Zum einen ist dies die gesamte Maillotsverwaltung inklusive Zuweisung eines Maillots zu einem Fahrer, der in der aktuellen Etappe dieses Maillot trägt.
-Weiter wird im \textit{AdminFragment} die aktuelle Etappe ausgewählt. Zudem können neue Etappen erfasst oder bereits bestehende Etappen bearbeitet werden. 
+Weiter wird im \textit{AdminFragment} die aktuelle Etappe ausgewählt und es können neue Etappen erfasst oder bereits bestehende Etappen bearbeitet werden.
 Als letzte der drei Grundfunktionen steht der Import über \gls{csv} zur Verfügung. Über einen Dateibrowser welcher in die Applikation integriert ist können die \gls{csv} - Dateien ausgewählt und importiert werden.  
 
 \section{Kommunikation zum Server}
-Es werden zwei Verbindung mit dem TourLive Server aufgebaut. Zum einen werden die Liveinformationen aus dem TourLive Aufnahmesystem bei bestehender Verbindung alle 10 Sekunden abgefragt. Zum anderen wird die aktuelle Rennsituation an den Server übermittelt. Um einem Unterbruch der Verbindung möglichst unbemerkt zu überbrücken kommen zwei verschiedene Methoden zum Einsatz.
+Es werden zwei Verbindung mit dem TourLive Server aufgebaut. Zum einen werden die Live Informationen aus dem TourLive Aufnahmesystem bei bestehender Verbindung alle 10 Sekunden abgefragt. Zum anderen wird die aktuelle Rennsituation an den Server übermittelt. Um einem Unterbruch der Verbindung möglichst unbemerkt zu überbrücken kommen zwei verschiedene Verfahren zum Einsatz.
 
 \subsection{Sending}
-Die Rennsituation bildet sich aus den gruppierten Fahrern mit den eingetragenen Rückständen zusammen. Bei jeder Änderung im der Situation wird der aktuelle Stand mit dem Rückstand der jeweiligen Gruppen in eine Warteschlange geschrieben. In einem Hintegrundprozess wird bei bestehender Verbindung mit dem Server diese Warteschlange abgearbeitet. Gesendet wir dann die Rennsituation im \gls{json} Format, ein Beispiel davon ist in der Abbildung \ref{fig:jsonsend} zu sehen. Da der Hintergrundprozess mit einer niedrigen Priorität läuft, wird weder das UserInterface noch anderen Funktionen im Tablet belastet. Dieses Verfahren erlaubt es auch bei längeren Unterbrechungen sämtliche Updates in der richtigen Reihenfolge an den Server zu übermitteln.
+Die Rennsituation bildet sich aus den gruppierten Fahrern mit den eingetragenen Rückständen zusammen. Bei jeder Änderung der Situation wird der aktuelle Stand mit dem Rückstand der jeweiligen Gruppen in eine Warteschlange geschrieben. In einem Hintegrundprozess wird bei bestehender Verbindung mit dem Server diese Warteschlange abgearbeitet. Gesendet wir dann die Rennsituation im \gls{json} Format, ein Beispiel davon ist in der Abbildung \ref{fig:jsonsend} zu sehen. Da der Hintergrundprozess mit einer niedrigen Priorität läuft, wird weder das UserInterface noch andere Funktionen des Tablets belastet. Dieses Verfahren erlaubt es auch bei längeren Unterbrechungen sämtliche Updates in der richtigen Reihenfolge an den Server zu übermitteln.
 \newpage
 
 \begin{figure}[H]
@@ -182,7 +183,7 @@ Die Rennsituation bildet sich aus den gruppierten Fahrern mit den eingetragenen 
 
 
 \subsection{Receiving}
-Im \textit{HeaderFragment} werden die Abstände zwischen der Spitze und dem Feld sowie der Spitze und dem \textit{RadioTour} Auto in Kilometer und Sekunden angegeben. Diese Informationen kommen aus dem TourLive Aufnahmesystem und werden auf dem Server berechnet. Auch kommt wieder ein Hintergrundprozess zum Einsatz, jedoch wird dafür ein Polling verwendet. Beim Polling wird in einem vordefinierten zeitlichen Abstand eine \gls{http} Anfrage an den Server geschickt. Kommt keine Antwort oder kann die Anfrage gar nicht erst platziert werden, konnte keine Verbindung aufgebaut werden. In diesem Fall werden die bestehenden Informationen weiter angezeigt, jedoch mit dem Hinweis, dass das Aufnahmesystem nicht verfügbar ist. Bei der Anfrage an den Server erwartet die Applikation eine Antwort im \gls{json} Format wie in der Abbildung \ref{fig:jsonreceive} dargestellt wird.
+Im \textit{HeaderFragment} werden die Abstände zwischen der Spitze und dem Feld sowie der Spitze und dem \textit{RadioTour} Auto in Kilometer und Sekunden angegeben. Diese Informationen kommen aus dem TourLive Aufnahmesystem und werden auf dem Server berechnet. Dabei kommt ein Hintergrundprozess zum Einsatz, jedoch wird dafür ein Polling verwendet. Beim Polling wird in einem vordefinierten zeitlichen Abstand eine \gls{http} Anfrage an den Server geschickt. Kommt keine Antwort oder kann die Anfrage gar nicht erst platziert werden, konnte keine Verbindung aufgebaut werden. In diesem Fall werden die bestehenden Informationen weiter angezeigt, jedoch mit dem Hinweis, dass das Aufnahmesystem nicht verfügbar sei. Bei der Anfrage an den Server erwartet die Applikation eine Antwort im \gls{json} Format wie in der Abbildung \ref{fig:jsonreceive} dargestellt wird.
 
 \begin{figure}[H]
 \caption{Livedaten im JSON Format}
@@ -193,11 +194,11 @@ Im \textit{HeaderFragment} werden die Abstände zwischen der Spitze und dem Feld
 
 \newpage
 
-\section{Datenbanken}
+\section{Datenbank}
 \textbf{ORMLite (Version 4.39)}
 
  
-Zur Speicherung der Objekte in die \gls{sqlite} Datenbank des Tablet wird die Java Library ORMLite der Version 4.39 benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Um sich in die Library einzulesen wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
+Zur Speicherung der Objekte in die \gls{sqlite} Datenbank des Tablet wird die Java Library ORMLite benutzt. In der Zwischenzeit sind neue Releases der Library auf der Webseite \url{http://ormlite.com/releases/} erschienen. Für weitere Informationen zur Library wird auf \url{http://ormlite.com/sqlite_java_android_orm.shtml} verwiesen.
 \\
 Um eine Änderung an den zu persistierenden Objekten durchzuführen ist es notwendig, die Klasse DatabaseConfigUtil.java im
 
@@ -213,7 +214,7 @@ welches für eine effizientere Ausführung von \textit{ORMLite} gebraucht wird.
 
 Um eine Klasse für die Persistierung durch \textit{ORMLite} vorzubereiten, muss diese mit Java Annotationen versehen werden. Als Beispiel für das Vorgehen wird der relevante Teil der annotierten Klasse \textit{MaillotStageConnection} im folgenden Listing gezeigt.
 
-\begin{lstlisting}{Name}
+\begin{lstlisting}
 @DatabaseTable
 public class MaillotStageConnection {
 	@DatabaseField(generatedId = true)

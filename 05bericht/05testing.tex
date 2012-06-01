@@ -1,33 +1,34 @@
 \chapter{Testing}
 
 \section{User Interface Tests}
-Die Domain Klassen der \textit{RadioTour} Applikation enthalten wenig bis gar keine Logik. Aus diesem Grund wird auf herkömmliche \glspl{junit} verzichtet. Als Ersatz dazu werden zwei Ansätze zum testen des User Interfaces verwendet. Zum einen ist ein Testprojekt mit Hilfe des Test Frameworks Robotium vorhanden. Anderseits wird der Android SDK interne Monkey verwendet.
+Die Domain Klassen der \textit{RadioTour} Applikation enthalten wenig bis gar keine Logik. Aus diesem Grund wird auf herkömmliche \gls{junit} verzichtet. Als Ersatz dazu werden zwei Ansätze zum Testen des User Interfaces verwendet. Zum einen ist ein Testprojekt mit Hilfe des Test Frameworks Robotium vorhanden. Andererseits wird der Android SDK interne Monkey verwendet.
+
 \subsection{Robotium Testprojekt}
  Mit Hilfe von Robotium werden Klicks sowie Texteingaben an die Applikation gesendet. Das Testprojekt ist deshalb eine Form des automated User Interface Testings. Wird das Testprojekt gestartet führt es folgende Aufgaben durch:
 \begin{itemize}
 \item Starten der Applikation\\
-Das Testprojekt startet die Applikation und wartet das erfolgreiche Ausblenden des \gls{splashscreen} ab
+Das Testprojekt startet die Applikation und wartet das erfolgreiche Ausblenden des \gls{splashscreen} ab.
 \item Importieren von Fahrern\\
-Falls die Applikation keine Fahrerinformationen enthält,navigiert das Testprojekt mit Hilfe von gesendeten Klicks zum Admin Bereich der Applikation und wählt das richtige Import \gls{csv}-File aus.
+Falls die Applikation keine Fahrerinformationen enthält, navigiert das Testprojekt mit Hilfe von gesendeten Klicks zum Admin Bereich der Applikation und wählt das richtige Import \gls{csv}-File aus.
 \item Gruppieren von Fahrern\\
-Das Testprojekt wählt zwei Fahrer aus und setzt sie an die Spitze. Dabei wird getestet ob nach dem Auswählen wirklich zwei Fahrer ausgewählt sind und nach dem Gruppieren wieder keine.
+Das Testprojekt wählt zwei Fahrer aus und setzt diese an die Spitze. Dabei wird getestet ob nach dem Auswählen wirklich zwei Fahrer ausgewählt sind und nach dem Gruppieren wieder keine.
 \item Testen der Gruppen Konsistenz\\
-Es wird getestet ob jeweils nur eine Gruppe mit der Bezeichnung "`Spitze"' sowie nur eine mit der Bezeichnung "`Feld"' vorhanden ist
+Es wird getestet, ob jeweils nur eine Gruppe mit der Bezeichnung "`Spitze"' sowie nur eine mit der Bezeichnung "`Feld"' vorhanden ist.
 \item Neustart der Applikation\\
-Das Testprojekt schliesst die Applikation und startet sie neu. Dabei wird überprüft ob der Gruppenstand vor dem Schliessen der Applikation derjenigen nach dem Neustart entspricht
+Das Testprojekt schliesst die Applikation und startet sie neu. Dabei wird überprüft, ob der Gruppenstand vor dem Schliessen der Applikation derjenigen nach dem Neustart entspricht.
 \item Neues Maillot erstellen\\
-Mit Hilfe der gesendeten Klicks wird ein neues Maillot erstellt und ein Fahrer als Träger dieses Maillots eingestellt. Darauf wird überprüft ob zum angegeben Fahrer der Eintrag zum Maillot vorhanden ist.
+Mit Hilfe der gesendeten Klicks wird ein neues Maillot erstellt und ein Fahrer als Träger dieses Maillots definiert. Darauf wird überprüft, ob zum angegeben Fahrer der Eintrag zum Maillot vorhanden ist.
 \item Neues Spezialklassement erstellen\\
-Das Testprojekt navigiert zum Spezialklassement Bereich und erstellt dort ein neues Spezialklassement sowie eine neue Wertung. Zu dieser Wertung werden die Gewinner eingegeben. Darauf wird überprüft ob die Bonuspunkte sowie Bonuszeit bei den angegebenen Fahrern korrekt eingetragen sind.
+Das Testprojekt navigiert zum Bereich Spezialklassement und erstellt dort ein neues Spezialklassement sowie eine neue Wertung. Zu dieser Wertung werden die Gewinner eingegeben. Darauf wird überprüft, ob die Bonuspunkte, sowie die Bonuszeit, bei den angegebenen Fahrern korrekt eingetragen ist.
 \item Löschen der oben erstellten Objekte \\
 Die in den oben aufgeführten Aufgaben erstellten Objekte werden - bis auf die Fahrer -  gelöscht. Nach dem Löschen überprüft das Testprojekt ob sich alle Fahrer wieder in der Ausgangslage befinden.
 \end{itemize}
 
 \subsection{Android Monkey}
-Der Android Monkey ist ein Kommandozeilentool welches auf jedem Android Gerät sowie dem Emulator ausgeführt werden kann. Das Tool sendet pseudo-zufällige Benutzer Events in schnellstmöglicher Abfolge an das System welches getestet wird. Dadurch werden Fehler im User Interface unabhängig von der darunter liegenden Logik aufgedeckt. Im Zusammenspiel mit dem Robotium Testprojekt kann deshalb, sofern beide Testmethoden erfolgreich durchlaufen, davon ausgegangen werden, dass die \textit{RadioTour} Applikation sich stabil und erwartungsgemäss verhält.
+Der Android Monkey ist ein Kommandozeilentool welches auf jedem Android Gerät sowie dem Emulator ausgeführt werden kann. Das Tool sendet pseudo-zufällige Benutzer Events in schnellstmöglicher Abfolge an das System welches getestet wird. Dadurch werden Fehler im User Interface unabhängig von der darunter liegenden Logik aufgedeckt. Zum Zeitpunkt der Codeübergabe beendeten beide Testläufe fehlerfrei.
 
 \section{Feldtest}
-Um die Benutzerfreundlichkeit und den Mehrwert der Applikation im Vergleich zur bisherigen Web Applikation zu ermitteln, ist ein Feldtest unabdingbar. Bei der Berner Rundfahrt\footnote{Berner Rundfahrt, \url{http://www.berner-rundfahrt.ch}, Aufgerufen am 01.05.2012.} bot sich der \textit{RadioTour Speaker} David Loosli\footnote{David Loosli, ehemaliger profi Radrennfahrer und \textit{RadioTour Speaker} der Berner Rundfahrt} an, die Applikation zu testen. In einem ersten Treffen wurden die grundlegenden Funktionen der Applikation und die Bedienung erklärt. Weiter wurde ein Ausschnitt aus einem fiktiven Rennen durchgespielt worden, wobei eine Person den \gls{chronofunk} simulierte. Ein kurzer Auszug aus der vorbereiteten Situation ist unten aufgeführt.
+Um die Benutzerfreundlichkeit und den Mehrwert der Applikation im Vergleich zur bisherigen Web Applikation zu ermitteln, ist ein Feldtest unabdingbar. Bei der Berner Rundfahrt\footnote{Berner Rundfahrt, \url{http://www.berner-rundfahrt.ch}, Aufgerufen am 01.05.2012.} bot sich der \textit{RadioTour Speaker} David Loosli\footnote{David Loosli, ehemaliger profi Radrennfahrer und \textit{RadioTour Speaker} der Berner Rundfahrt} an, die Applikation zu testen. In einem ersten Treffen wurden die grundlegenden Funktionen der Applikation und die Bedienung erklärt. Weiter wurde ein Ausschnitt aus einem fiktiven Rennen durchgespielt, wobei eine Person den \gls{chronofunk} simulierte. Ein kurzer Auszug aus der vorbereiteten Situation ist unten aufgeführt.
 
 \begin{itemize}
 \item Alle Fahrer sind importiert und das Rennen beginnt jetzt
@@ -59,7 +60,7 @@ Mit den Erfahrungen und den Rückmeldungen aus diesem Event konnte das Endproduk
 \centering
 \includegraphics[scale=0.8]{05bericht/images/timepicker.png}
 \end{figure} 
-Besonders hervorzuheben ist an dieser Stelle, dass Herr Loosli, entgegen den Erwartungen, die Fahrer, welche in einer Gruppe eingeteilt sind (z.B. Spitze), nicht ausgegraut haben möchte. So entstand der in Abbildung \ref{fig:riderpicker} dargestellte Entwurf.
+Besonders hervorzuheben ist an dieser Stelle, dass Herr Loosli, entgegen den Erwartungen, die Fahrer, welche in einer Gruppe eingeteilt sind (z.B. Spitze), im RiderPicker nicht ausgegraut haben möchte. So entstand der in Abbildung \ref{fig:riderpicker} dargestellte Entwurf.
 
 \begin{figure}[h!]
 \caption{RiderPicker - Auswahl von Fahrern}

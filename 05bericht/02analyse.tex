@@ -3,7 +3,7 @@ Die Analyse untersucht die bestehende Web Applikation und fasst die Anforderunge
 
 \section{Requirements}
 \label{sec:requirements}
-Die Anforderungen an die \textit{RadioTour} Applikation ergeben sich aus den Features der bisherigen Web Applikation und den Verbesserungsvorschlägen des \textit{RadioTour} Speakers. Im Anhang \ref{ref:usecases} sind sämtliche UseCases der bisherigen Applikation aufgeführt. Im folgenden Abschnitt werden die Funktionen, welche in diesem Projekt implementiert sind, aufgeführt.
+Die Anforderungen an die \textit{RadioTour} Applikation ergeben sich aus den Features der bisherigen Web Applikation und den Verbesserungsvorschlägen des \textit{RadioTour Speakers}. Im Anhang \ref{ref:usecases} sind sämtliche UseCases der bisherigen Applikation aufgeführt. Im folgenden Abschnitt werden die wichtigsten Funktionen, welche in diesem Projekt implementiert sind, aufgeführt.
 
 \subsection{Funktionale Anforderungen}
 Die funktionalen Anforderungen sind in drei Prioritätsstufen eingeteilt:
@@ -11,7 +11,7 @@ Die funktionalen Anforderungen sind in drei Prioritätsstufen eingeteilt:
 \textbf{zwingende Anforderungen (must)}
 \begin{itemize}
 \item Fahrerliste, Etappen und Marschtabellen importieren
-\item Fahrer ansehen, sortieren und bearbeiten
+\item Fahrer auflisten, sortieren und bearbeiten
 \item Gruppen bilden und Rückstand angeben
 \item Gruppen auflösen
 \item Events für Fahrer erfassen (Sturz, Arzt, Aufgabe)
@@ -39,7 +39,7 @@ Die funktionalen Anforderungen sind in drei Prioritätsstufen eingeteilt:
 \end{itemize}
 
 \subsection{Nicht funktionale Anforderungen}
-Im Umfeld eines Live Sport Events spielen neben den funktionalen Anforderungen an ein Software Produkt auch nicht funktionale Anforderungen eine wichtige Rolle. So muss z.B. das UserInterface Fehler bei der Eingabe tolerieren bzw. korrigierbar machen. Die Bedienung muss flüssig verlaufen und zu jedem Zeitpunkt muss der Status der Applikation sichtbar sein. Die für \textit{RadioTour} relevanten nicht funktionalen Anforderungen sind im Folgenden aufgelistet.
+Im Umfeld der \textit{RadioTour} Applikation spielen neben den funktionalen Anforderungen an ein Software Produkt auch nicht funktionale Anforderungen eine wichtige Rolle. So muss z.B. das UserInterface Fehler bei der Eingabe tolerieren bzw. korrigierbar machen. Die Bedienung muss flüssig verlaufen und zu jedem Zeitpunkt muss der Status der Applikation sichtbar sein. Die für \textit{RadioTour} relevanten nicht funktionalen Anforderungen sind im Folgenden aufgelistet.
 
 \begin{itemize}
 \item Mobilfunkverbindung ist nicht immer gewährleistet, keine Daten dürfen dadurch verloren gehen
@@ -47,11 +47,11 @@ Im Umfeld eines Live Sport Events spielen neben den funktionalen Anforderungen a
 \item Angenehme, flüssige und selbsterklärende Bedienung der Applikation
 \end{itemize}
 
-Weitere nicht funktionale Anforderungen beziehen sich auch auf die Hardware an sich und sind im Kapitel \ref{kap:kaufempfehlung} bereits aufgeführt.
+Weitere nicht funktionale Anforderungen beziehen sich auf die Hardware an sich und sind im Kapitel \ref{kap:kaufempfehlung} aufgeführt.
 
 \section{Evaluation und Kaufempfehlung}
 \label{kap:kaufempfehlung}
-Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwicklung der Arbeit. Aus diesem Grund stand diese ganz zu Beginn der Arbeit an. Zur Auswahl standen die beiden marktführenden Betriebssysteme Android (Google) und iOS (Apple). Als Grundlage für die Evaluation dienten die folgenden Kriterien:
+Die Evaluation der Zielplattform stellt einen wichtigen Faktor für die weitere Entwicklung der Arbeit dar. Zur Auswahl stehen die beiden marktführenden Betriebssysteme Android (Google) und iOS (Apple). Als Grundlage für die Evaluation dienen die folgenden Kriterien:
 \begin{itemize}
 \item Vorkenntnisse der Programmiersprachen Java bzw. Objective-C
 \item Möglichkeiten zum UserInterface Design
@@ -60,7 +60,7 @@ Die Evaluation der Zielplattform war ein wichtiger Faktor für die weitere Entwi
 \item Nutzbarkeit von externen Geräten und Schnittstellen
 \item Vielfalt von Informationsquellen im Internet
 \end{itemize}
-Die Kriterien werden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java sind  ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid ist in Absprache mit Herrn Heinzmann getroffen worden. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang \ref{ref:kriterien}.
+Die Kriterien werden in einer Nutzwertanalyse gewichtet und bewertet. Insbesondere die Vorkenntnisse in Java sind  ausschlaggebend für den Entscheid, die Applikation für die Androidplattform zu entwickeln. Dieser Entscheid ist in Absprache mit Herrn Heinzmann getroffen worden. Die gesamte Liste der Kriterien mit der jeweiligen Gewichtung sowie eine ausführliche Erläuterung befinden sich im Anhang \ref{ref:kaufempfehlung}.
 \\
 
 Für die Auswahl eines geeigneten Tablets wird im nächsten Schritt ein Kriterienkatalog definiert mit zwingenden und optionalen Kriterien für das Gerät. Die zwingenden Kriterien beinhalten:
@@ -74,14 +74,14 @@ Für die Auswahl eines geeigneten Tablets wird im nächsten Schritt ein Kriterie
 Zu den optionalen Kriterien gehören die Akkulaufzeit, falls die Stromversorgung unterbrochen wird, sowie ein grosszügiger Bildschirm für die Bedienung mit dem Finger oder mithilfe eines Stifts.
 \\
 
-Als Sieger und somit auch als Kaufempfehlung an die \textit{cnlab AG} geht das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugt in der Vielfalt der Anschlüsse. Die Kaufempfehlung mit weiteren Erläuterungen ist ebenfalls im Anhang \ref{ref:kaufempfehlung} zu finden.
+Als Sieger und somit auch als Kaufempfehlung an die \textit{cnlab AG} geht das Lenovo ThinkPad Tablet. Dieses Gerät erfüllt alle Kriterien und überzeugt in der Vielfalt der Anschlüsse. Die Kaufempfehlung mit weiteren Erläuterungen ist im Anhang \ref{ref:kaufempfehlung} zu finden.
 \\
 
 Im Verlauf der Arbeit ist ein Defekt an der Micro USB Buchse entstanden. Dieser Anschluss wird für die Entwicklung auf dem Gerät dringend benötigt. Für die weitere Entwicklung ist ein Ersatzgerät angeschafft worden. Dabei handelt es sich um das Galaxy Nexus Tab 10.1\footnote{Galaxy Nexus Tab 10.1, \url{http://www.samsung.com/ch/consumer/mobile-phone/tablets/tablets/GT-P7500UWDITV}, Aufgerufen am 23.05.2012.}
 
 \section{Technologien}
 \subsection{Android}
-Die native Programmiersprache für das Android Betriebssystem ist Java. Die Programmierung in Java bringt den Vorteil, dass auf die gesamte \gls{api} von Android zugegriffen werden kann. Weiter sind die Geräte genau dafür ausgelegt und eine optimale Performance kann erreicht werden. Sämtliche Komponenten dieser Arbeit sind in Java geschrieben. Für die Persistierung der Daten auf dem Tablet wird eine \gls{sqlite} Datenbank verwendet.
+Die native Programmiersprache für das Android Betriebssystem ist Java. Die Programmierung in Java bringt den Vorteil, dass auf die gesamte \gls{api} von Android zugegriffen werden kann. Weiter sind die Geräte genau dafür ausgelegt und eine optimale Performance kann erreicht werden. Sämtliche Komponenten dieser Arbeit sind in Java geschrieben.
 
 \subsection{Externe Libraries}
 Android beinhaltet bereits ein umfangreiches Framework zur Entwicklung. Deshalb nutzt die \textit{RadioTour} Applikation folgende zwei externe Libraries:
@@ -101,10 +101,10 @@ Die von Android empfohlene Entwicklungsumgebung ist Eclipse\footnote{Eclipse, \u
 Eclipse ist eine weit verbreitete \gls{ide} und wird aktiv weiter entwickelt. Mit dem Plugin zusammen bildet sie eine solide Grundlage für dieses Projekt.
 \\
 
-Damit die Android Applikation direkt auf dem Computer getestet werden kann, stellt Google einen Emulator zur Verfügung. Der Emulator ist allerdings auch als solchen zu betrachten, da die Bedienung nicht vergleichbar ist mit einem richtigen Tablet.
+Damit die Android Applikation direkt auf dem Computer getestet werden kann, stellt Google einen Emulator zur Verfügung. Der Emulator ist allerdings auch als solcher zu betrachten, da die Bedienung nicht vergleichbar mit einem richtigen Tablet ist.
 
 \subsection{Android Version}
-Eine Anwendung wird für eine spezifische Android Version entwickelt und getestet. Somit kann garantiert werden, dass das Verhalten der Anwendung  immer gleich ist. In dieser Arbeit ist dies die Version 3.1 mit dem Versionsnamen \textit{Honeycomb}.\footnote{Android Honeycomb, \url{http://de.wikipedia.org/wiki/Android_(Betriebssystem)}, aufgerufen am 11.05.2012.}.
+Eine Anwendung wird für eine spezifische Android Version entwickelt und getestet. Somit kann garantiert werden, dass das Verhalten der Anwendung  immer gleich ist. In dieser Arbeit ist dies die Version 3.1 mit dem Versionsnamen \textit{Honeycomb}.\footnote{Android Honeycomb, \url{http://de.wikipedia.org/wiki/Android_(Betriebssystem)}, aufgerufen am 11.05.2012.}. Weiter läuft die Applikation ebenfalls mit der Nachfolgeversion \textit{IceCreamSandwick}.
 \\
 
 Die Entwicklung auf einer Version schliesst jedoch nicht aus, dass die Anwendung in neueren Versionen nicht mehr lauffähig ist. Auch \textit{RadioTour} kann für zukünftige Versionen weiterentwickelt und verwendet werden.
@@ -124,4 +124,4 @@ In Italien findet zum Zeitpunkt dieser Arbeit der \textit{Giro d'Italia}\footnot
 In der Abbildung \ref{fig:giro} ist der Live Abschnitt der offiziellen Webseite zu sehen. Im oberen Teil wird der Standort in der aktuelle Etappe eingeblendet. Unten ist die Situation an der Spitze abgebildet. Die Fahrer sind nach Rückstand gruppiert.
 \\
 
-Da jedoch nicht zu erkennen ist, wie die Informationen im Feld erfasst werden, muss die Mitbewerberanalyse an dieser Stelle abgeschlossen werden.
+Da jedoch nicht zu erkennen ist, wie die Informationen erfasst werden, muss die Mitbewerberanalyse an dieser Stelle abgeschlossen werden.

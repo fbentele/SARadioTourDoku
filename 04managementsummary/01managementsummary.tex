@@ -6,12 +6,12 @@ An der Tour de Suisse fahren ca. 200 Radrennfahrer in Tagesetappen durch die gan
 \subsection*{Live Informationen}
 Während dem Rennen werden aus verschiedenen Quellen Informationen gesammelt. Zum einen sind dies Veränderungen im Rennfeld, zum anderen Wertungen, welche die Fahrer erreichen können, so z.B. einen Bergsprint. Diese Daten werden vom \textit{RadioTour Speaker} manuell erfasst.
 \\
-Wenn sich ein Rennfahrer vom Feld ablöst und einen Vorsprung erarbeitet, wird dieser von einem Motorradfahrer verfolgt. Diese Änderung wird dann sofort per Funk an den \textit{RadioTour Speaker} übermittelt.
+Wenn sich ein Rennfahrer vom Feld ablöst und einen Vorsprung erarbeitet, wird dieser von einem Motorradfahrer verfolgt. Diese Änderung wird dann sofort per Funk dem \textit{RadioTour Speaker} übermittelt.
 
 \subsection*{Äussere Bedingungen}
-Bei Live Sport Events wie der Tour de Suisse ist die Erfassung von Echtzeitdaten, aus technischer Sicht, eine Herausforderung. Sowohl das Alpine Gebirge, wo die Mobilfunkverbindungen und GPS Informationen nicht immer gewährleistet sind, als auch die ständige Vibration der Fahrzeuge stellen erschwerende Rahmenbedingungen dar.
+Bei Live Sport Events wie der Tour de Suisse ist die Erfassung von Echtzeitdaten, aus technischer Sicht, eine Herausforderung. Sowohl das alpine Gebirge, wo die Mobilfunkverbindungen und GPS Informationen nicht immer gewährleistet sind, als auch die ständige Vibration der Fahrzeuge stellen erschwerende Rahmenbedingungen dar.
 \\
-Die Unterbrüche der Verbindung werden überbrückt, indem die Änderungen gesammelt und periodisch an den Server gesendet werde. Alle Änderungen werden als Paket in eine Warteschlange eingetragen. Ist eine sofortige Übertragen nicht möglich, wird es später wieder versucht.
+Die Unterbrüche der Verbindung werden überbrückt, indem die Änderungen gesammelt und periodisch an den Server gesendet werde.
 
 \newpage
 
@@ -33,9 +33,3 @@ Im weiteren Verlauf der Arbeit wurden die Anforderungen und die UseCases definie
 
 \section*{Ergebnisse}
 Die \textit{RadioTour} Android Applikation beinhaltet die festgelegten Anforderungen. Die Fahrerlisten und die offiziellen Zeitmessungen können via USB oder aus dem Internet importiert werden. Die Gruppen lassen sich dynamisch verändern und die Rennsituation wird an den Server übermittelt. Ein Testlauf mit dem ersten Prototypen hat klar aufgezeigt, dass diese Anwendung eine Verbesserung in der Bedienung bringt. Dabei entstehen keine Einbussen in der Funktionalität. Die Applikation ist damit für den Einsatz an der Tour de Suisse bereit.
-
-
-\section*{Ausblick}
-Für den erfolgreichen Einsatz an der Tour de Suisse ist ein Feldtest, insbesondere um die Serververbindung zu testen, notwendig.
-\\
-Nach der Tour de Suisse sind die Eindrücke und das Feedback des \textit{RadioTour Speakers} aufzunehmen, damit die Applikation weiter verbessert werden kann.
