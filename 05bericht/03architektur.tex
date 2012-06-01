@@ -15,6 +15,8 @@ Der Stamm stellt die Applikation dar und die Äste zeigen die Aufteilung der Fun
 \\
 Die untere Ebene beinhaltet die Kernelemente der Applikation. Diese werden in Views seitenweise dargestellt. Durch eine Navigation lässt sich zwischen den Views wechseln, ohne dass dabei die Live Informationen ausgeblendet werden.
 
+\newpage
+
 \section{Schichtenmodell und Paketdiagramm}
 Die Applikation lässt sich in vier verschiedene Schichten aufteilen. Diese Schichten sind in der folgenden Grafik illustriert. Die oberste Schicht stellt dabei die Schnittstelle zum Benutzer dar. Innerhalb der Schicht werden die dabei verwendeten Pakete angezeigt.  
 \begin{figure}[h!]
@@ -67,6 +69,7 @@ Die \textit{SpecialPointHolder} Klasse dient dazu, den zu Wertungen zugewiesenen
 Eine \textit{RaceSituation} stellt einen Stand von \textit{Group} Objekten zu einem speziellen Zeitpunkt und Kilometerstand dar. Objekte vom Typ \textit{RaceSituation} werden bei jeder Neugruppierung von Fahrern oder Setzen eines Rückstandes einer Gruppe erstellt, an den Server gesendet und in die lokale \gls{sqlite} Datenbank geschrieben. Jeweils beim Start der Applikation sowie beim Wechseln der aktuellen Etappe wird die zuletzt in der Datenbank abgespeicherte \textit{RaceSituation} geladen. Die \textit{Group} Klasse enthält die Angaben zum aktuellen Rückstand zur Spitze, dem letzten bekannten Rückstand sowie boolsche Attribute welche bestimmen ob die Gruppe das Feld oder die Spitze darstellt.\\
 Mit Hilfe der \textit{Maillot} Klasse können Maillots erstellt und verteilt werden, welche dann über alle Etappen bestehen. Da nach jeder Etappe ein anderer Fahrer ein Maillot tragen kann, wird eine Verbindung zwischen der Etappe und einem Maillot gebraucht. Diese Funktion wird durch die Klasse \textit{MaillotStageConnection} erfüllt. 
 
+\newpage
 
 \section{Datenbankschema}
 Die Nutzung von ORMLite zur Objektrelationalen Abbildung von Instanzen in die \gls{sqlite} Datenbank impliziert, dass das Datenbankschema der Klassenstruktur wie in \ref{fig:domain} abgebildet entspricht. 
