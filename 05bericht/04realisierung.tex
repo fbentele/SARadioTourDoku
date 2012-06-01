@@ -184,12 +184,14 @@ Die Rennsituation bildet sich aus den gruppierten Fahrern mit den eingetragenen 
 \subsection{Receiveing}
 Im \textit{HeaderFragment} werden die Abstände zwischen der Spitze und dem Feld sowie der Spitze und dem \textit{RadioTour} Auto in Kilometer und Sekunden angegeben. Diese Informationen kommen aus dem TourLive Aufnahmesystem und werden auf dem Server berechnet. Auch kommt wieder ein Hintergrundprozess zum Einsatz, jedoch wird dafür ein Polling verwendet. Beim Polling wird in einem vordefinierten zeitlichen Abstand eine \gls{http} Anfrage an den Server geschickt. Kommt keine Antwort oder kann die Anfrage gar nicht erst platziert werden, konnte keine Verbindung aufgebaut werden. In diesem Fall werden die bestehenden Informationen weiter angezeigt, jedoch mit dem Hinweis, dass das Aufnahmesystem nicht verfügbar ist. Bei der Anfrage an den Server erwartet die Applikation eine Antwort im \gls{json} Format wie in der Abbildung \ref{fig:jsonreceive} dargestellt wird.
 
-\begin{figure}{H}
+\begin{figure}[H]
 \caption{Lievdaten im JSON Format }
 \label{fig:jsonreceive}
 \centering
 \includegraphics[scale=0.9]{05bericht/images/json2.png}
 \end{figure}
+
+\newpage
 
 \section{Datenbanken}
 \textbf{ORMLite (Version 4.39)}
